@@ -1,0 +1,26 @@
+{
+  "vue-router": {
+    "js": [
+      "window.$nuxt && window.$nuxt.$router && window.$nuxt.$route",
+      "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$router && el.__vue__.$route)).filter(Boolean).length"
+    ]
+  },
+  "vuex": {
+    "js": [
+      "window.$nuxt && window.$nuxt.$store && window.$nuxt.$store.dipatch && window.$nuxt.$store.commit",
+      "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$store && el.__vue__.$store.dispatch && el.__vue__.$store.commit)).filter(Boolean).length"
+    ]
+  },
+  "vue-meta": {
+    "js": [
+      "window.$nuxt && window.$nuxt.$meta && window.$nuxt.$meta() && window.$nuxt.$meta().getOptions",
+      "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$meta && el.__vue__.$meta() && el.__vue__.$meta().getOptions)).filter(Boolean).length"
+    ]
+  },
+  "vue-apollo": {
+    "js": "(window.$nuxt && window.$nuxt.$apollo) || [...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$apollo)).filter(Boolean).length"
+  },
+  "vue-warehouse": {
+    "js": "(window.$nuxt && window.$nuxt.$warehouse) || [...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$warehouse)).filter(Boolean).length"
+  }
+}

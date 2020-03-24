@@ -1,0 +1,22 @@
+{
+  "nuxt": {
+    "html": [
+      "<div [^>]*id=\"__nuxt\"",
+      "<script [^>]*>window\\.__NUXT__"
+    ],
+    "js": "window.__NUXT__ || window.$nuxt",
+    "script": [
+      "/_nuxt/"
+    ]
+  },
+  "vuepress": {
+    "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$vuepress)).filter(Boolean).length"
+  },
+  "gridsome": {
+    "html": "<meta [^>]*name=\"gridsome:hash\""
+  },
+  "quasar": {
+    "html": "<div [^>]*id=\"q-app\"",
+    "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$q)).filter(Boolean).length"
+  }
+}

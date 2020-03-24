@@ -1,0 +1,86 @@
+{
+  "@nuxtjs/axios": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$axios"
+  },
+  "@nuxt/http": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$http"
+  },
+  "@nuxt/press": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$press"
+  },
+  "@nuxtjs/pwa": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$icon"
+  },
+  "@nuxtjs/apollo": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$apolloHelpers"
+  },
+  "@nuxtjs/auth": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$auth && window.$nuxt.$options.context.app.$auth.loginWith"
+  },
+  "@nuxtjs/sentry": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$sentry"
+  },
+  "@nuxtjs/vuetify": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.vuetify"
+  },
+  "@nuxtjs/device": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$device"
+  },
+  "nuxt-fire": {
+    "js": "window.$nuxt && (window.$nuxt.$options.context.app.$fireAuth || window.$nuxt.$options.context.app.$fireDb || window.$nuxt.$options.context.app.$fireStore || window.$nuxt.$options.context.app.$fireStorage || window.$nuxt.$options.context.app.$fireFunc || window.$nuxt.$options.context.app.$fireMess || window.$nuxt.$options.context.app.$firePerf || window.$nuxt.$options.context.app.$fireAnalytics || window.$nuxt.$options.context.app.$fireConfig)"
+  },
+  "nuxt-user-agent": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$ua"
+  },
+  "nuxt-shopify": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$shopify"
+  },
+  "@nuxtjs/recaptcha": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$recaptcha"
+  },
+  "@nuxtjs/google-gtag": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$gtag"
+  },
+  "@nuxtjs/google-analytics": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$ga"
+  },
+  "@nuxtjs/google-tag-manager": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$gtm"
+  },
+  "nuxt-matomo": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$matomo"
+  },
+  "cookie-universal-nuxt": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$cookies && window.$nuxt.$options.context.app.$cookies.nodeCookie"
+  },
+  "nuxt-socket-io": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$nuxtSocket"
+  },
+  "nuxt-facebook-pixel-module": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$fb"
+  },
+  "nuxt-rollbar-module": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$rollbar"
+  },
+  "nuxt-dayjs-module": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$dayjs"
+  },
+  "@nuxtjs/date-fns": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$dateFns"
+  },
+  "@nuxtjs/moment": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$moment"
+  },
+  "@nuxtjs/universal-storage": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$storage"
+  },
+  "@nuxtjs/prismic": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$prismic"
+  },
+  "storyblok-nuxt": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$storyapi"
+  },
+  "nuxt-sanity": {
+    "js": "window.$nuxt && window.$nuxt.$options.context.app.$sanity"
+  }
+}
