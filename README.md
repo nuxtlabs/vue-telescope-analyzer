@@ -2,6 +2,10 @@
 
 Help the community discover websites made with [Vue](https://vuejs.org).
 
+```bash
+npx vue-telemetry https://fr.nuxtjs.org
+```
+
 It supports multiple vue plugins, frameworks and UI librairies.
 
 ```js
