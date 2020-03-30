@@ -2,17 +2,18 @@
 
 const ora = require('ora')
 const consola = require('consola')
+const yargs = require('yargs')
 
-require('yargs')
+yargs
   .usage('$0 [url]', 'analyze an url', (yargs) => {
     yargs.positional('url', {
       describe: 'the url to analyze',
-      type: 'string',
-      default: 'https://vuejs.org'
+      type: 'string'
     })
   }, (argv) => {
     if (!argv.url) {
-      return consola.error('Please provide an url to analyze')
+      consola.error('Please provide an url to analyze')
+      return yargs.showHelp()
     }
     const spinner = ora(`Detecting Vue on ${argv.url}`).start()
     setTimeout(() => spinner.color = 'magenta', 2500)
