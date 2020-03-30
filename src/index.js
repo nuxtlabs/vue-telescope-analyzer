@@ -1,4 +1,4 @@
-const puppeteer = require('puppeteer')
+const chromium = require('chrome-aws-lambda')
 const tldParser = require('tld-extract')
 const makeDir = require('make-dir')
 const { URL } = require('url')
@@ -7,14 +7,19 @@ const { tmpdir } = require('os')
 const { isValidUrl } = require('./utils')
 const { hasVue, getFramework, getPlugins, getUI, getNuxtMeta, getNuxtModules } = require('./detectors')
 
-let browser = puppeteer.launch({
-  args: ['--no-sandbox', '--headless', '--disable-gpu', '--ignore-certificate-errors']
-})
+let browser = null
 
 module.exports = async function (originalUrl) {
   // Make sure browser is running
-  if (browser instanceof Promise) {
-    browser = await browser
+  if (!browser) {
+    const executablePath = await chromium.executablePath
+
+    browser = await chromium.puppeteer.launch({
+      executablePath,
+      args: chromium.args,
+      defaultViewport: chromium.defaultViewport,
+      headless: true
+    })
   }
   // Parse url
   let url
