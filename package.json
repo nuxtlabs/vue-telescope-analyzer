@@ -10,9 +10,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["vue", "vue analyzer", "vue telemetry"],
+  "author": "NuxtJS Company",
+  "license": "MIT",
   "dependencies": {
     "consola": "^2.11.3",
     "make-dir": "^3.0.2",
