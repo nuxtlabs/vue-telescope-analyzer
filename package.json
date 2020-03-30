@@ -1,6 +1,6 @@
 {
   "name": "vue-telemetry-analyzer",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "main": "src/index.js",
   "bin": {
@@ -10,7 +10,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["vue", "vue analyzer", "vue telemetry"],
+  "keywords": [
+    "vue",
+    "vue analyzer",
+    "vue telemetry"
+  ],
   "author": "NuxtJS Company",
   "license": "MIT",
   "dependencies": {
