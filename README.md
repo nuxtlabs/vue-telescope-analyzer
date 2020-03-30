@@ -1,55 +1,26 @@
 # Vue Telemetry
 
-Help the community discover websites made with [Vue](https://vuejs.org).
+CLI to analyze a website and detect Vue and its ecosystem ✨
+
+You can help the community by using the [browser extension](https://github.com/nuxt-company/vue-telemetry-extensions) 💚
+
+## Installation
 
 ```bash
-npm install vue-telemetry
+npm install -g vue-telemetry-analyzer # Or yarn global add vue-telemetry-analyzer
 ```
 
 ## Usage
 
-```js
-const analyze = require('vue-telemetry')
+```bash
+vta [url]
 
-analyze('https://fr.nuxtjs.org')
-  .then(console.log)
+# Example
+vta https://fr.nuxtjs.org
 ```
 
-Result:
+[![render1585566509798](https://user-images.githubusercontent.com/904724/77906279-fb455d80-7287-11ea-86f2-d7eca773ba56.gif)](https://terminalizer.com/view/a30a95523602)
 
-```js
-{
-  url: 'https://fr.nuxtjs.org/',
-  hostname: 'fr.nuxtjs.org',
-  domain: 'nuxtjs.org',
-  // website metadata
-  meta: {
-    language: 'fr',
-    title: 'Nuxt.js - Le Framework Vue.js',
-    description: 'Nuxt.js fournit toutes les configurations nécessaires pour rendre...'
-  },
-  // Vue Framework
-  framework: 'nuxt',
-  // Vue plugins
-  plugins: [
-    'vue-router',
-    'vue-meta',
-    'vuex'
-  ],
-  // UI Librairy
-  ui: 'tailwindcss',
-  // When framework === 'nuxt'
-  nuxt: {
-    ssr: true,
-    static: true,
-    modules: [
-      '@nuxt/http',
-      '@nuxtjs/pwa',
-      '@nuxtjs/google-analytics'
-    ]
-  }
-}
-```
 
 It supports multiple [frameworks](#frameworks), [UI librairies](#ui-librairies) and [vue plugins](#vue-plugins).
 
@@ -93,3 +64,56 @@ When [NuxtJS](https://nuxtjs.org) is detected as a framework, it will also detec
 See [detectors/nuxt.meta.json](detectors/nuxt.meta.json) for the detection.
 
 It will also detecrt the Nuxt modules used, refer to [detectors/nuxt.modules.json](detectors/nuxt.modules.json) to support new Nuxt modules.
+
+
+## NPM module
+
+You can use `vue-telemetry-analyzer` locally on your project:
+
+```bash
+npm install vue-telemetry
+```
+
+```js
+const analyze = require('vue-telemetry-analyzer')
+
+analyze('https://fr.nuxtjs.org')
+  .then(result => console.log(result))
+  .catch(error => console.error(error))
+```
+
+Result:
+
+```js
+{
+  url: 'https://fr.nuxtjs.org/',
+  hostname: 'fr.nuxtjs.org',
+  domain: 'nuxtjs.org',
+  // website metadata
+  meta: {
+    language: 'fr',
+    title: 'Nuxt.js - Le Framework Vue.js',
+    description: 'Nuxt.js fournit toutes les configurations nécessaires pour rendre...'
+  },
+  // Vue Framework
+  framework: 'nuxt',
+  // Vue plugins
+  plugins: [
+    'vue-router',
+    'vue-meta',
+    'vuex'
+  ],
+  // UI Librairy
+  ui: 'tailwindcss',
+  // When framework === 'nuxt'
+  nuxt: {
+    ssr: true,
+    static: true,
+    modules: [
+      '@nuxt/http',
+      '@nuxtjs/pwa',
+      '@nuxtjs/google-analytics'
+    ]
+  }
+}
+```
