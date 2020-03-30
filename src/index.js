@@ -7,24 +7,24 @@ const { tmpdir } = require('os')
 const { isValidUrl } = require('./utils')
 const { hasVue, getFramework, getPlugins, getUI, getNuxtMeta, getNuxtModules } = require('./detectors')
 
-let browser = null
+async function getPuppeteerPath() {
+  let executablePath = await chromium.executablePath
+
+  if (process.env.NETLIFY_DEV) {
+    executablePath = null // forces to use local puppeteer
+  }
+
+  return executablePath
+}
 
 module.exports = async function (originalUrl) {
-  // Make sure browser is running
-  if (!browser) {
-    let executablePath = await chromium.executablePath
-
-    if (process.env.NETLIFY_DEV) {
-      executablePath = null // forces to use local puppeteer
-    }
-
-    browser = await chromium.puppeteer.launch({
-      executablePath,
-      args: chromium.args,
-      defaultViewport: chromium.defaultViewport,
-      headless: true
-    })
-  }
+  const executablePath = await getPuppeteerPath()
+  const browser = await chromium.puppeteer.launch({
+    executablePath,
+    args: chromium.args,
+    defaultViewport: chromium.defaultViewport,
+    headless: true
+  })
   // Parse url
   let url
   try {
@@ -112,6 +112,9 @@ module.exports = async function (originalUrl) {
     type: 'jpeg',
     quality: 90
   })
+
+  // Close browser
+  await browser.close()
 
   return infos
 }
