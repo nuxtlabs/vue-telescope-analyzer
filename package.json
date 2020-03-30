@@ -1,8 +1,12 @@
 {
-  "name": "vue-telemetry",
-  "version": "1.0.0",
+  "name": "vue-telemetry-analyzer",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
+  "bin": {
+    "vta": "bin/vta.js",
+    "vue-telemetry-analyzer": "bin/vta.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +15,8 @@
   "license": "ISC",
   "dependencies": {
     "consola": "^2.11.3",
+    "make-dir": "^3.0.2",
+    "ora": "^4.0.3",
     "puppeteer": "^2.1.0",
     "tld-extract": "^1.1.2",
     "yargs": "^15.1.0"
