@@ -22,15 +22,22 @@ Result:
   url: 'https://fr.nuxtjs.org/',
   hostname: 'fr.nuxtjs.org',
   domain: 'nuxtjs.org',
-  language: 'fr',
+  // website metadata
+  meta: {
+    language: 'fr',
+    title: 'Nuxt.js - Le Framework Vue.js',
+    description: 'Nuxt.js fournit toutes les configurations nécessaires pour rendre...'
+  },
+  // Vue Framework
   framework: 'nuxt',
+  // Vue plugins
   plugins: [
     'vue-router',
     'vue-meta',
     'vuex'
   ],
+  // UI Librairy
   ui: 'tailwindcss',
-  title: 'Nuxt.js - Le Framework Vue.js',
   // When framework === 'nuxt'
   nuxt: {
     ssr: true,
@@ -44,7 +51,7 @@ Result:
 }
 ```
 
-It supports multiple vue plugins, frameworks and UI librairies.
+It supports multiple [frameworks](#frameworks), [UI librairies](#ui-librairies) and [vue plugins](#vue-plugins).
 
 ## Frameworks
 
