@@ -71,7 +71,7 @@ It will also detecrt the Nuxt modules used, refer to [detectors/nuxt.modules.jso
 You can use `vue-telemetry-analyzer` locally on your project:
 
 ```bash
-npm install vue-telemetry # Or yarn add vue-telemetry
+npm install vue-telemetry-analyzer # Or yarn add vue-telemetry
 ```
 
 Since this module is made to work on serverless environement by using [puppeteer-core](https://www.npmjs.com/package/puppeteer-core) and [chrome-aws-lambda](http://npmjs.com/package/chrome-aws-lambda), you need to install [puppeteer](https://www.npmjs.com/package/puppeteer) locally as a dev dependency:
