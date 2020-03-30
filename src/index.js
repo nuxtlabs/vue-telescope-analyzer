@@ -12,7 +12,11 @@ let browser = null
 module.exports = async function (originalUrl) {
   // Make sure browser is running
   if (!browser) {
-    const executablePath = await chromium.executablePath
+    let executablePath = await chromium.executablePath
+
+    if (process.env.NETLIFY_DEV) {
+      executablePath = null // forces to use local puppeteer
+    }
 
     browser = await chromium.puppeteer.launch({
       executablePath,
