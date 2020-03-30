@@ -67,7 +67,7 @@ module.exports = async function (originalUrl) {
   const context = { html, scripts, page }
 
   if (!(await hasVue(context))) {
-    return consola.warn('Vue is not detected on %s', originalUrl)
+    throw new Error(`Vue is not detected on ${originalUrl}`)
   }
 
   // Get page title
