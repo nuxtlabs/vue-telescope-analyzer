@@ -3,10 +3,19 @@
 Help the community discover websites made with [Vue](https://vuejs.org).
 
 ```bash
-npx vue-telemetry https://fr.nuxtjs.org
+npm install vue-telemetry
 ```
 
-It supports multiple vue plugins, frameworks and UI librairies.
+## Usage
+
+```js
+const analyze = require('vue-telemetry')
+
+analyze('https://fr.nuxtjs.org')
+  .then(console.log)
+```
+
+Result:
 
 ```js
 {
@@ -35,7 +44,7 @@ It supports multiple vue plugins, frameworks and UI librairies.
 }
 ```
 
-To test it: `node src/analyze.js https://my-url.com`
+It supports multiple vue plugins, frameworks and UI librairies.
 
 ## Frameworks
 
