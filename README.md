@@ -117,3 +117,14 @@ Result:
   }
 }
 ```
+
+## Contributing
+
+1. Clone this repository
+2. Install dependencies using `yarn install` or `npm install`
+3. Update the code right inside `src/` or `detectors/`
+4. Test it with `./bin/vta.js https://your-url-to-test`
+
+## License
+
+[MIT License](./LICENSE)
