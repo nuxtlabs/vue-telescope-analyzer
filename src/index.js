@@ -1,6 +1,7 @@
 const chromium = require('chrome-aws-lambda')
 const tldParser = require('tld-extract')
 const makeDir = require('make-dir')
+const { createHash } = require('crypto')
 const { URL } = require('url')
 const { join } = require('path')
 const { tmpdir } = require('os')
@@ -105,7 +106,8 @@ module.exports = async function (originalUrl) {
 
   // Take screenshot
   const screenshotsDir = join(tmpdir(), 'vue-telemetry-analyzer')
-  infos.screenshot = join(screenshotsDir, `${url.hostname}.jpg`)
+  const filename = createHash('md5').update(originalUrl).digest('hex')
+  infos.screenshot = join(screenshotsDir, `${filename}.jpg`)
   await makeDir(screenshotsDir)
   await page.screenshot({
     path: infos.screenshot,
