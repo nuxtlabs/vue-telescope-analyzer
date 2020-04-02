@@ -67,6 +67,7 @@ module.exports = async function (originalUrl) {
   })
   if (!response.ok()) {
     const error = new Error(`Website responded with ${response.status()} status code`)
+    error.statusCode = response.status()
     error.body = await response.text()
     throw error
   }
