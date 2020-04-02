@@ -67,9 +67,16 @@ module.exports = async function (originalUrl) {
     domain: url.hostname
   })
   // https://github.com/puppeteer/puppeteer/blob/v2.1.0/docs/api.md#pagegotourl-options
-  await page.goto(originalUrl, {
+  const response = await page.goto(originalUrl, {
     waitUntil: 'networkidle0'
   })
+  if (!response.ok()) {
+    const error = new Error(`Website responded with ${response.status()} status code`)
+    error.statusCode = response.status()
+    error.body = await response.text()
+    throw error
+  }
+  console.log('response.ok()', response.ok(), response.status())
   // Get page scripts urls
   let scripts = await page.evaluateHandle(() => Array.from(document.getElementsByTagName('script')).map(({ src }) => src))
   scripts = (await scripts.jsonValue()).filter(script => script)
@@ -86,7 +93,10 @@ module.exports = async function (originalUrl) {
 
   // Get page title
   infos.meta.title = await page.title()
-  infos.meta.description = await page.$eval('head > meta[name="description"]', element => element.content)
+  infos.meta.description = await page.$eval('head > meta[name="description"]', element => element.content).catch(() => '')
+  if (!infos.meta.description) {
+    infos.meta.description = await page.$eval('head > meta[property="og:description"]', element => element.content).catch(() => '')
+  }
 
   // Get page language
   const matches = html.match(new RegExp('<html[^>]*[: ]lang="([a-z]{2}((-|_)[A-Z]{2})?)"', 'i'));

@@ -1,4 +1,4 @@
-# Vue Telemetry
+# Vue Telemetry Analyzer
 
 CLI to analyze a website and detect Vue and its ecosystem ✨
 
