@@ -62,9 +62,15 @@ module.exports = async function (originalUrl) {
     domain: url.hostname
   })
   // https://github.com/puppeteer/puppeteer/blob/v2.1.0/docs/api.md#pagegotourl-options
-  await page.goto(originalUrl, {
+  const response = await page.goto(originalUrl, {
     waitUntil: 'networkidle0'
   })
+  if (!response.ok()) {
+    const error = new Error(`Website responded with ${response.status()} status code`)
+    error.body = await response.text()
+    throw error
+  }
+  console.log('response.ok()', response.ok(), response.status())
   // Get page scripts urls
   let scripts = await page.evaluateHandle(() => Array.from(document.getElementsByTagName('script')).map(({ src }) => src))
   scripts = (await scripts.jsonValue()).filter(script => script)

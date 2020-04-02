@@ -37,7 +37,8 @@ yargs
       consola.info('Execution time (hr): %ds %dms', hrend[0], hrend[1] / 1000000)
       process.exit(0)
     } catch (err) {
-      consola.error(err)
+      consola.error(err.message)
+      if (err.body) consola.log(err.body)
       process.exit(1)
     }
   })
