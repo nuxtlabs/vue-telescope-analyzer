@@ -5,7 +5,6 @@ const { createHash } = require('crypto')
 const { URL } = require('url')
 const { join } = require('path')
 const { tmpdir } = require('os')
-const { isValidUrl } = require('./utils')
 const { hasVue, getFramework, getPlugins, getUI, getNuxtMeta, getNuxtModules } = require('./detectors')
 
 async function getPuppeteerPath() {
@@ -82,7 +81,10 @@ module.exports = async function (originalUrl) {
 
   // Get page title
   infos.meta.title = await page.title()
-  infos.meta.description = await page.$eval('head > meta[name="description"]', element => element.content)
+  infos.meta.description = await page.$eval('head > meta[name="description"]', element => element.content).catch(() => '')
+  if (!infos.meta.description) {
+    infos.meta.description = await page.$eval('head > meta[property="og:description"]', element => element.content).catch(() => '')
+  }
 
   // Get page language
   const matches = html.match(new RegExp('<html[^>]*[: ]lang="([a-z]{2}((-|_)[A-Z]{2})?)"', 'i'));
