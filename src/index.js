@@ -5,7 +5,9 @@ const { createHash } = require('crypto')
 const { URL } = require('url')
 const { join } = require('path')
 const { tmpdir } = require('os')
-const { hasVue, getFramework, getPlugins, getUI, getNuxtMeta, getNuxtModules } = require('./detectors')
+const { isValidUrl } = require('./utils')
+const { hasVue, getVueMeta, getFramework, getPlugins, getUI, getNuxtMeta, getNuxtModules } = require('./detectors')
+const consola = require('consola')
 
 async function getPuppeteerPath() {
   let executablePath = await chromium.executablePath
@@ -45,6 +47,9 @@ module.exports = async function (originalUrl) {
       title: '',
       description: ''
     },
+    vueVersion: null,
+    hasSSR: false, // default
+    isStatic: true, // default
     framework: null, // nuxt | gridsome | quasar
     plugins: [], // vue-router, vuex, vue-apollo, etc
     ui: null // vuetify | bootstrap-vue | element-ui | tailwindcss
@@ -71,16 +76,18 @@ module.exports = async function (originalUrl) {
     error.body = await response.text()
     throw error
   }
-  console.log('response.ok()', response.ok(), response.status())
   // Get page scripts urls
   let scripts = await page.evaluateHandle(() => Array.from(document.getElementsByTagName('script')).map(({ src }) => src))
   scripts = (await scripts.jsonValue()).filter(script => script)
+
+  // Original HTLM sent back
+  const originalHtml = await response.text()
 
   // Get page html
   const html = await page.content()
 
   // Use for detection
-  const context = { html, scripts, page }
+  const context = { originalHtml, html, scripts, page }
 
   if (!(await hasVue(context))) {
     throw new Error(`Vue is not detected on ${originalUrl}`)
@@ -99,6 +106,16 @@ module.exports = async function (originalUrl) {
     infos.meta.language = matches[1].split('-')[0]
   }
 
+  // Get Vue version
+  const version = await page.evaluate('(window.$nuxt && window.$nuxt.$root && window.$nuxt.$root.constructor.version) || (window.Vue && window.Vue.version) || [...document.querySelectorAll("*")].map((el) => el.__vue__ && el.__vue__.$root && el.__vue__.$root.constructor.version).filter(Boolean)[0]')
+  if (version) {
+    infos.vueVersion = version
+  }
+
+  // Get Vue metas
+  const { ssr } = await getVueMeta(context)
+  infos.hasSSR = ssr
+
   // Get Vue ecosystem infos
   infos.framework = await getFramework(context)
   infos.plugins = await getPlugins(context)
@@ -110,7 +127,9 @@ module.exports = async function (originalUrl) {
       getNuxtMeta(context),
       getNuxtModules(context)
     ])
-    infos.nuxt = { ...meta, modules }
+    infos.isStatic = meta.static
+    infos.hasSSR = meta.ssr
+    infos.nuxtModules = modules
   }
 
   // Take screenshot
