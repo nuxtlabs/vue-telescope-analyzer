@@ -107,7 +107,11 @@ module.exports = async function (originalUrl) {
   }
 
   // Get Vue version
-  infos.vueVersion = await page.evaluate('(window.$nuxt && window.$nuxt.constructor.version) || (window.Vue && window.Vue.version)')
+  const version = await page.evaluate('(window.$nuxt && window.$nuxt.$root && window.$nuxt.$root.constructor.version) || (window.Vue && window.Vue.version) || [...document.querySelectorAll("*")].map((el) => el.__vue__ && el.__vue__.$root && el.__vue__.$root.constructor.version).filter(Boolean)[0]')
+  if (version) {
+    infos.vueVersion = version
+  }
+
   // Get Vue metas
   const { ssr } = await getVueMeta(context)
   infos.hasSSR = ssr
