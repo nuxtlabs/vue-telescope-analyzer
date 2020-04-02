@@ -2,6 +2,7 @@ const { parsePatterns, asArray } = require('./utils')
 
 const detectors = {
   vue: require('../detectors/vue.json'),
+  meta: require('../detectors/vue.meta.json'),
   frameworks: require('../detectors/frameworks.json'),
   plugins: require('../detectors/plugins.json'),
   uis: require('../detectors/uis.json'),
@@ -13,6 +14,16 @@ const detectors = {
 
 exports.hasVue = function (context) {
   return isMatching(detectors.vue, context)
+}
+
+exports.getVueMeta = async function(context) {
+  const meta = {}
+  await Promise.all(
+    Object.keys(detectors.meta).map(async (key) => {
+      meta[key] = await isMatching(detectors.meta[key], context)
+    })
+  )
+  return meta
 }
 
 exports.getFramework = async function (context) {

@@ -5,7 +5,9 @@ const { createHash } = require('crypto')
 const { URL } = require('url')
 const { join } = require('path')
 const { tmpdir } = require('os')
-const { hasVue, getFramework, getPlugins, getUI, getNuxtMeta, getNuxtModules } = require('./detectors')
+const { isValidUrl } = require('./utils')
+const { hasVue, getVueMeta, getFramework, getPlugins, getUI, getNuxtMeta, getNuxtModules } = require('./detectors')
+const consola = require('consola')
 
 async function getPuppeteerPath() {
   let executablePath = await chromium.executablePath
@@ -45,6 +47,9 @@ module.exports = async function (originalUrl) {
       title: '',
       description: ''
     },
+    vueVersion: null,
+    hasSSR: false, // default
+    isStatic: true, // default
     framework: null, // nuxt | gridsome | quasar
     plugins: [], // vue-router, vuex, vue-apollo, etc
     ui: null // vuetify | bootstrap-vue | element-ui | tailwindcss
@@ -104,13 +109,23 @@ module.exports = async function (originalUrl) {
   infos.plugins = await getPlugins(context)
   infos.ui = await getUI(context)
 
+  // Get Vue version
+  infos.vueVersion = await page.evaluate('window.Vue && window.Vue.version')
+
+  // Get Vue metas
+  const { ssr } = await getVueMeta(context)
+  consola.log('[getVueMeta] ssr', ssr)
+  // infos.hasSSR = ssr
+
   // Get Nuxt modules if using Nuxt
   if (infos.framework === 'nuxt') {
     const [ meta, modules ] = await Promise.all([
       getNuxtMeta(context),
       getNuxtModules(context)
     ])
-    infos.nuxt = { ...meta, modules }
+    infos.isStatic = meta.static
+    infos.hasSSR = meta.ssr
+    infos.nuxt = { modules }
   }
 
   // Take screenshot
