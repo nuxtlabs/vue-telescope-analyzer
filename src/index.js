@@ -76,16 +76,18 @@ module.exports = async function (originalUrl) {
     error.body = await response.text()
     throw error
   }
-  console.log('response.ok()', response.ok(), response.status())
   // Get page scripts urls
   let scripts = await page.evaluateHandle(() => Array.from(document.getElementsByTagName('script')).map(({ src }) => src))
   scripts = (await scripts.jsonValue()).filter(script => script)
+
+  // Original HTLM sent back
+  const originalHtml = await response.text()
 
   // Get page html
   const html = await page.content()
 
   // Use for detection
-  const context = { html, scripts, page }
+  const context = { originalHtml, html, scripts, page }
 
   if (!(await hasVue(context))) {
     throw new Error(`Vue is not detected on ${originalUrl}`)
@@ -104,18 +106,16 @@ module.exports = async function (originalUrl) {
     infos.meta.language = matches[1].split('-')[0]
   }
 
+  // Get Vue version
+  infos.vueVersion = await page.evaluate('(window.$nuxt && window.$nuxt.constructor.version) || (window.Vue && window.Vue.version)')
+  // Get Vue metas
+  const { ssr } = await getVueMeta(context)
+  infos.hasSSR = ssr
+
   // Get Vue ecosystem infos
   infos.framework = await getFramework(context)
   infos.plugins = await getPlugins(context)
   infos.ui = await getUI(context)
-
-  // Get Vue version
-  infos.vueVersion = await page.evaluate('window.Vue && window.Vue.version')
-
-  // Get Vue metas
-  const { ssr } = await getVueMeta(context)
-  consola.log('[getVueMeta] ssr', ssr)
-  // infos.hasSSR = ssr
 
   // Get Nuxt modules if using Nuxt
   if (infos.framework === 'nuxt') {
@@ -125,7 +125,7 @@ module.exports = async function (originalUrl) {
     ])
     infos.isStatic = meta.static
     infos.hasSSR = meta.ssr
-    infos.nuxt = { modules }
+    infos.nuxtModules = modules
   }
 
   // Take screenshot

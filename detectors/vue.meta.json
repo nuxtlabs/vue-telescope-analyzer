@@ -1,5 +1,5 @@
 {
   "ssr": {
-    "html": "<div [^>]*data-server-rendered=\"true\""
+    "originalHtml": "<div [^>]*data-server-rendered=\"true\""
   }
 }

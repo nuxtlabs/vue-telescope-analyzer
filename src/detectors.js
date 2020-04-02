@@ -84,7 +84,13 @@ exports.getNuxtModules = async function (context) {
   return Array.from(modules)
 }
 
-async function isMatching (detector, { html, scripts, page }) {
+async function isMatching (detector, { originalHtml, html, scripts, page }) {
+  // If we can detect technology from response html
+  if (detector.originalHtml) {
+    for (const pattern of parsePatterns(detector.originalHtml)) {
+      if (pattern.regex.test(originalHtml)) return true
+    }
+  }
   // If we can detect technology from html
   if (detector.html) {
     for (const pattern of parsePatterns(detector.html)) {
