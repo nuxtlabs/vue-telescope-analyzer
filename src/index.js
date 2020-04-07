@@ -5,7 +5,7 @@ const { createHash } = require('crypto')
 const { URL } = require('url')
 const { join } = require('path')
 const { tmpdir } = require('os')
-const { isValidUrl } = require('./utils')
+const { isCrawlable } = require('./utils')
 const { hasVue, getVueMeta, getFramework, getPlugins, getUI, getNuxtMeta, getNuxtModules } = require('./detectors')
 const consola = require('consola')
 
@@ -76,6 +76,13 @@ module.exports = async function (originalUrl) {
     error.body = await response.text()
     throw error
   }
+  // Get headers
+  const headers = response.headers()
+
+  if (!(await isCrawlable(headers))) {
+    throw new Error(`Crawling is not allowed on ${originalUrl}`)
+  }
+
   // Get page scripts urls
   let scripts = await page.evaluateHandle(() => Array.from(document.getElementsByTagName('script')).map(({ src }) => src))
   scripts = (await scripts.jsonValue()).filter(script => script)
