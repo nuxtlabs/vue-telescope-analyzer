@@ -57,7 +57,7 @@ exports.parsePatterns = function (patterns) {
 
 exports.isCrawlable = async function (htmlHeaders) {
   const tag = htmlHeaders['x-robots-tag']
-  const patterns = /noindex|none|nofollow/
+  const patterns = /noindex|none/
 
   return tag ? !patterns.test(tag) : true
 }
