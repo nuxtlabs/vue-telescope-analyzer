@@ -136,7 +136,7 @@ module.exports = async function (originalUrl) {
     ])
     infos.isStatic = meta.static
     infos.hasSSR = meta.ssr
-    infos.nuxtModules = modules
+    infos.frameworkModules = modules
   }
 
   // Take screenshot
