@@ -3,7 +3,8 @@
 const ora = require('ora')
 const consola = require('consola')
 const yargs = require('yargs')
-const { install } = require('lmify')
+const { setRootDir, install } = require('lmify')
+const { join } = require('path')
 
 yargs
   .usage('$0 [url]', 'analyze an url', (yargs) => {
@@ -19,6 +20,7 @@ yargs
     // Check if puppeteer is installed
     try { require('puppeteer') }
     catch(err) {
+      setRootDir(join(__dirname, '..'))
       await install('puppeteer')
     }
 
