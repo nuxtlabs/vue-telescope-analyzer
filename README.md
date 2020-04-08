@@ -85,7 +85,7 @@ Then you can use the module in your project:
 ```js
 const analyze = require('vue-telemetry-analyzer')
 
-analyze('https://fr.nuxtjs.org')
+analyze('https://nuxtjs.org')
   .then(result => console.log(result))
   .catch(error => console.error(error))
 ```
@@ -94,17 +94,20 @@ Result:
 
 ```js
 {
-  url: 'https://fr.nuxtjs.org/',
-  hostname: 'fr.nuxtjs.org',
+  url: 'https://nuxtjs.org/',
+  hostname: 'nuxtjs.org',
   domain: 'nuxtjs.org',
   // website metadata
   meta: {
-    language: 'fr',
-    title: 'Nuxt.js - Le Framework Vue.js',
-    description: 'Nuxt.js fournit toutes les configurations nécessaires pour rendre...'
+    language: 'en',
+    title: 'Nuxt.js - The Vue.js Framework',
+    description: 'Nuxt.js presets all the configuration needed to make...'
   },
+  vueVersion: '2.6.11',
   // Vue Framework
   framework: 'nuxt',
+  hasSSR: true,
+  isStatic: true,
   // Vue plugins
   plugins: [
     'vue-router',
@@ -113,16 +116,13 @@ Result:
   ],
   // UI Librairy
   ui: 'tailwindcss',
-  // When framework === 'nuxt'
-  nuxt: {
-    ssr: true,
-    static: true,
-    modules: [
-      '@nuxt/http',
-      '@nuxtjs/pwa',
-      '@nuxtjs/google-analytics'
-    ]
-  }
+  // Framework modules
+  frameworkModules: [
+    '@nuxt/http',
+    '@nuxtjs/pwa',
+    '@nuxtjs/google-analytics'
+  ],
+  screenshot: '/var/folders/....../8f1a071384d0b4.jpg'
 }
 ```
 
