@@ -9,6 +9,11 @@ const { isCrawlable } = require('./utils')
 const { hasVue, getVueMeta, getFramework, getPlugins, getUI, getNuxtMeta, getNuxtModules } = require('./detectors')
 const consola = require('consola')
 
+const apiErrorCode = {
+  notCrawlable: 0,
+  vueNotDetected: 1
+}
+
 async function getPuppeteerPath() {
   let executablePath = await chromium.executablePath
 
@@ -73,7 +78,6 @@ module.exports = async function (originalUrl) {
   if (!response.ok()) {
     const error = new Error(`Website responded with ${response.status()} status code`)
     error.statusCode = response.status()
-    error.apiCode = response.status() || null
     error.body = await response.text()
     throw error
   }
@@ -82,11 +86,8 @@ module.exports = async function (originalUrl) {
 
   if (!(await isCrawlable(headers))) {
     const error = new Error(`Crawling is not allowed on ${originalUrl}`)
-    error.statusCode = response.status()
-    error.apiCode = response.status() || null
-    error.body = await response.text()
+    error.apiCode = apiErrorCode.notCrawlable
     throw error
-    //throw new Error(`Crawling is not allowed on ${originalUrl}`)
   }
 
   // Get page scripts urls
@@ -104,11 +105,8 @@ module.exports = async function (originalUrl) {
 
   if (!(await hasVue(context))) {
     const error = new Error(`Vue is not detected on ${originalUrl}`)
-    error.statusCode = response.status()
-    error.apiCode = 1
-    error.body = await response.text()
+    error.apiCode = apiErrorCode.vueNotDetected
     throw error
-    //throw new Error(`Vue is not detected on ${originalUrl}`)
   }
 
   // Get page title
