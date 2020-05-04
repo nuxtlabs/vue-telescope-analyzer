@@ -73,6 +73,7 @@ module.exports = async function (originalUrl) {
   if (!response.ok()) {
     const error = new Error(`Website responded with ${response.status()} status code`)
     error.statusCode = response.status()
+    error.apiCode = response.status() || null
     error.body = await response.text()
     throw error
   }
@@ -80,7 +81,12 @@ module.exports = async function (originalUrl) {
   const headers = response.headers()
 
   if (!(await isCrawlable(headers))) {
-    throw new Error(`Crawling is not allowed on ${originalUrl}`)
+    const error = new Error(`Crawling is not allowed on ${originalUrl}`)
+    error.statusCode = response.status()
+    error.apiCode = response.status() || null
+    error.body = await response.text()
+    throw error
+    //throw new Error(`Crawling is not allowed on ${originalUrl}`)
   }
 
   // Get page scripts urls
@@ -97,7 +103,12 @@ module.exports = async function (originalUrl) {
   const context = { originalHtml, html, scripts, page }
 
   if (!(await hasVue(context))) {
-    throw new Error(`Vue is not detected on ${originalUrl}`)
+    const error = new Error(`Vue is not detected on ${originalUrl}`)
+    error.statusCode = response.status()
+    error.apiCode = 1
+    error.body = await response.text()
+    throw error
+    //throw new Error(`Vue is not detected on ${originalUrl}`)
   }
 
   // Get page title
