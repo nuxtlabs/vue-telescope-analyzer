@@ -137,8 +137,8 @@ module.exports = async function (originalUrl) {
   infos.plugins = await getPlugins(context)
   infos.ui = await getUI(context)
 
-  // Get Nuxt modules if using Nuxt
-  if (infos.framework === 'nuxt') {
+  // Get Nuxt modules if using NuxtJS
+  if (infos.framework && infos.framework.name === 'NuxtJS') {
     const [ meta, modules ] = await Promise.all([
       getNuxtMeta(context),
       getNuxtModules(context)

@@ -1,4 +1,4 @@
-{
+{  
   "html": "<[^>]+\\sdata-v(?:ue)?-",
   "js": "window.Vue || window.$nuxt || [...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__)).filter(Boolean).length",
   "script": [

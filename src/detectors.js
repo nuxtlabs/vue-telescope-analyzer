@@ -28,8 +28,8 @@ exports.getVueMeta = async function(context) {
 
 exports.getFramework = async function (context) {
   for (const framework of Object.keys(detectors.frameworks)) {
-    if (await isMatching(detectors.frameworks[framework], context)) {
-      return framework
+    if (await isMatching(detectors.frameworks[framework].detectors, context)) {
+      return detectors.frameworks[framework].metas
     }
   }
   return null
@@ -37,8 +37,8 @@ exports.getFramework = async function (context) {
 
 exports.getUI = async function (context) {
   for (const ui of Object.keys(detectors.uis)) {
-    if (await isMatching(detectors.uis[ui], context)) {
-      return ui
+    if (await isMatching(detectors.uis[ui].detectors, context)) {
+      return detectors.uis[ui].metas
     }
   }
   return null
@@ -49,8 +49,8 @@ exports.getPlugins = async function (context) {
 
   await Promise.all(
     Object.keys(detectors.plugins).map(async (plugin) => {
-      if (await isMatching(detectors.plugins[plugin], context)) {
-        plugins.add(plugin)
+      if (await isMatching(detectors.plugins[plugin].detectors, context)) {
+        plugins.add(detectors.plugins[plugin].metas)
       }
     })
   )
@@ -75,8 +75,8 @@ exports.getNuxtModules = async function (context) {
 
   await Promise.all(
     Object.keys(detectors.nuxt.modules).map(async (name) => {
-      if (await isMatching(detectors.nuxt.modules[name], context)) {
-        modules.add(name)
+      if (await isMatching(detectors.nuxt.modules[name].detectors, context)) {
+        modules.add(detectors.nuxt.modules[name].metas)
       }
     })
   )

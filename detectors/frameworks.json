@@ -1,22 +1,50 @@
 {
   "nuxt": {
-    "html": [
-      "<div [^>]*id=\"__nuxt\"",
-      "<script [^>]*>window\\.__NUXT__"
-    ],
-    "js": "window.__NUXT__ || window.$nuxt",
-    "script": [
-      "/_nuxt/"
-    ]
+    "metas": {
+      "name": "NuxtJS",
+      "img_path": "/img/nuxtjs.svg",
+      "url": "https://nuxtjs.org"
+    },
+    "detectors": {
+      "html": [
+        "<div [^>]*id=\"__nuxt\"",
+        "<script [^>]*>window\\.__NUXT__"
+      ],
+      "js": "window.__NUXT__ || window.$nuxt",
+      "script": [
+        "/_nuxt/"
+      ]
+    }
   },
   "vuepress": {
-    "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$vuepress)).filter(Boolean).length"
+    "metas": {
+      "name": "VuePress",
+      "img_path": "/img/vuepress.svg",
+      "url": "https://vuepress.vuejs.org"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$vuepress)).filter(Boolean).length"
+    }
   },
   "gridsome": {
-    "html": "<meta [^>]*name=\"gridsome:hash\""
+    "metas": {
+      "name": "Gridsome",
+      "img_path": "/img/gridsome.svg",
+      "url": "https://gridsome.org"
+    },
+    "detectors": {
+      "html": "<meta [^>]*name=\"gridsome:hash\""
+    }
   },
   "quasar": {
-    "html": "<div [^>]*id=\"q-app\"",
-    "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$q)).filter(Boolean).length"
+    "metas": {
+      "name": "Quasar",
+      "img_path": "/img/quasar.svg",
+      "url": "https://quasar.dev"
+    },
+    "detectors": {
+      "html": "<div [^>]*id=\"q-app\"",
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$q)).filter(Boolean).length"
+    }
   }
 }

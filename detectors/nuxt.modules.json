@@ -1,86 +1,282 @@
 {
   "@nuxtjs/axios": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$axios"
+    "metas": {
+      "name": "@nuxtjs/axios",
+      "img_path": "",
+      "url": "https://axios.nuxtjs.org"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$axios"
+    }
   },
   "@nuxt/http": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$http"
+    "metas": {
+      "name": "@nuxt/http",
+      "img_path": "",
+      "url": "https://http.nuxtjs.org"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$http"
+    }
   },
   "@nuxt/press": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$press"
+    "metas": {
+      "name": "@nuxt/press",
+      "img_path": "",
+      "url": "https://github.com/nuxt/press"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$press"
+    }
   },
   "@nuxtjs/pwa": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$icon"
+    "metas": {
+      "name": "@nuxtjs/pwa",
+      "img_path": "",
+      "url": "https://github.com/nuxt-community/pwa-module"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$icon"
+    }
   },
   "@nuxtjs/apollo": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$apolloHelpers"
+    "metas": {
+      "name": "@nuxtjs/apollo",
+      "img_path": "",
+      "url": "https://github.com/nuxt-community/apollo-module"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$apolloHelpers"
+    }
   },
   "@nuxtjs/auth": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$auth && window.$nuxt.$options.context.app.$auth.loginWith"
+    "metas": {
+      "name": "@nuxtjs/auth",
+      "img_path": "",
+      "url": "https://github.com/nuxt-community/auth-module"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$auth && window.$nuxt.$options.context.app.$auth.loginWith"
+    }
   },
   "@nuxtjs/sentry": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$sentry"
+    "metas": {
+      "name": "@nuxtjs/sentry",
+      "img_path": "",
+      "url": "https://github.com/nuxt-community/sentry-module"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$sentry"
+    }
   },
   "@nuxtjs/vuetify": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.vuetify"
+    "metas": {
+      "name": "@nuxtjs/vuetify",
+      "img_path": "",
+      "url": "https://github.com/nuxt-community/vuetify-module"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.vuetify"
+    }
   },
   "@nuxtjs/device": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$device"
+    "metas": {
+      "name": "@nuxtjs/device",
+      "img_path": "",
+      "url": "https://github.com/nuxt-community/device-module"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$device"
+    }
   },
-  "nuxt-fire": {
-    "js": "window.$nuxt && (window.$nuxt.$options.context.app.$fireAuth || window.$nuxt.$options.context.app.$fireDb || window.$nuxt.$options.context.app.$fireStore || window.$nuxt.$options.context.app.$fireStorage || window.$nuxt.$options.context.app.$fireFunc || window.$nuxt.$options.context.app.$fireMess || window.$nuxt.$options.context.app.$firePerf || window.$nuxt.$options.context.app.$fireAnalytics || window.$nuxt.$options.context.app.$fireConfig)"
+  "@nuxtjs/firebase": {
+    "metas": {
+      "name": "@nuxtjs/firebase",
+      "img_path": "",
+      "url": "https://github.com/nuxt-community/firebase-module"
+    },
+    "detectors": {
+      "js": "window.$nuxt && (window.$nuxt.$options.context.app.$fireAuth || window.$nuxt.$options.context.app.$fireDb || window.$nuxt.$options.context.app.$fireStore || window.$nuxt.$options.context.app.$fireStorage || window.$nuxt.$options.context.app.$fireFunc || window.$nuxt.$options.context.app.$fireMess || window.$nuxt.$options.context.app.$firePerf || window.$nuxt.$options.context.app.$fireAnalytics || window.$nuxt.$options.context.app.$fireConfig)"
+    }
   },
   "nuxt-user-agent": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$ua"
+    "metas": {
+      "name": "nuxt-user-agent",
+      "img_path": "",
+      "url": "https://github.com/fukuiretu/nuxt-user-agent"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$ua"
+    }
   },
   "nuxt-shopify": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$shopify"
+    "metas": {
+      "name": "nuxt-shopify",
+      "img_path": "",
+      "url": "https://github.com/Gomah/nuxt-shopify"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$shopify"
+    }
   },
   "@nuxtjs/recaptcha": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$recaptcha"
+    "metas": {
+      "name": "@nuxtjs/recaptcha",
+      "img_path": "",
+      "url": "https://github.com/nuxt-community/recaptcha-module"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$recaptcha"
+    }
   },
   "@nuxtjs/google-gtag": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$gtag"
+    "metas": {
+      "name": "@nuxtjs/google-gtag",
+      "img_path": "",
+      "url": "https://github.com/nuxt-community/google-gtag"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$gtag"
+    }
   },
   "@nuxtjs/google-analytics": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$ga"
+    "metas": {
+      "name": "@nuxtjs/google-analytics",
+      "img_path": "",
+      "url": "https://github.com/nuxt-community/analytics-module"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$ga"
+    }
   },
   "@nuxtjs/google-tag-manager": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$gtm"
+    "metas": {
+      "name": "@nuxtjs/google-tag-manager",
+      "img_path": "",
+      "url": "https://github.com/nuxt-community/gtm-module"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$gtm"
+    }
   },
   "nuxt-matomo": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$matomo"
+    "metas": {
+      "name": "nuxt-matomo",
+      "img_path": "",
+      "url": "https://github.com/pimlie/nuxt-matomo"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$matomo"
+    }
   },
   "cookie-universal-nuxt": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$cookies && window.$nuxt.$options.context.app.$cookies.nodeCookie"
+    "metas": {
+      "name": "cookie-universal-nuxt",
+      "img_path": "",
+      "url": "https://github.com/microcipcip/cookie-universal/tree/master/packages/cookie-universal-nuxt"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$cookies && window.$nuxt.$options.context.app.$cookies.nodeCookie"
+    }
   },
   "nuxt-socket-io": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$nuxtSocket"
+    "metas": {
+      "name": "nuxt-socket-io",
+      "img_path": "",
+      "url": "https://github.com/richardeschloss/nuxt-socket-io"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$nuxtSocket"
+    }
   },
   "nuxt-facebook-pixel-module": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$fb"
+    "metas": {
+      "name": "nuxt-facebook-pixel-module",
+      "img_path": "",
+      "url": "https://github.com/WilliamDASILVA/nuxt-facebook-pixel-module"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$fb"
+    }
   },
   "nuxt-rollbar-module": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$rollbar"
+    "metas": {
+      "name": "nuxt-rollbar-module",
+      "img_path": "",
+      "url": "https://github.com/gaelreyrol/nuxt-rollbar-module"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$rollbar"
+    }
   },
   "nuxt-dayjs-module": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$dayjs"
+    "metas": {
+      "name": "nuxt-dayjs-module",
+      "img_path": "",
+      "url": "https://github.com/potato4d/nuxt-dayjs-module"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$dayjs"
+    }
   },
   "@nuxtjs/date-fns": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$dateFns"
+    "metas": {
+      "name": "@nuxtjs/date-fns",
+      "img_path": "",
+      "url": "https://github.com/nuxt-community/date-fns-module"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$dateFns"
+    }
   },
   "@nuxtjs/moment": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$moment"
+    "metas": {
+      "name": "@nuxtjs/moment",
+      "img_path": "",
+      "url": "https://github.com/nuxt-community/moment-module"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$moment"
+    }
   },
   "@nuxtjs/universal-storage": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$storage"
+    "metas": {
+      "name": "@nuxtjs/universal-storage",
+      "img_path": "",
+      "url": "https://github.com/nuxt-community/universal-storage-module"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$storage"
+    }
   },
   "@nuxtjs/prismic": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$prismic"
+    "metas": {
+      "name": "@nuxtjs/prismic",
+      "img_path": "",
+      "url": "https://github.com/nuxt-community/prismic-module"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$prismic"
+    }
   },
   "storyblok-nuxt": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$storyapi"
+    "metas": {
+      "name": "storyblok-nuxt",
+      "img_path": "",
+      "url": "https://github.com/storyblok/storyblok-nuxt"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$storyapi"
+    }
   },
   "nuxt-sanity": {
-    "js": "window.$nuxt && window.$nuxt.$options.context.app.$sanity"
+    "metas": {
+      "name": "nuxt-sanity",
+      "img_path": "",
+      "url": "https://github.com/vicbergquist/nuxt-sanity"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$sanity"
+    }
   }
 }
