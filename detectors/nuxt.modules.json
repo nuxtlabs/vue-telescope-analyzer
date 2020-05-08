@@ -2,7 +2,7 @@
   "@nuxtjs/axios": {
     "metas": {
       "name": "@nuxtjs/axios",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://axios.nuxtjs.org"
     },
     "detectors": {
@@ -12,7 +12,7 @@
   "@nuxt/http": {
     "metas": {
       "name": "@nuxt/http",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://http.nuxtjs.org"
     },
     "detectors": {
@@ -22,7 +22,7 @@
   "@nuxt/press": {
     "metas": {
       "name": "@nuxt/press",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/nuxt/press"
     },
     "detectors": {
@@ -32,7 +32,7 @@
   "@nuxtjs/pwa": {
     "metas": {
       "name": "@nuxtjs/pwa",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/nuxt-community/pwa-module"
     },
     "detectors": {
@@ -42,7 +42,7 @@
   "@nuxtjs/apollo": {
     "metas": {
       "name": "@nuxtjs/apollo",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/nuxt-community/apollo-module"
     },
     "detectors": {
@@ -52,7 +52,7 @@
   "@nuxtjs/auth": {
     "metas": {
       "name": "@nuxtjs/auth",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/nuxt-community/auth-module"
     },
     "detectors": {
@@ -62,7 +62,7 @@
   "@nuxtjs/sentry": {
     "metas": {
       "name": "@nuxtjs/sentry",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/nuxt-community/sentry-module"
     },
     "detectors": {
@@ -72,7 +72,7 @@
   "@nuxtjs/vuetify": {
     "metas": {
       "name": "@nuxtjs/vuetify",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/nuxt-community/vuetify-module"
     },
     "detectors": {
@@ -82,7 +82,7 @@
   "@nuxtjs/device": {
     "metas": {
       "name": "@nuxtjs/device",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/nuxt-community/device-module"
     },
     "detectors": {
@@ -92,7 +92,7 @@
   "@nuxtjs/firebase": {
     "metas": {
       "name": "@nuxtjs/firebase",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/nuxt-community/firebase-module"
     },
     "detectors": {
@@ -102,7 +102,7 @@
   "nuxt-user-agent": {
     "metas": {
       "name": "nuxt-user-agent",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/fukuiretu/nuxt-user-agent"
     },
     "detectors": {
@@ -112,7 +112,7 @@
   "nuxt-shopify": {
     "metas": {
       "name": "nuxt-shopify",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/Gomah/nuxt-shopify"
     },
     "detectors": {
@@ -122,7 +122,7 @@
   "@nuxtjs/recaptcha": {
     "metas": {
       "name": "@nuxtjs/recaptcha",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/nuxt-community/recaptcha-module"
     },
     "detectors": {
@@ -132,7 +132,7 @@
   "@nuxtjs/google-gtag": {
     "metas": {
       "name": "@nuxtjs/google-gtag",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/nuxt-community/google-gtag"
     },
     "detectors": {
@@ -142,7 +142,7 @@
   "@nuxtjs/google-analytics": {
     "metas": {
       "name": "@nuxtjs/google-analytics",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/nuxt-community/analytics-module"
     },
     "detectors": {
@@ -152,7 +152,7 @@
   "@nuxtjs/google-tag-manager": {
     "metas": {
       "name": "@nuxtjs/google-tag-manager",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/nuxt-community/gtm-module"
     },
     "detectors": {
@@ -162,7 +162,7 @@
   "nuxt-matomo": {
     "metas": {
       "name": "nuxt-matomo",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/pimlie/nuxt-matomo"
     },
     "detectors": {
@@ -172,7 +172,7 @@
   "cookie-universal-nuxt": {
     "metas": {
       "name": "cookie-universal-nuxt",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/microcipcip/cookie-universal/tree/master/packages/cookie-universal-nuxt"
     },
     "detectors": {
@@ -182,7 +182,7 @@
   "nuxt-socket-io": {
     "metas": {
       "name": "nuxt-socket-io",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/richardeschloss/nuxt-socket-io"
     },
     "detectors": {
@@ -192,7 +192,7 @@
   "nuxt-facebook-pixel-module": {
     "metas": {
       "name": "nuxt-facebook-pixel-module",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/WilliamDASILVA/nuxt-facebook-pixel-module"
     },
     "detectors": {
@@ -202,7 +202,7 @@
   "nuxt-rollbar-module": {
     "metas": {
       "name": "nuxt-rollbar-module",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/gaelreyrol/nuxt-rollbar-module"
     },
     "detectors": {
@@ -212,7 +212,7 @@
   "nuxt-dayjs-module": {
     "metas": {
       "name": "nuxt-dayjs-module",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/potato4d/nuxt-dayjs-module"
     },
     "detectors": {
@@ -222,7 +222,7 @@
   "@nuxtjs/date-fns": {
     "metas": {
       "name": "@nuxtjs/date-fns",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/nuxt-community/date-fns-module"
     },
     "detectors": {
@@ -232,7 +232,7 @@
   "@nuxtjs/moment": {
     "metas": {
       "name": "@nuxtjs/moment",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/nuxt-community/moment-module"
     },
     "detectors": {
@@ -242,7 +242,7 @@
   "@nuxtjs/universal-storage": {
     "metas": {
       "name": "@nuxtjs/universal-storage",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/nuxt-community/universal-storage-module"
     },
     "detectors": {
@@ -252,7 +252,7 @@
   "@nuxtjs/prismic": {
     "metas": {
       "name": "@nuxtjs/prismic",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/nuxt-community/prismic-module"
     },
     "detectors": {
@@ -262,7 +262,7 @@
   "storyblok-nuxt": {
     "metas": {
       "name": "storyblok-nuxt",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/storyblok/storyblok-nuxt"
     },
     "detectors": {
@@ -272,7 +272,7 @@
   "nuxt-sanity": {
     "metas": {
       "name": "nuxt-sanity",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/vicbergquist/nuxt-sanity"
     },
     "detectors": {

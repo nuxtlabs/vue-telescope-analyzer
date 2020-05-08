@@ -2,7 +2,7 @@
   "element-ui": {
     "metas":{
       "name": "element-ui",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/ElemeFE/element"
     },
     "detectors": {
@@ -12,7 +12,7 @@
   "vuetify": {
     "metas":{
       "name": "vuetify",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/vuetifyjs/vuetify"
     },
     "detectors": {
@@ -22,7 +22,7 @@
   "bootstrap-vue": {
     "metas":{
       "name": "bootstrap-vue",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/bootstrap-vue/bootstrap-vue"
     },
     "detectors": {
@@ -32,7 +32,7 @@
   "tailwindcss": {
     "metas":{
       "name": "tailwindcss",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/tailwindcss/tailwindcss"
     },
     "detectors": {
@@ -45,7 +45,7 @@
   "buefy": {
     "metas":{
       "name": "buefy",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/buefy/buefy"
     },
     "detectors": {
@@ -55,7 +55,7 @@
   "inkline": {
     "metas":{
       "name": "inkline",
-      "img_path": "",
+      "imgPath": "",
       "url": "https://github.com/inkline/inkline"
     },
     "detectors": {
