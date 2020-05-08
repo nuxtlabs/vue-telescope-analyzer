@@ -2,7 +2,7 @@
   "nuxt": {
     "metas": {
       "name": "NuxtJS",
-      "imgPath": "/img/nuxtjs.svg",
+      "imgPath": "/img/nuxt.svg",
       "url": "https://nuxtjs.org"
     },
     "detectors": {

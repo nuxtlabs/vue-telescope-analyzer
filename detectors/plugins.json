@@ -2,8 +2,8 @@
   "vue-router": {
     "metas": {
       "name": "vue-router",
-      "imgPath": "",
-      "url": "https://github.com/vuejs/vue-router"
+      "imgPath": null,
+      "url": "https://router.vuejs.org/"
     },
     "detectors": {
       "js": [
@@ -15,7 +15,7 @@
   "vuex": {
     "metas": {
       "name": "vuex",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://vuex.vuejs.org"
     },
     "detectors": {
@@ -28,7 +28,7 @@
   "vue-meta": {
     "metas": {
       "name": "vue-meta",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://vue-meta.nuxtjs.org"
     },
     "detectors": {
@@ -41,7 +41,7 @@
   "vue-apollo": {
     "metas": {
       "name": "vue-apollo",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://apollo.vuejs.org"
     },
     "detectors": {
@@ -51,7 +51,7 @@
   "vue-warehouse": {
     "metas": {
       "name": "vue-warehouse",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://aceforth.com/docs/vue-warehouse"
     },
     "detectors": {

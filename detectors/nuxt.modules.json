@@ -2,7 +2,7 @@
   "@nuxtjs/axios": {
     "metas": {
       "name": "@nuxtjs/axios",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://axios.nuxtjs.org"
     },
     "detectors": {
@@ -12,7 +12,7 @@
   "@nuxt/http": {
     "metas": {
       "name": "@nuxt/http",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://http.nuxtjs.org"
     },
     "detectors": {
@@ -22,8 +22,8 @@
   "@nuxt/press": {
     "metas": {
       "name": "@nuxt/press",
-      "imgPath": "",
-      "url": "https://github.com/nuxt/press"
+      "imgPath": null,
+      "url": "https://nuxt.press/"
     },
     "detectors": {
       "js": "window.$nuxt && window.$nuxt.$options.context.app.$press"
@@ -32,8 +32,8 @@
   "@nuxtjs/pwa": {
     "metas": {
       "name": "@nuxtjs/pwa",
-      "imgPath": "",
-      "url": "https://github.com/nuxt-community/pwa-module"
+      "imgPath": null,
+      "url": "https://pwa.nuxtjs.org/"
     },
     "detectors": {
       "js": "window.$nuxt && window.$nuxt.$options.context.app.$icon"
@@ -42,7 +42,7 @@
   "@nuxtjs/apollo": {
     "metas": {
       "name": "@nuxtjs/apollo",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/nuxt-community/apollo-module"
     },
     "detectors": {
@@ -52,8 +52,8 @@
   "@nuxtjs/auth": {
     "metas": {
       "name": "@nuxtjs/auth",
-      "imgPath": "",
-      "url": "https://github.com/nuxt-community/auth-module"
+      "imgPath": null,
+      "url": "https://auth.nuxtjs.org/"
     },
     "detectors": {
       "js": "window.$nuxt && window.$nuxt.$options.context.app.$auth && window.$nuxt.$options.context.app.$auth.loginWith"
@@ -62,7 +62,7 @@
   "@nuxtjs/sentry": {
     "metas": {
       "name": "@nuxtjs/sentry",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/nuxt-community/sentry-module"
     },
     "detectors": {
@@ -72,7 +72,7 @@
   "@nuxtjs/vuetify": {
     "metas": {
       "name": "@nuxtjs/vuetify",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/nuxt-community/vuetify-module"
     },
     "detectors": {
@@ -82,7 +82,7 @@
   "@nuxtjs/device": {
     "metas": {
       "name": "@nuxtjs/device",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/nuxt-community/device-module"
     },
     "detectors": {
@@ -92,8 +92,8 @@
   "@nuxtjs/firebase": {
     "metas": {
       "name": "@nuxtjs/firebase",
-      "imgPath": "",
-      "url": "https://github.com/nuxt-community/firebase-module"
+      "imgPath": null,
+      "url": "https://firebase.nuxtjs.org/"
     },
     "detectors": {
       "js": "window.$nuxt && (window.$nuxt.$options.context.app.$fireAuth || window.$nuxt.$options.context.app.$fireDb || window.$nuxt.$options.context.app.$fireStore || window.$nuxt.$options.context.app.$fireStorage || window.$nuxt.$options.context.app.$fireFunc || window.$nuxt.$options.context.app.$fireMess || window.$nuxt.$options.context.app.$firePerf || window.$nuxt.$options.context.app.$fireAnalytics || window.$nuxt.$options.context.app.$fireConfig)"
@@ -102,7 +102,7 @@
   "nuxt-user-agent": {
     "metas": {
       "name": "nuxt-user-agent",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/fukuiretu/nuxt-user-agent"
     },
     "detectors": {
@@ -112,7 +112,7 @@
   "nuxt-shopify": {
     "metas": {
       "name": "nuxt-shopify",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/Gomah/nuxt-shopify"
     },
     "detectors": {
@@ -122,7 +122,7 @@
   "@nuxtjs/recaptcha": {
     "metas": {
       "name": "@nuxtjs/recaptcha",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/nuxt-community/recaptcha-module"
     },
     "detectors": {
@@ -132,7 +132,7 @@
   "@nuxtjs/google-gtag": {
     "metas": {
       "name": "@nuxtjs/google-gtag",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/nuxt-community/google-gtag"
     },
     "detectors": {
@@ -142,7 +142,7 @@
   "@nuxtjs/google-analytics": {
     "metas": {
       "name": "@nuxtjs/google-analytics",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/nuxt-community/analytics-module"
     },
     "detectors": {
@@ -152,7 +152,7 @@
   "@nuxtjs/google-tag-manager": {
     "metas": {
       "name": "@nuxtjs/google-tag-manager",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/nuxt-community/gtm-module"
     },
     "detectors": {
@@ -162,7 +162,7 @@
   "nuxt-matomo": {
     "metas": {
       "name": "nuxt-matomo",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/pimlie/nuxt-matomo"
     },
     "detectors": {
@@ -172,7 +172,7 @@
   "cookie-universal-nuxt": {
     "metas": {
       "name": "cookie-universal-nuxt",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/microcipcip/cookie-universal/tree/master/packages/cookie-universal-nuxt"
     },
     "detectors": {
@@ -182,7 +182,7 @@
   "nuxt-socket-io": {
     "metas": {
       "name": "nuxt-socket-io",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/richardeschloss/nuxt-socket-io"
     },
     "detectors": {
@@ -192,7 +192,7 @@
   "nuxt-facebook-pixel-module": {
     "metas": {
       "name": "nuxt-facebook-pixel-module",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/WilliamDASILVA/nuxt-facebook-pixel-module"
     },
     "detectors": {
@@ -202,7 +202,7 @@
   "nuxt-rollbar-module": {
     "metas": {
       "name": "nuxt-rollbar-module",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/gaelreyrol/nuxt-rollbar-module"
     },
     "detectors": {
@@ -212,7 +212,7 @@
   "nuxt-dayjs-module": {
     "metas": {
       "name": "nuxt-dayjs-module",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/potato4d/nuxt-dayjs-module"
     },
     "detectors": {
@@ -222,7 +222,7 @@
   "@nuxtjs/date-fns": {
     "metas": {
       "name": "@nuxtjs/date-fns",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/nuxt-community/date-fns-module"
     },
     "detectors": {
@@ -232,7 +232,7 @@
   "@nuxtjs/moment": {
     "metas": {
       "name": "@nuxtjs/moment",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/nuxt-community/moment-module"
     },
     "detectors": {
@@ -242,7 +242,7 @@
   "@nuxtjs/universal-storage": {
     "metas": {
       "name": "@nuxtjs/universal-storage",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/nuxt-community/universal-storage-module"
     },
     "detectors": {
@@ -252,8 +252,8 @@
   "@nuxtjs/prismic": {
     "metas": {
       "name": "@nuxtjs/prismic",
-      "imgPath": "",
-      "url": "https://github.com/nuxt-community/prismic-module"
+      "imgPath": null,
+      "url": "https://prismic-nuxt.js.org/"
     },
     "detectors": {
       "js": "window.$nuxt && window.$nuxt.$options.context.app.$prismic"
@@ -262,7 +262,7 @@
   "storyblok-nuxt": {
     "metas": {
       "name": "storyblok-nuxt",
-      "imgPath": "",
+      "imgPath": null,
       "url": "https://github.com/storyblok/storyblok-nuxt"
     },
     "detectors": {
@@ -272,8 +272,8 @@
   "nuxt-sanity": {
     "metas": {
       "name": "nuxt-sanity",
-      "imgPath": "",
-      "url": "https://github.com/vicbergquist/nuxt-sanity"
+      "imgPath": null,
+      "url": "https://nuxt-sanity.netlify.app/"
     },
     "detectors": {
       "js": "window.$nuxt && window.$nuxt.$options.context.app.$sanity"
