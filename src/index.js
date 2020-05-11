@@ -9,9 +9,11 @@ const { isCrawlable } = require('./utils')
 const { hasVue, getVueMeta, getFramework, getPlugins, getUI, getNuxtMeta, getNuxtModules } = require('./detectors')
 const consola = require('consola')
 
-const apiErrorCode = {
-  notCrawlable: 0,
-  vueNotDetected: 1
+const ERROR_CODES = {
+  invalidUrl: 0,
+  httpError: 1,
+  notCrawlable: 2,
+  vueNotDetected: 3
 }
 
 async function getPuppeteerPath() {
@@ -37,7 +39,9 @@ module.exports = async function (originalUrl) {
   try {
     url = new URL(originalUrl)
   } catch (e) {
-    throw new Error(`Invalid URL ${originalUrl}`)
+    const error =  new Error(`Invalid URL ${originalUrl}`)
+    error.code = ERROR_CODES.invalidUrl
+    throw error
   }
   // Force https
   originalUrl = 'https://' + url.hostname + url.pathname
@@ -77,6 +81,7 @@ module.exports = async function (originalUrl) {
   })
   if (!response.ok()) {
     const error = new Error(`Website responded with ${response.status()} status code`)
+    error.code = ERROR_CODES.httpError
     error.statusCode = response.status()
     error.body = await response.text()
     throw error
@@ -86,7 +91,7 @@ module.exports = async function (originalUrl) {
 
   if (!(await isCrawlable(headers))) {
     const error = new Error(`Crawling is not allowed on ${originalUrl}`)
-    error.apiCode = apiErrorCode.notCrawlable
+    error.code = ERROR_CODES.notCrawlable
     throw error
   }
 
@@ -105,7 +110,7 @@ module.exports = async function (originalUrl) {
 
   if (!(await hasVue(context))) {
     const error = new Error(`Vue is not detected on ${originalUrl}`)
-    error.apiCode = apiErrorCode.vueNotDetected
+    error.code = ERROR_CODES.vueNotDetected
     throw error
   }
 
@@ -164,3 +169,4 @@ module.exports = async function (originalUrl) {
 
   return infos
 }
+module.exports.ERROR_CODES = ERROR_CODES
