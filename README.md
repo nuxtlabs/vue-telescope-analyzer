@@ -132,6 +132,7 @@ Result:
 2. Install dependencies using `yarn install` or `npm install`
 3. Update the code right inside `src/` or `detectors/`
 4. Test it with `./bin/vta.js https://your-url-to-test`
+5. If you add a new detector, please add the icon in `icons/` (SVG cleaned with [SVGOMG](https://jakearchibald.github.io/svgomg/))
 
 ## License
 
