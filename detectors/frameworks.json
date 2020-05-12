@@ -2,7 +2,7 @@
   "nuxt": {
     "metas": {
       "name": "NuxtJS",
-      "imgPath": "/icons/frameworks/nuxt.svg",
+      "imgPath": "/icons/framework/nuxt.svg",
       "url": "https://nuxtjs.org"
     },
     "detectors": {
@@ -19,7 +19,7 @@
   "vuepress": {
     "metas": {
       "name": "VuePress",
-      "imgPath": "/icons/frameworks/vuepress.svg",
+      "imgPath": "/icons/framework/vuepress.svg",
       "url": "https://vuepress.vuejs.org"
     },
     "detectors": {
@@ -29,7 +29,7 @@
   "gridsome": {
     "metas": {
       "name": "Gridsome",
-      "imgPath": "/icons/frameworks/gridsome.svg",
+      "imgPath": "/icons/framework/gridsome.svg",
       "url": "https://gridsome.org"
     },
     "detectors": {
@@ -39,7 +39,7 @@
   "quasar": {
     "metas": {
       "name": "Quasar",
-      "imgPath": "/icons/frameworks/quasar.svg",
+      "imgPath": "/icons/framework/quasar.svg",
       "url": "https://quasar.dev"
     },
     "detectors": {
