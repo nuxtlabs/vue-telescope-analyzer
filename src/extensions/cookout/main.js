@@ -1,4 +1,4 @@
-const keywords = ['cookie', 'tracking', 'gdpr', 'consent']
+const keywords = ['cookie', 'tracking', 'gdpr', 'consent', 'didomi-notice']
 
 function findCookieBanners() {
   let banners = []
