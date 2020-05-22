@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Cookout",
+  "version": "0.1",
+
+  "description": "Detects cookie banners and removes them",
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["main.js"]
+    }
+  ]
+}

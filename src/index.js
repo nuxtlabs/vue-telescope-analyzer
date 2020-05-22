@@ -28,11 +28,16 @@ async function getPuppeteerPath() {
 
 module.exports = async function (originalUrl) {
   const executablePath = await getPuppeteerPath()
+  const pathToExtension = require('path').join(__dirname, 'extensions', 'cookout')
   const browser = await chromium.puppeteer.launch({
     executablePath,
-    args: chromium.args,
+    args: [
+      `--disable-extensions-except=${pathToExtension}`,
+      `--load-extension=${pathToExtension}`,
+      ...chromium.args
+    ],
     defaultViewport: chromium.defaultViewport,
-    headless: true
+    headless: false
   })
   // Parse url
   let url
