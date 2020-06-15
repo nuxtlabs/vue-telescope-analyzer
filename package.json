@@ -18,16 +18,16 @@
   "author": "NuxtJS Company",
   "license": "MIT",
   "dependencies": {
-    "chrome-aws-lambda": "^3.0.4",
-    "consola": "^2.12.1",
+    "chrome-aws-lambda": "^3.1.1",
+    "consola": "^2.13.0",
     "lmify": "^0.3.0",
     "make-dir": "^3.1.0",
     "ora": "^4.0.4",
-    "puppeteer-core": "^3.0.4",
+    "puppeteer-core": "^3.3.0",
     "tld-extract": "^1.1.2",
     "yargs": "^15.3.1"
   },
   "devDependencies": {
-    "puppeteer": "^3.0.4"
+    "puppeteer": "^3.3.0"
   }
 }
