@@ -278,5 +278,15 @@
     "detectors": {
       "js": "window.$nuxt && window.$nuxt.$options.context.app.$sanity"
     }
+  },
+  "@nuxt/content": {
+    "metas": {
+      "name": "@nuxt/content",
+      "imgPath": null,
+      "url": "https://content.nuxtjs.org"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$content"
+    }
   }
 }
