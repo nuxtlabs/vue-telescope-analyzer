@@ -2,6 +2,8 @@
 
 CLI to analyze a website and detect Vue and its ecosystem ✨
 
+This module is used by [vuetelemetry.com](https://vuetelemetry.com) to detect Vue and its ecosystem on a website.
+
 You can help the community by using the [browser extension](https://github.com/nuxt-company/vue-telemetry-extensions) 💚
 
 ## Installation
