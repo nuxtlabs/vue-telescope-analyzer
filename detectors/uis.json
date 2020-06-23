@@ -1,6 +1,7 @@
 {
   "element-ui": {
-    "metas":{
+    "metas": {
+      "slug": "element-ui",
       "name": "Element UI",
       "imgPath": "/icons/ui/element.svg",
       "url": "https://element.eleme.io/"
@@ -10,7 +11,8 @@
     }
   },
   "vuetify": {
-    "metas":{
+    "metas": {
+      "slug": "vuetify",
       "name": "Vuetify",
       "imgPath": "/icons/ui/vuetify.svg",
       "url": "https://vuetifyjs.com/"
@@ -20,7 +22,8 @@
     }
   },
   "bootstrap-vue": {
-    "metas":{
+    "metas": {
+      "slug": "bootstrap-vue",
       "name": "Bootstrap Vue",
       "imgPath": "/icons/ui/bootstrap.svg",
       "url": "https://bootstrap-vue.org/"
@@ -30,7 +33,8 @@
     }
   },
   "tailwindcss": {
-    "metas":{
+    "metas": {
+      "slug": "tailwind-css",
       "name": "Tailwind CSS",
       "imgPath": "/icons/ui/tailwind.svg",
       "url": "https://tailwindcss.com/"
@@ -43,7 +47,8 @@
     }
   },
   "buefy": {
-    "metas":{
+    "metas": {
+      "slug": "buefy",
       "name": "Buefy",
       "imgPath": "/icons/ui/bulma.svg",
       "url": "https://buefy.org/"
@@ -53,7 +58,8 @@
     }
   },
   "inkline": {
-    "metas":{
+    "metas": {
+      "slug": "inkline",
       "name": "Inkline",
       "imgPath": "/icons/ui/inkline.svg",
       "url": "https://inkline.io/"

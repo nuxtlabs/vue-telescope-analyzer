@@ -1,6 +1,7 @@
 {
   "nuxt": {
     "metas": {
+      "slug": "nuxtjs",
       "name": "NuxtJS",
       "imgPath": "/icons/framework/nuxt.svg",
       "url": "https://nuxtjs.org"
@@ -18,6 +19,7 @@
   },
   "vuepress": {
     "metas": {
+      "slug": "vuepress",
       "name": "VuePress",
       "imgPath": "/icons/framework/vuepress.svg",
       "url": "https://vuepress.vuejs.org"
@@ -28,6 +30,7 @@
   },
   "gridsome": {
     "metas": {
+      "slug": "gridsome",
       "name": "Gridsome",
       "imgPath": "/icons/framework/gridsome.svg",
       "url": "https://gridsome.org"
@@ -38,6 +41,7 @@
   },
   "quasar": {
     "metas": {
+      "slug": "quasar",
       "name": "Quasar",
       "imgPath": "/icons/framework/quasar.svg",
       "url": "https://quasar.dev"

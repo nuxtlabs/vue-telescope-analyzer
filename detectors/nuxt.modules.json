@@ -1,6 +1,7 @@
 {
   "@nuxtjs/axios": {
     "metas": {
+      "slug": "nuxtjs-axios",
       "name": "@nuxtjs/axios",
       "imgPath": null,
       "url": "https://axios.nuxtjs.org"
@@ -11,6 +12,7 @@
   },
   "@nuxt/http": {
     "metas": {
+      "slug": "nuxt-http",
       "name": "@nuxt/http",
       "imgPath": null,
       "url": "https://http.nuxtjs.org"
@@ -21,6 +23,7 @@
   },
   "@nuxt/press": {
     "metas": {
+      "slug": "nuxt-press",
       "name": "@nuxt/press",
       "imgPath": null,
       "url": "https://nuxt.press/"
@@ -31,6 +34,7 @@
   },
   "@nuxtjs/pwa": {
     "metas": {
+      "slug": "nuxtjs-pwa",
       "name": "@nuxtjs/pwa",
       "imgPath": null,
       "url": "https://pwa.nuxtjs.org/"
@@ -41,6 +45,7 @@
   },
   "@nuxtjs/apollo": {
     "metas": {
+      "slug": "nuxtjs-apollo",
       "name": "@nuxtjs/apollo",
       "imgPath": null,
       "url": "https://github.com/nuxt-community/apollo-module"
@@ -51,6 +56,7 @@
   },
   "@nuxtjs/auth": {
     "metas": {
+      "slug": "nuxtjs-auth",
       "name": "@nuxtjs/auth",
       "imgPath": null,
       "url": "https://auth.nuxtjs.org/"
@@ -61,6 +67,7 @@
   },
   "@nuxtjs/sentry": {
     "metas": {
+      "slug": "nuxtjs-sentry",
       "name": "@nuxtjs/sentry",
       "imgPath": null,
       "url": "https://github.com/nuxt-community/sentry-module"
@@ -71,6 +78,7 @@
   },
   "@nuxtjs/vuetify": {
     "metas": {
+      "slug": "nuxtjs-vuetify",
       "name": "@nuxtjs/vuetify",
       "imgPath": null,
       "url": "https://github.com/nuxt-community/vuetify-module"
@@ -81,6 +89,7 @@
   },
   "@nuxtjs/device": {
     "metas": {
+      "slug": "nuxtjs-device",
       "name": "@nuxtjs/device",
       "imgPath": null,
       "url": "https://github.com/nuxt-community/device-module"
@@ -91,6 +100,7 @@
   },
   "@nuxtjs/firebase": {
     "metas": {
+      "slug": "nuxtjs-firebase",
       "name": "@nuxtjs/firebase",
       "imgPath": null,
       "url": "https://firebase.nuxtjs.org/"
@@ -101,6 +111,7 @@
   },
   "nuxt-user-agent": {
     "metas": {
+      "slug": "nuxt-user-agent",
       "name": "nuxt-user-agent",
       "imgPath": null,
       "url": "https://github.com/fukuiretu/nuxt-user-agent"
@@ -111,6 +122,7 @@
   },
   "nuxt-shopify": {
     "metas": {
+      "slug": "nuxt-shopify",
       "name": "nuxt-shopify",
       "imgPath": null,
       "url": "https://github.com/Gomah/nuxt-shopify"
@@ -121,6 +133,7 @@
   },
   "@nuxtjs/recaptcha": {
     "metas": {
+      "slug": "nuxtjs-recaptcha",
       "name": "@nuxtjs/recaptcha",
       "imgPath": null,
       "url": "https://github.com/nuxt-community/recaptcha-module"
@@ -131,6 +144,7 @@
   },
   "@nuxtjs/google-gtag": {
     "metas": {
+      "slug": "nuxtjs-google-gtag",
       "name": "@nuxtjs/google-gtag",
       "imgPath": null,
       "url": "https://github.com/nuxt-community/google-gtag"
@@ -141,6 +155,7 @@
   },
   "@nuxtjs/google-analytics": {
     "metas": {
+      "slug": "nuxtjs-google-analytics",
       "name": "@nuxtjs/google-analytics",
       "imgPath": null,
       "url": "https://github.com/nuxt-community/analytics-module"
@@ -151,6 +166,7 @@
   },
   "@nuxtjs/google-tag-manager": {
     "metas": {
+      "slug": "nuxtjs-google-tag-manager",
       "name": "@nuxtjs/google-tag-manager",
       "imgPath": null,
       "url": "https://github.com/nuxt-community/gtm-module"
@@ -161,6 +177,7 @@
   },
   "nuxt-matomo": {
     "metas": {
+      "slug": "nuxt-matomo",
       "name": "nuxt-matomo",
       "imgPath": null,
       "url": "https://github.com/pimlie/nuxt-matomo"
@@ -171,6 +188,7 @@
   },
   "cookie-universal-nuxt": {
     "metas": {
+      "slug": "cookie-universal-nuxt",
       "name": "cookie-universal-nuxt",
       "imgPath": null,
       "url": "https://github.com/microcipcip/cookie-universal/tree/master/packages/cookie-universal-nuxt"
@@ -181,6 +199,7 @@
   },
   "nuxt-socket-io": {
     "metas": {
+      "slug": "nuxt-socket-io",
       "name": "nuxt-socket-io",
       "imgPath": null,
       "url": "https://github.com/richardeschloss/nuxt-socket-io"
@@ -191,6 +210,7 @@
   },
   "nuxt-facebook-pixel-module": {
     "metas": {
+      "slug": "nuxt-facebook-pixel-module",
       "name": "nuxt-facebook-pixel-module",
       "imgPath": null,
       "url": "https://github.com/WilliamDASILVA/nuxt-facebook-pixel-module"
@@ -201,6 +221,7 @@
   },
   "nuxt-rollbar-module": {
     "metas": {
+      "slug": "nuxt-rollbar-module",
       "name": "nuxt-rollbar-module",
       "imgPath": null,
       "url": "https://github.com/gaelreyrol/nuxt-rollbar-module"
@@ -211,6 +232,7 @@
   },
   "nuxt-dayjs-module": {
     "metas": {
+      "slug": "nuxt-dayjs-module",
       "name": "nuxt-dayjs-module",
       "imgPath": null,
       "url": "https://github.com/potato4d/nuxt-dayjs-module"
@@ -221,6 +243,7 @@
   },
   "@nuxtjs/date-fns": {
     "metas": {
+      "slug": "nuxtjs-date-fns",
       "name": "@nuxtjs/date-fns",
       "imgPath": null,
       "url": "https://github.com/nuxt-community/date-fns-module"
@@ -231,6 +254,7 @@
   },
   "@nuxtjs/moment": {
     "metas": {
+      "slug": "nuxtjs-moment",
       "name": "@nuxtjs/moment",
       "imgPath": null,
       "url": "https://github.com/nuxt-community/moment-module"
@@ -241,6 +265,7 @@
   },
   "@nuxtjs/universal-storage": {
     "metas": {
+      "slug": "nuxtjs-universal-storage",
       "name": "@nuxtjs/universal-storage",
       "imgPath": null,
       "url": "https://github.com/nuxt-community/universal-storage-module"
@@ -251,6 +276,7 @@
   },
   "@nuxtjs/prismic": {
     "metas": {
+      "slug": "nuxtjs-prismic",
       "name": "@nuxtjs/prismic",
       "imgPath": null,
       "url": "https://prismic-nuxt.js.org/"
@@ -261,6 +287,7 @@
   },
   "storyblok-nuxt": {
     "metas": {
+      "slug": "storyblok-nuxt",
       "name": "storyblok-nuxt",
       "imgPath": null,
       "url": "https://github.com/storyblok/storyblok-nuxt"
@@ -271,6 +298,7 @@
   },
   "nuxt-sanity": {
     "metas": {
+      "slug": "nuxt-sanity",
       "name": "nuxt-sanity",
       "imgPath": null,
       "url": "https://nuxt-sanity.netlify.app/"
@@ -281,6 +309,7 @@
   },
   "@nuxt/content": {
     "metas": {
+      "slug": "nuxt-content",
       "name": "@nuxt/content",
       "imgPath": null,
       "url": "https://content.nuxtjs.org"

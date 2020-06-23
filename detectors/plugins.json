@@ -1,6 +1,7 @@
 {
   "vue-router": {
     "metas": {
+      "slug": "vue-router",
       "name": "vue-router",
       "imgPath": null,
       "url": "https://router.vuejs.org/"
@@ -14,6 +15,7 @@
   },
   "vuex": {
     "metas": {
+      "slug": "vuex",
       "name": "vuex",
       "imgPath": null,
       "url": "https://vuex.vuejs.org"
@@ -27,6 +29,7 @@
   },
   "vue-meta": {
     "metas": {
+      "slug": "vue-meta",
       "name": "vue-meta",
       "imgPath": null,
       "url": "https://vue-meta.nuxtjs.org"
@@ -40,6 +43,7 @@
   },
   "vue-apollo": {
     "metas": {
+      "slug": "vue-apollo",
       "name": "vue-apollo",
       "imgPath": null,
       "url": "https://apollo.vuejs.org"
@@ -50,6 +54,7 @@
   },
   "vue-warehouse": {
     "metas": {
+      "slug": "vue-warehouse",
       "name": "vue-warehouse",
       "imgPath": null,
       "url": "https://aceforth.com/docs/vue-warehouse"
