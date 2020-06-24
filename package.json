@@ -8,7 +8,8 @@
     "vue-telemetry-analyzer": "bin/vta.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version && git push --follow-tags && npm publish"
   },
   "keywords": [
     "vue",
@@ -28,6 +29,7 @@
     "yargs": "^15.3.1"
   },
   "devDependencies": {
-    "puppeteer": "^3.3.0"
+    "puppeteer": "^3.3.0",
+    "standard-version": "^8.0.0"
   }
 }
