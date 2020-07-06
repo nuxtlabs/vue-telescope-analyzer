@@ -317,5 +317,27 @@
     "detectors": {
       "js": "window.$nuxt && window.$nuxt.$options.context.app.$content"
     }
+  },
+  "@nuxtjs/color-mode": {
+    "metas": {
+      "slug": "nuxtjs-color-mode",
+      "name": "@nuxtjs/color-mode",
+      "imgPath": null,
+      "url": "https://github.com/nuxt-community/color-mode-module"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$colorMode"
+    }
+  },
+  "nuxt-ackee": {
+    "metas": {
+      "slug": "nuxt-ackee",
+      "name": "nuxt-ackee",
+      "imgPath": null,
+      "url": "https://github.com/bdrtsky/nuxt-ackee"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$options.context.app.$ackee"
+    }
   }
 }
