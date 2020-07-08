@@ -54,7 +54,8 @@ module.exports = async function (originalUrl) {
     meta: {
       language: '',
       title: '',
-      description: ''
+      description: '',
+      isRtaLabel: false
     },
     vueVersion: null,
     hasSSR: false, // default
@@ -119,6 +120,11 @@ module.exports = async function (originalUrl) {
   infos.meta.description = await page.$eval('head > meta[name="description"]', element => element.content).catch(() => '')
   if (!infos.meta.description) {
     infos.meta.description = await page.$eval('head > meta[property="og:description"]', element => element.content).catch(() => '')
+  }
+
+  const rtaLabel = await page.$eval('head > meta[name="RATING"]', element => element.content).catch(() => '')
+  if (rtaLabel.trim() === 'RTA-5042-1996-1400-1577-RTA') {
+    infos.meta.isRtaLabel = true
   }
 
   // Get page language
