@@ -67,8 +67,8 @@ module.exports = async function (originalUrl) {
 
   await page.setUserAgent('Vue-Telemetry')
   await page.setViewport({
-    width: 1738,
-    height: 1080,
+    width: 1680,
+    height: 1260,
     deviceScaleFactor: 1,
   })
   await page.setCookie({
