@@ -4,7 +4,7 @@ CLI to analyze a website and detect Vue and its ecosystem ✨
 
 This module is used by [vuetelemetry.com](https://vuetelemetry.com) to detect Vue and its ecosystem on a website.
 
-You can help the community by using the [browser extension](https://github.com/nuxt-company/vue-telemetry-extensions) 💚
+You can help the community discover new Vue websites by using the [browser extension](https://github.com/nuxt-company/vue-telemetry-extensions) 💚
 
 ## Installation
 
@@ -103,26 +103,73 @@ Result:
   meta: {
     language: 'en',
     title: 'Nuxt.js - The Vue.js Framework',
-    description: 'Nuxt.js presets all the configuration needed to make...'
+    description: 'Nuxt.js presets all the configuration needed to make...',
+    siteName: 'NuxtJS',
+    isAdultContent: false
   },
   vueVersion: '2.6.11',
-  // Vue Framework
-  framework: 'nuxt',
   hasSSR: true,
   isStatic: true,
+  // Vue Framework
+  framework: {
+    slug: 'nuxtjs',
+    name: 'NuxtJS',
+    imgPath: '/framework/nuxt.svg', // prefix with https://icons.vuetelemetry.com
+  },
   // Vue plugins
   plugins: [
-    'vue-router',
-    'vue-meta',
-    'vuex'
+    {
+      slug: 'vue-router',
+      name: 'vue-router',
+      imgPath: null,
+      url: 'https://router.vuejs.org/'
+    },
+    {
+      slug: 'vue-meta',
+      name: 'vue-meta',
+      imgPath: null,
+      url: 'https://vue-meta.nuxtjs.org'
+    },
+    {
+      slug: 'vuex',
+      name: 'vuex',
+      imgPath: null,
+      url: 'https://vuex.vuejs.org'
+    }
   ],
   // UI Librairy
-  ui: 'tailwindcss',
+  ui: {
+    slug: 'tailwind-css',
+    name: 'Tailwind CSS',
+    imgPath: '/ui/tailwind.svg',
+    url: 'https://tailwindcss.com/'
+  },
   // Framework modules
   frameworkModules: [
-    '@nuxt/http',
-    '@nuxtjs/pwa',
-    '@nuxtjs/google-analytics'
+    {
+      slug: 'nuxt-http',
+      name: '@nuxt/http',
+      imgPath: null,
+      url: 'https://http.nuxtjs.org'
+    },
+    {
+      slug: 'nuxtjs-pwa',
+      name: '@nuxtjs/pwa',
+      imgPath: null,
+      url: 'https://pwa.nuxtjs.org/'
+    },
+    {
+      slug: 'nuxtjs-google-analytics',
+      name: '@nuxtjs/google-analytics',
+      imgPath: null,
+      url: 'https://github.com/nuxt-community/analytics-module'
+    },
+    {
+      slug: 'nuxtjs-color-mode',
+      name: '@nuxtjs/color-mode',
+      imgPath: null,
+      url: 'https://github.com/nuxt-community/color-mode-module'
+    }
   ],
   screenshot: '/var/folders/....../8f1a071384d0b4.jpg'
 }
