@@ -56,7 +56,7 @@ module.exports = async function (originalUrl) {
       title: '',
       description: '',
       siteName: '',
-      isRtaLabel: false
+      isAdultContent: false
     },
     vueVersion: null,
     hasSSR: false, // default
@@ -126,7 +126,7 @@ module.exports = async function (originalUrl) {
 
   const rtaLabel = await page.$eval('head > meta[name="RATING"]', element => element.content).catch(() => '')
   if (rtaLabel.trim() === 'RTA-5042-1996-1400-1577-RTA') {
-    infos.meta.isRtaLabel = true
+    infos.meta.isAdultContent = true
   }
 
   // Get page language
