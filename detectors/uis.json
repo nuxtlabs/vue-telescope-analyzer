@@ -3,7 +3,7 @@
     "metas": {
       "slug": "element-ui",
       "name": "Element UI",
-      "imgPath": "/icons/ui/element.svg",
+      "imgPath": "/ui/element.svg",
       "url": "https://element.eleme.io/"
     },
     "detectors": {
@@ -14,7 +14,7 @@
     "metas": {
       "slug": "vuetify",
       "name": "Vuetify",
-      "imgPath": "/icons/ui/vuetify.svg",
+      "imgPath": "/ui/vuetify.svg",
       "url": "https://vuetifyjs.com/"
     },
     "detectors": {
@@ -25,7 +25,7 @@
     "metas": {
       "slug": "bootstrap-vue",
       "name": "Bootstrap Vue",
-      "imgPath": "/icons/ui/bootstrap.svg",
+      "imgPath": "/ui/bootstrap.svg",
       "url": "https://bootstrap-vue.org/"
     },
     "detectors": {
@@ -36,7 +36,7 @@
     "metas": {
       "slug": "tailwind-css",
       "name": "Tailwind CSS",
-      "imgPath": "/icons/ui/tailwind.svg",
+      "imgPath": "/ui/tailwind.svg",
       "url": "https://tailwindcss.com/"
     },
     "detectors": {
@@ -50,7 +50,7 @@
     "metas": {
       "slug": "buefy",
       "name": "Buefy",
-      "imgPath": "/icons/ui/bulma.svg",
+      "imgPath": "/ui/bulma.svg",
       "url": "https://buefy.org/"
     },
     "detectors": {
@@ -61,7 +61,7 @@
     "metas": {
       "slug": "inkline",
       "name": "Inkline",
-      "imgPath": "/icons/ui/inkline.svg",
+      "imgPath": "/ui/inkline.svg",
       "url": "https://inkline.io/"
     },
     "detectors": {
