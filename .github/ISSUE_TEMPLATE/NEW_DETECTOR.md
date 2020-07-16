@@ -1,5 +1,5 @@
 ---
-name: 👀 New detector
+name: New detector 👀
 about: Report a bug report to help us improve the module.
 title: ''
 labels: 'detector'
