@@ -67,5 +67,16 @@
     "detectors": {
       "html": "<(?:div|button|a) [^>]*class=\"[^\"]*[^_](?:_border-|_rounded|_rounded-|_clearfix|_background-|_display-|_embed|_float-|_overflow-|_overlay|_position-|_width-|_margin-|_padding-|_align-|_visibility-)"
     }
+  },
+  "chakra-ui": {
+    "metas": {
+      "slug": "chakra-ui",
+      "name": "Chakra UI",
+      "imgPath": "/ui/chakra-ui.svg",
+      "url": "https://vue.chakra-ui.com"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$chakra)).filter(Boolean).length"
+    }
   }
 }

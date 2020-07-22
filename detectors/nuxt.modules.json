@@ -339,5 +339,16 @@
     "detectors": {
       "js": "window.$nuxt && window.$nuxt.$options.context.app.$ackee"
     }
+  },
+  "@nuxtjs/strapi": {
+    "metas": {
+      "slug": "nuxtjs-strapi",
+      "name": "@nuxtjs/strapi",
+      "imgPath": null,
+      "url": "https://strapi.nuxtjs.org/"
+    },
+    "detectors": {
+      "js": "window.$nuxt && (window.$strapi || window.$nuxt.$options.context.app.$strapi)"
+    }
   }
 }
