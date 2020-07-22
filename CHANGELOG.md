@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.12](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.6.11...v0.6.12) (2020-07-22)
+
+
+### Bug Fixes
+
+* change buefy icon ([8afdf59](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/8afdf59000cc3f96ad776ae4333c2aaea650f56b))
+
 ### [0.6.11](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.6.10...v0.6.11) (2020-07-22)
 
 ### [0.6.10](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.6.9...v0.6.10) (2020-07-22)
