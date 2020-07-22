@@ -50,7 +50,7 @@
     "metas": {
       "slug": "buefy",
       "name": "Buefy",
-      "imgPath": "/ui/bulma.svg",
+      "imgPath": "/ui/buefy.svg",
       "url": "https://buefy.org/"
     },
     "detectors": {
