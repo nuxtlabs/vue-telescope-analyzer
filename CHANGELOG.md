@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.9](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.6.8...v0.6.9) (2020-07-22)
+
+
+### Features
+
+* add chakraUI and strapi module ([4ad554b](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/4ad554bf81cb17089d20baf30c3a9f1404c7f371))
+
 ### [0.6.8](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.6.7...v0.6.8) (2020-07-16)
 
 ### [0.6.7](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.6.6...v0.6.7) (2020-07-16)
