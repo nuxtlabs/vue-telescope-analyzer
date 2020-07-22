@@ -348,7 +348,18 @@
       "url": "https://strapi.nuxtjs.org/"
     },
     "detectors": {
-      "js": "window.$nuxt && (window.$strapi || window.$nuxt.$options.context.app.$strapi)"
+      "js": "window.$nuxt && (window.$nuxt.$strapi || window.$nuxt.$options.context.app.$strapi)"
+    }
+  },
+  "nuxt-i18n": {
+    "metas": {
+      "slug": "nuxt-i18n",
+      "name": "nuxt-i18n",
+      "imgPath": null,
+      "url": "https://nuxt-community.github.io/nuxt-i18n/"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$nuxtI18nSeo"
     }
   }
 }

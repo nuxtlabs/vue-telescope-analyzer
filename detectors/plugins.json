@@ -62,5 +62,16 @@
     "detectors": {
       "js": "(window.$nuxt && window.$nuxt.$warehouse) || [...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$warehouse)).filter(Boolean).length"
     }
+  },
+  "vue-i18n": {
+    "metas": {
+      "slug": "vue-i18n",
+      "name": "vue-i18n",
+      "imgPath": null,
+      "url": "https://kazupon.github.io/vue-i18n/"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$i18n)).filter(Boolean).length"
+    }
   }
 }
