@@ -43,6 +43,8 @@ To support a new Vue framework, please look at [detectors/frameworks.json](detec
 - [TailwindCSS](https://tailwindcss.com)
 - [Buefy](https://buefy.org)
 - [Inkline](https://inkline.io)
+- [Chakra UI Vue](https://vue.chakra-ui.com)
+- [Oruga](https://oruga.io)
 
 To support a new UI library, please look at [detectors/uis.json](detectors/uis.json).
 
@@ -52,7 +54,8 @@ To support a new UI library, please look at [detectors/uis.json](detectors/uis.j
 - [Vuex](https://vuex.vuejs.org)
 - [Vue Meta](https://vue-meta.nuxtjs.org)
 - [Vue Apollo](https://apollo.vuejs.org)
-- [Vue Warehouse](https://www.bazzite.com/docs/vue-warehouse)
+- [Vue Warehouse](https://marquez.co/docs/vue-warehouse)
+- [Vue i18n](https://kazupon.github.io/vue-i18n/)
 
 To support a new Vue plugin, please look at [detectors/plugins.json](detectors/plugins.json).
 
@@ -65,7 +68,7 @@ When [NuxtJS](https://nuxtjs.org) is detected as a framework, it will also detec
 
 See [detectors/nuxt.meta.json](detectors/nuxt.meta.json) for the detection.
 
-It will also detecrt the Nuxt modules used, refer to [detectors/nuxt.modules.json](detectors/nuxt.modules.json) to support new Nuxt modules.
+It will also detect the Nuxt modules used, refer to [detectors/nuxt.modules.json](detectors/nuxt.modules.json) to support new Nuxt modules.
 
 
 ## NPM module

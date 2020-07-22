@@ -57,7 +57,7 @@
       "slug": "vue-warehouse",
       "name": "vue-warehouse",
       "imgPath": null,
-      "url": "https://aceforth.com/docs/vue-warehouse"
+      "url": "https://marquez.co/docs/vue-warehouse"
     },
     "detectors": {
       "js": "(window.$nuxt && window.$nuxt.$warehouse) || [...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$warehouse)).filter(Boolean).length"

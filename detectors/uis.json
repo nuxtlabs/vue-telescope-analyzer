@@ -78,5 +78,16 @@
     "detectors": {
       "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$chakra)).filter(Boolean).length"
     }
+  },
+  "oruga": {
+    "metas": {
+      "slug": "oruga",
+      "name": "Oruga",
+      "imgPath": "/ui/oruga.svg",
+      "url": "https://oruga.io"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$oruga)).filter(Boolean).length"
+    }
   }
 }
