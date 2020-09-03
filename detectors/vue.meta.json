@@ -1,5 +1,9 @@
 {
   "ssr": {
-    "originalHtml": "<div [^>]*data-server-rendered=\"true\""
+    "originalHtml": "<div [^>]*data-server-rendered=\"true\"",
+    "html": [
+      "data-n-head=\"ssr\"",
+      "data-vue-tag=\"ssr\""
+    ]
   }
 }
