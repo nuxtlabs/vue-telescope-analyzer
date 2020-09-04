@@ -13,14 +13,14 @@ const detectors = {
 }
 
 exports.hasVue = function (context) {
-  return isMatching(detectors.vue, context)
+  return match(detectors.vue, context)
 }
 
 exports.getVueMeta = async function(context) {
   const meta = {}
   await Promise.all(
     Object.keys(detectors.meta).map(async (key) => {
-      meta[key] = await isMatching(detectors.meta[key], context)
+      meta[key] = await match(detectors.meta[key], context)
     })
   )
   return meta
@@ -28,7 +28,7 @@ exports.getVueMeta = async function(context) {
 
 exports.getFramework = async function (context) {
   for (const framework of Object.keys(detectors.frameworks)) {
-    if (await isMatching(detectors.frameworks[framework].detectors, context)) {
+    if (await match(detectors.frameworks[framework].detectors, context)) {
       return detectors.frameworks[framework].metas
     }
   }
@@ -37,7 +37,7 @@ exports.getFramework = async function (context) {
 
 exports.getUI = async function (context) {
   for (const ui of Object.keys(detectors.uis)) {
-    if (await isMatching(detectors.uis[ui].detectors, context)) {
+    if (await match(detectors.uis[ui].detectors, context)) {
       return detectors.uis[ui].metas
     }
   }
@@ -49,7 +49,7 @@ exports.getPlugins = async function (context) {
 
   await Promise.all(
     Object.keys(detectors.plugins).map(async (plugin) => {
-      if (await isMatching(detectors.plugins[plugin].detectors, context)) {
+      if (await match(detectors.plugins[plugin].detectors, context)) {
         plugins.add(detectors.plugins[plugin].metas)
       }
     })
@@ -63,7 +63,7 @@ exports.getNuxtMeta = async function (context) {
 
   await Promise.all(
     Object.keys(detectors.nuxt.meta).map(async (key) => {
-      meta[key] = await isMatching(detectors.nuxt.meta[key], context)
+      meta[key] = await match(detectors.nuxt.meta[key], context)
     })
   )
 
@@ -75,7 +75,7 @@ exports.getNuxtModules = async function (context) {
 
   await Promise.all(
     Object.keys(detectors.nuxt.modules).map(async (name) => {
-      if (await isMatching(detectors.nuxt.modules[name].detectors, context)) {
+      if (await match(detectors.nuxt.modules[name].detectors, context)) {
         modules.add(detectors.nuxt.modules[name].metas)
       }
     })
@@ -84,7 +84,15 @@ exports.getNuxtModules = async function (context) {
   return Array.from(modules)
 }
 
-async function isMatching (detector, { originalHtml, html, scripts, page }) {
+async function match (detector, { originalHtml, html, scripts, page }) {
+  // JS eval (for string value)
+  if (detector.eval) {
+    for (const js of asArray(detector.eval)) {
+      const value = await page.evaluate(js)
+      if (value) return value
+    }
+    return null
+  }
   // If we can detect technology from response html
   if (detector.originalHtml) {
     for (const pattern of parsePatterns(detector.originalHtml)) {

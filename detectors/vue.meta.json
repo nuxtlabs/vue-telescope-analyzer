@@ -1,4 +1,7 @@
 {
+  "version": {
+    "eval": "(window.$nuxt && window.$nuxt.$root && window.$nuxt.$root.constructor.version) || (window.Vue && window.Vue.version) || [...document.querySelectorAll('*')].map((el) => el.__vue__ && el.__vue__.$root && el.__vue__.$root.constructor.version).filter(Boolean)[0]"
+  },
   "ssr": {
     "originalHtml": "<div [^>]*data-server-rendered=\"true\"",
     "html": [

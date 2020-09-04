@@ -135,14 +135,9 @@ module.exports = async function (originalUrl) {
     infos.meta.language = matches[1].split('-')[0]
   }
 
-  // Get Vue version
-  const version = await page.evaluate('(window.$nuxt && window.$nuxt.$root && window.$nuxt.$root.constructor.version) || (window.Vue && window.Vue.version) || [...document.querySelectorAll("*")].map((el) => el.__vue__ && el.__vue__.$root && el.__vue__.$root.constructor.version).filter(Boolean)[0]')
-  if (version) {
-    infos.vueVersion = version
-  }
-
   // Get Vue metas
-  const { ssr } = await getVueMeta(context)
+  const { ssr, version } = await getVueMeta(context)
+  infos.vueVersion = version
   infos.hasSSR = ssr
 
   // Get Vue ecosystem infos
