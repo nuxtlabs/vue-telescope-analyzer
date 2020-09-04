@@ -88,7 +88,7 @@ async function match (detector, { originalHtml, html, scripts, page }) {
   // JS eval (for string value)
   if (detector.eval) {
     for (const js of asArray(detector.eval)) {
-      const value = await page.evaluate(js)
+      const value = await page.evaluate(`String(${js})`)
       if (value) return value
     }
     return null
