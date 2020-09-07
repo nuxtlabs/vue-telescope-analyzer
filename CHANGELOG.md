@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.15](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.6.14...v0.6.15) (2020-09-07)
+
+
+### Bug Fixes
+
+* revert detection of version in detectors ([2a2398a](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/2a2398a0e08652bc03ba95d3125e0a21418d4a26))
+
 ### [0.6.14](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.6.13...v0.6.14) (2020-09-04)
 
 
