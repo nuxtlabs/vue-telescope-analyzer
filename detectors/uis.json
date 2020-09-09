@@ -99,7 +99,7 @@
       "url": "https://www.vue-tailwind.com/"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && (el.__vue__.$vueTailwind || el.__vue__.$options.components.TInput !== undefined))).filter(Boolean).length"
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && (el.__vue__.$vueTailwind || (el.__vue__.$options.components.TInput !== undefined && el.__vue__.$options.components.TButton !== undefined && el.__vue__.$options.components.TModal !== undefined)))).filter(Boolean).length"
     }
   }
 }
