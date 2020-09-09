@@ -88,6 +88,18 @@
     },
     "detectors": {
       "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$oruga)).filter(Boolean).length"
+      
+    }
+  },
+  "vue-tailwind": {
+    "metas": {
+      "slug": "vue-tailwind",
+      "name": "VueTailwind",
+      "imgPath": "/ui/vue-tailwind.svg",
+      "url": "https://www.vue-tailwind.com/"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && (el.__vue__.$vueTailwind || el.__vue__.$options.components.TInput !== undefined))).filter(Boolean).length"
     }
   }
 }
