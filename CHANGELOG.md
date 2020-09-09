@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.16](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.6.15...v0.6.16) (2020-09-09)
+
+
+### Features
+
+* add vue-tailwind to the list of the detectable UI frameworks ([#17](https://github.com/nuxt-company/vue-telemetry-analyzer/issues/17)) ([22df069](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/22df0693e29e21ec084108a772b3bc8142b5b8b8))
+
 ### [0.6.15](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.6.14...v0.6.15) (2020-09-07)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "vue-telemetry-analyzer",
-  "version": "0.6.15",
+  "version": "0.6.16",
   "description": "",
   "main": "src/index.js",
   "bin": {
