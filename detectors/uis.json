@@ -32,6 +32,17 @@
       "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && (el.__vue__.$bvModal || el.__vue__.$bvConfig || el.__vue__.$bvToast))).filter(Boolean).length"
     }
   },
+  "vue-tailwind": {
+    "metas": {
+      "slug": "vue-tailwind",
+      "name": "VueTailwind",
+      "imgPath": "/ui/vue-tailwind.svg",
+      "url": "https://www.vue-tailwind.com/"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && (el.__vue__.$vueTailwind || (el.__vue__.$options.components.TInput !== undefined && el.__vue__.$options.components.TButton !== undefined && el.__vue__.$options.components.TModal !== undefined)))).filter(Boolean).length"
+    }
+  },
   "tailwindcss": {
     "metas": {
       "slug": "tailwind-css",

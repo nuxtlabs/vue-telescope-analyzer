@@ -1,0 +1,8 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+    <g transform="matrix(0.036324,0,0,0.036324,20,14)">
+        <path id="T" d="M340.065,589L0,-0L2500.03,0.018L2159.98,589L1731.17,589L1250,1421.95L768.833,589L340.065,589Z" style="fill:rgb(237,137,54);fill-rule:nonzero;"/>
+        <g id="V" transform="matrix(-1,-1.53143e-15,-1.53143e-15,1,2500,589)">
+            <path d="M1731.17,0L1250,832.948L768.833,0L0,0L1250,2164L2500,0L1731.17,0Z" style="fill:rgb(45,55,72);fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>
