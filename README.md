@@ -32,6 +32,7 @@ It supports multiple [frameworks](#frameworks), [UI librairies](#ui-librairies) 
 - [Quasar](https://quasar.dev)
 - [Gridsome](https://gridsome.org)
 - [Vuepress](https://vuepress.vuejs.org)
+- [Inertia.js](https://inertiajs.com)
 
 To support a new Vue framework, please look at [detectors/frameworks.json](detectors/frameworks.json).
 
