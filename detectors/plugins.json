@@ -73,5 +73,16 @@
     "detectors": {
       "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$i18n)).filter(Boolean).length"
     }
+  },
+  "@braid/vue-formulate": {
+    "metas": {
+      "slug": "vue-formulate",
+      "name": "@braid/vue-formulate",
+      "imgPath": "/plugins/vue-formulate.svg",
+      "url": "https://vueformulate.com/"
+    },
+    "detectors": {
+      "js": "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__ && el.__vue__.$formulate)))"
+    }
   }
 }

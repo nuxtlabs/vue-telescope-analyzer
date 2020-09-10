@@ -57,6 +57,7 @@ To support a new UI library, please look at [detectors/uis.json](detectors/uis.j
 - [Vue Apollo](https://apollo.vuejs.org)
 - [Vue Warehouse](https://marquez.co/docs/vue-warehouse)
 - [Vue i18n](https://kazupon.github.io/vue-i18n/)
+- [Vue Formulate](https://vueformulate.com/)
 
 To support a new Vue plugin, please look at [detectors/plugins.json](detectors/plugins.json).
 
