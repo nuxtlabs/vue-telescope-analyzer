@@ -84,5 +84,16 @@
     "detectors": {
       "js": "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__ && el.__vue__.$formulate)))"
     }
+  },
+  "@inertiajs/inertia-vue": {
+    "metas": {
+      "slug": "inertia-vue",
+      "name": "Inertia.js",
+      "imgPath": "/plugins/inertiajs.svg",
+      "url": "https://inertiajs.com/"
+    },
+    "detectors": {
+      "js": "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__ && el.__vue__.$inertia)))"
+    }
   }
 }

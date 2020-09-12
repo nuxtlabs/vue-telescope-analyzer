@@ -50,16 +50,5 @@
       "html": "<div [^>]*id=\"q-app\"",
       "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$q)).filter(Boolean).length"
     }
-  },
-  "inertiajs": {
-    "metas": {
-      "slug": "inertiajs",
-      "name": "Inertia.js",
-      "imgPath": "/framework/inertiajs.svg",
-      "url": "https://inertiajs.com/"
-    },
-    "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$inertia)).filter(Boolean).length"
-    }
   }
 }
