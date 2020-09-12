@@ -32,7 +32,6 @@ It supports multiple [frameworks](#frameworks), [UI librairies](#ui-librairies) 
 - [Quasar](https://quasar.dev)
 - [Gridsome](https://gridsome.org)
 - [Vuepress](https://vuepress.vuejs.org)
-- [Inertia.js](https://inertiajs.com)
 
 To support a new Vue framework, please look at [detectors/frameworks.json](detectors/frameworks.json).
 
@@ -59,6 +58,7 @@ To support a new UI library, please look at [detectors/uis.json](detectors/uis.j
 - [Vue Warehouse](https://marquez.co/docs/vue-warehouse)
 - [Vue i18n](https://kazupon.github.io/vue-i18n/)
 - [Vue Formulate](https://vueformulate.com/)
+- [Inertia.js](https://inertiajs.com)
 
 To support a new Vue plugin, please look at [detectors/plugins.json](detectors/plugins.json).
 
