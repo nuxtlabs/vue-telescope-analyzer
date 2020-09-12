@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.19](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.6.18...v0.6.19) (2020-09-12)
+
+
+### Features
+
+* rename inertia plugin and improve nuxt detection ([b9d94da](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/b9d94da6fa0e7ce4d2deed7934ea52dc5086fbb1))
+
 ### [0.6.18](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.6.17...v0.6.18) (2020-09-12)
 
 ### [0.6.17](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.6.16...v0.6.17) (2020-09-12)
