@@ -11,7 +11,7 @@
         "<div [^>]*id=\"__nuxt\"",
         "<script [^>]*>window\\.__NUXT__"
       ],
-      "js": "window.__NUXT__ || window.$nuxt",
+      "js": "window.__NUXT__ || window.$nuxt || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__ && el.__vue__.nuxt)))",
       "script": [
         "/_nuxt/"
       ]

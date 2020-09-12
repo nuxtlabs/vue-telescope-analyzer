@@ -88,7 +88,7 @@
   "@inertiajs/inertia-vue": {
     "metas": {
       "slug": "inertia-vue",
-      "name": "Inertia.js",
+      "name": "@inertiajs/inertia-vue",
       "imgPath": "/plugins/inertiajs.svg",
       "url": "https://inertiajs.com/"
     },
