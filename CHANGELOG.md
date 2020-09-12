@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.17](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.6.16...v0.6.17) (2020-09-12)
+
+
+### Features
+
+* add @braid/vue-formulate to the detectable plugins ([#19](https://github.com/nuxt-company/vue-telemetry-analyzer/issues/19)) ([230b414](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/230b4145bfd957e088ddac809639a22bd6cb874e))
+* add Inertia.js in frameworks ([#20](https://github.com/nuxt-company/vue-telemetry-analyzer/issues/20)) ([4910935](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/491093594f50af82e5b2996dc14d9fa281c1fd69))
+
 ### [0.6.16](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.6.15...v0.6.16) (2020-09-09)
 
 
