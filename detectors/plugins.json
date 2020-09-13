@@ -104,7 +104,7 @@
       "url": "https://vee-validate.logaretm.com/"
     },
     "detectors": {
-      "js": "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__ && '$_veeObserver' in el.__vue__)))"
+      "js": "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__ && ('$_veeObserver' in el.__vue__ || (el.__vue__.$validator && 'attach' in el.__vue__.$validator)))))"
     }
   }
 }
