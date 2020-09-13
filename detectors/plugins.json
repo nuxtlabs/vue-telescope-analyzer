@@ -95,5 +95,16 @@
     "detectors": {
       "js": "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__ && el.__vue__.$inertia)))"
     }
+  },
+  "vee-validate": {
+    "metas": {
+      "slug": "vee-validate",
+      "name": "vee-validate",
+      "imgPath": "/plugins/vee-validate.svg",
+      "url": "https://vee-validate.logaretm.com/"
+    },
+    "detectors": {
+      "js": "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__ && '$_veeObserver' in el.__vue__)))"
+    }
   }
 }
