@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.3](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.7.2...v0.7.3) (2020-09-16)
+
+
+### Bug Fixes
+
+* move back to no-sandbox ([61f69d6](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/61f69d6f30a666b1725c233cfc224c3bb20c0330))
+
 ### [0.7.2](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.7.1...v0.7.2) (2020-09-16)
 
 
