@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.0](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.6.19...v0.7.0) (2020-09-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove chromium and use puppeteer (#24)
+
+### Features
+
+* add vee-validate to plugins ([#22](https://github.com/nuxt-company/vue-telemetry-analyzer/issues/22)) ([fb51ee3](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/fb51ee30a0bc976e747aaee5212ba976d3f2e0e4))
+* remove chromium and use puppeteer ([#24](https://github.com/nuxt-company/vue-telemetry-analyzer/issues/24)) ([c1d4633](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/c1d4633f2b437ec2c7d1b1a4221093c6faef7ab2))
+
 ### [0.6.19](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.6.18...v0.6.19) (2020-09-12)
 
 
