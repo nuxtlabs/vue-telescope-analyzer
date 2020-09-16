@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.2](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.7.1...v0.7.2) (2020-09-16)
+
+
+### Bug Fixes
+
+* remove zygote ([e1ea266](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/e1ea2668d115d9d4058a7d725e2b057aa2ea0e5a))
+
 ### [0.7.1](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.7.0...v0.7.1) (2020-09-16)
 
 
