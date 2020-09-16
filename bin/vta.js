@@ -3,8 +3,6 @@
 const ora = require('ora')
 const consola = require('consola')
 const yargs = require('yargs')
-const { setRootDir, install } = require('lmify')
-const { join } = require('path')
 
 yargs
   .usage('$0 [url]', 'analyze an url', (yargs) => {
@@ -16,12 +14,6 @@ yargs
     if (!argv.url) {
       consola.error('Please provide an url to analyze')
       return yargs.showHelp()
-    }
-    // Check if puppeteer is installed
-    try { require('puppeteer') }
-    catch(err) {
-      setRootDir(join(__dirname, '..'))
-      await install('puppeteer')
     }
 
     const spinner = ora(`Detecting Vue on ${argv.url}`).start()

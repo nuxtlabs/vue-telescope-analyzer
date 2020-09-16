@@ -82,12 +82,6 @@ You can use `vue-telemetry-analyzer` locally on your project:
 npm install vue-telemetry-analyzer # Or yarn add vue-telemetry
 ```
 
-Since this module is made to work on serverless environement by using [puppeteer-core](https://www.npmjs.com/package/puppeteer-core) and [chrome-aws-lambda](http://npmjs.com/package/chrome-aws-lambda), you need to install [puppeteer](https://www.npmjs.com/package/puppeteer) locally as a dev dependency:
-
-```bash
-npm install --save-dev puppeteer # Or yarn add --dev puppeteer
-```
-
 Then you can use the module in your project:
 
 ```js

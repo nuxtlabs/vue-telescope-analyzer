@@ -1,11 +1,11 @@
-const chromium = require('chrome-aws-lambda')
+const puppeteer = require('puppeteer')
 const tldParser = require('tld-extract')
 const makeDir = require('make-dir')
 const { createHash } = require('crypto')
 const { URL } = require('url')
 const { join } = require('path')
 const { tmpdir } = require('os')
-const { isCrawlable } = require('./utils')
+const { isCrawlable, puppeteerArgs, puppeteerViewport } = require('./utils')
 const { hasVue, getVueMeta, getFramework, getPlugins, getUI, getNuxtMeta, getNuxtModules } = require('./detectors')
 const consola = require('consola')
 
@@ -15,25 +15,9 @@ const ERROR_CODES = Object.freeze({
   NOT_CRAWLABLE: 3,
   VUE_NOT_DETECTED: 4
 })
+let browser = null
 
-async function getPuppeteerPath() {
-  let executablePath = await chromium.executablePath
-
-  if (process.env.NETLIFY_DEV) {
-    executablePath = null // forces to use local puppeteer
-  }
-
-  return executablePath
-}
-
-module.exports = async function (originalUrl) {
-  const executablePath = await getPuppeteerPath()
-  const browser = await chromium.puppeteer.launch({
-    executablePath,
-    args: chromium.args,
-    defaultViewport: chromium.defaultViewport,
-    headless: true
-  })
+async function analyze (originalUrl) {
   // Parse url
   let url
   try {
@@ -42,6 +26,17 @@ module.exports = async function (originalUrl) {
     const error =  new Error(`Invalid URL ${originalUrl}`)
     error.code = ERROR_CODES.INVALID_URL
     throw error
+  }
+  // Start browser if not launched
+  if (!browser) {
+    browser = await puppeteer.launch({
+      args: puppeteerArgs,
+      defaultViewport: puppeteerViewport,
+      headless: true
+    })
+    browser.on('disconnected', () => {
+      browser = null
+    })
   }
   // Force https
   originalUrl = 'https://' + url.hostname + url.pathname
@@ -172,9 +167,15 @@ module.exports = async function (originalUrl) {
     quality: 90
   })
 
-  // Close browser
-  await browser.close()
+  await page.close()
 
   return infos
 }
+
+module.exports = analyze
 module.exports.ERROR_CODES = ERROR_CODES
+module.exports.close = async function () {
+  if (browser) {
+    await browser.close()
+  }
+}
