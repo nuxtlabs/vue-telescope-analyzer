@@ -94,9 +94,12 @@ exports.puppeteerArgs = [
   '--no-default-browser-check',
   '--no-first-run',
   '--no-pings',
+  '--no-zygote',
   '--password-store=basic',
   '--use-gl=swiftshader',
-  '--use-mock-keychain'
+  '--use-mock-keychain',
+  '--no-sandbox',
+  '--disable-setuid-sandbox'
 ]
 exports.puppeteerViewport = {
   deviceScaleFactor: 1,
