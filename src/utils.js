@@ -94,7 +94,6 @@ exports.puppeteerArgs = [
   '--no-default-browser-check',
   '--no-first-run',
   '--no-pings',
-  '--no-zygote',
   '--password-store=basic',
   '--use-gl=swiftshader',
   '--use-mock-keychain'
