@@ -23,7 +23,7 @@ async function analyze (originalUrl) {
   try {
     url = new URL(originalUrl)
   } catch (e) {
-    const error =  new Error(`Invalid URL ${originalUrl}`)
+    const error = new Error(`Invalid URL ${originalUrl}`)
     error.code = ERROR_CODES.INVALID_URL
     throw error
   }
@@ -82,6 +82,7 @@ async function analyze (originalUrl) {
     error.code = ERROR_CODES.HTTP_ERROR
     error.statusCode = response.status()
     error.body = await response.text()
+    await page.close()
     throw error
   }
   // Get headers
@@ -90,6 +91,7 @@ async function analyze (originalUrl) {
   if (!(await isCrawlable(headers))) {
     const error = new Error(`Crawling is not allowed on ${originalUrl}`)
     error.code = ERROR_CODES.NOT_CRAWLABLE
+    await page.close()
     throw error
   }
 
@@ -109,6 +111,7 @@ async function analyze (originalUrl) {
   if (!(await hasVue(context))) {
     const error = new Error(`Vue is not detected on ${originalUrl}`)
     error.code = ERROR_CODES.VUE_NOT_DETECTED
+    await page.close()
     throw error
   }
 
@@ -148,7 +151,7 @@ async function analyze (originalUrl) {
 
   // Get Nuxt modules if using NuxtJS
   if (infos.framework && infos.framework.name === 'NuxtJS') {
-    const [ meta, modules ] = await Promise.all([
+    const [meta, modules] = await Promise.all([
       getNuxtMeta(context),
       getNuxtModules(context)
     ])
@@ -169,7 +172,6 @@ async function analyze (originalUrl) {
   })
 
   await page.close()
-
   return infos
 }
 
