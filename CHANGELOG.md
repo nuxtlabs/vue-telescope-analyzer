@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.5](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.7.4...v0.7.5) (2020-09-18)
+
+
+### Bug Fixes
+
+* close the page before throwing ([b8af1f1](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/b8af1f1e90c658f03e62f8426caa7d0359a15b27))
+* memory issue on error ([e3ca487](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/e3ca487cb2ff7b3310356dc6720fc0f2e4f18222))
+
 ### [0.7.4](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.7.3...v0.7.4) (2020-09-18)
 
 
