@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.6](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.7.5...v0.7.6) (2020-09-18)
+
+
+### Bug Fixes
+
+* remove timeout ([22ea001](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/22ea001c60c2c9ed9eab4e0e63eaa35299f8d525))
+
 ### [0.7.5](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.7.4...v0.7.5) (2020-09-18)
 
 
