@@ -61,6 +61,7 @@ async function analyze (originalUrl) {
     ui: null // vuetify | bootstrap-vue | element-ui | tailwindcss
   }
 
+  await page.setCacheEnabled(false) // disable cache for avoiding 304
   await page.setUserAgent('Vue-Telemetry')
   await page.setViewport({
     width: 1680,
