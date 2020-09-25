@@ -74,9 +74,18 @@ async function analyze (originalUrl) {
       domain: url.hostname
     })
     // https://github.com/puppeteer/puppeteer/blob/v2.1.0/docs/api.md#pagegotourl-options
-    const response = await page.goto(originalUrl, {
-      waitUntil: 'networkidle0'
-    })
+    let response
+    try {
+      response = await page.goto(originalUrl, {
+        waitUntil: 'networkidle0',
+        timeout: 20000
+      })
+    } catch (err) {
+      response = await page.goto(originalUrl, {
+        waitUntil: 'domcontentloaded'
+      })
+      await page.waitForTimeout(10000)
+    }
     if (!response.ok()) {
       const error = new Error(`Website responded with ${response.status()} status code`)
       error.code = ERROR_CODES.HTTP_ERROR
