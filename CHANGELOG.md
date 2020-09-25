@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.7](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.7.6...v0.7.7) (2020-09-25)
+
+
+### Bug Fixes
+
+* fallback to domcontentloaded when timeout ([11fe542](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/11fe542a550d617419a5d90dc2e42c5ad15c6356))
+
 ### [0.7.6](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.7.5...v0.7.6) (2020-09-18)
 
 
