@@ -26,7 +26,7 @@
       "slug": "nuxt-press",
       "name": "@nuxt/press",
       "imgPath": null,
-      "url": "https://nuxt.press/"
+      "url": "https://nuxt.press"
     },
     "detectors": {
       "js": "window.$nuxt && window.$nuxt.$options.context.app.$press"
@@ -37,7 +37,7 @@
       "slug": "nuxtjs-pwa",
       "name": "@nuxtjs/pwa",
       "imgPath": null,
-      "url": "https://pwa.nuxtjs.org/"
+      "url": "https://pwa.nuxtjs.org"
     },
     "detectors": {
       "js": "window.$nuxt && window.$nuxt.$options.context.app.$icon"
@@ -59,7 +59,7 @@
       "slug": "nuxtjs-auth",
       "name": "@nuxtjs/auth",
       "imgPath": null,
-      "url": "https://auth.nuxtjs.org/"
+      "url": "https://auth.nuxtjs.org"
     },
     "detectors": {
       "js": "window.$nuxt && window.$nuxt.$options.context.app.$auth && window.$nuxt.$options.context.app.$auth.loginWith"
@@ -103,7 +103,7 @@
       "slug": "nuxtjs-firebase",
       "name": "@nuxtjs/firebase",
       "imgPath": null,
-      "url": "https://firebase.nuxtjs.org/"
+      "url": "https://firebase.nuxtjs.org"
     },
     "detectors": {
       "js": "window.$nuxt && (window.$nuxt.$options.context.app.$fireAuth || window.$nuxt.$options.context.app.$fireDb || window.$nuxt.$options.context.app.$fireStore || window.$nuxt.$options.context.app.$fireStorage || window.$nuxt.$options.context.app.$fireFunc || window.$nuxt.$options.context.app.$fireMess || window.$nuxt.$options.context.app.$firePerf || window.$nuxt.$options.context.app.$fireAnalytics || window.$nuxt.$options.context.app.$fireConfig)"
@@ -158,7 +158,7 @@
       "slug": "nuxtjs-google-analytics",
       "name": "@nuxtjs/google-analytics",
       "imgPath": null,
-      "url": "https://github.com/nuxt-community/analytics-module"
+      "url": "https://google-analytics.nuxtjs.org"
     },
     "detectors": {
       "js": "window.$nuxt && window.$nuxt.$options.context.app.$ga"
@@ -279,7 +279,7 @@
       "slug": "nuxtjs-prismic",
       "name": "@nuxtjs/prismic",
       "imgPath": null,
-      "url": "https://prismic-nuxt.js.org/"
+      "url": "https://prismic.nuxtjs.org"
     },
     "detectors": {
       "js": "window.$nuxt && window.$nuxt.$options.context.app.$prismic"
@@ -301,7 +301,7 @@
       "slug": "nuxt-sanity",
       "name": "nuxt-sanity",
       "imgPath": null,
-      "url": "https://nuxt-sanity.netlify.app/"
+      "url": "https://sanity.nuxtjs.org"
     },
     "detectors": {
       "js": "window.$nuxt && window.$nuxt.$options.context.app.$sanity"
@@ -323,7 +323,7 @@
       "slug": "nuxtjs-color-mode",
       "name": "@nuxtjs/color-mode",
       "imgPath": null,
-      "url": "https://github.com/nuxt-community/color-mode-module"
+      "url": "https://color-mode.nuxtjs.org"
     },
     "detectors": {
       "js": "window.$nuxt && window.$nuxt.$options.context.app.$colorMode"
@@ -345,7 +345,7 @@
       "slug": "nuxtjs-strapi",
       "name": "@nuxtjs/strapi",
       "imgPath": null,
-      "url": "https://strapi.nuxtjs.org/"
+      "url": "https://strapi.nuxtjs.org"
     },
     "detectors": {
       "js": "window.$nuxt && (window.$nuxt.$strapi || window.$nuxt.$options.context.app.$strapi)"
@@ -356,10 +356,32 @@
       "slug": "nuxt-i18n",
       "name": "nuxt-i18n",
       "imgPath": null,
-      "url": "https://nuxt-community.github.io/nuxt-i18n/"
+      "url": "https://i18n.nuxtjs.org"
     },
     "detectors": {
       "js": "window.$nuxt && window.$nuxt.$nuxtI18nSeo"
+    }
+  },
+  "nuxt-image": {
+    "metas": {
+      "slug": "nuxt-image",
+      "name": "@nuxt/image",
+      "imgPath": null,
+      "url": "https://image.nuxtjs.org"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$img"
+    }
+  },
+  "nuxt-cloudinary": {
+    "metas": {
+      "slug": "nuxt-cloudinary",
+      "name": "@nuxtjs/cloudinary",
+      "imgPath": null,
+      "url": "https://cloudinary.nuxtjs.org"
+    },
+    "detectors": {
+      "js": "window.$nuxt && window.$nuxt.$cloudinary"
     }
   }
 }
