@@ -167,7 +167,7 @@
   "@nuxtjs/google-tag-manager": {
     "metas": {
       "slug": "nuxtjs-google-tag-manager",
-      "name": "@nuxtjs/google-tag-manager",
+      "name": "@nuxtjs/gtm",
       "imgPath": null,
       "url": "https://github.com/nuxt-community/gtm-module"
     },
