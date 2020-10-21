@@ -80,7 +80,7 @@ It will also detect the Nuxt modules used, refer to [detectors/nuxt.modules.json
 You can use `vue-telemetry-analyzer` locally on your project:
 
 ```bash
-npm install vue-telemetry-analyzer # Or yarn add vue-telemetry
+npm install vue-telemetry-analyzer # Or yarn add vue-telemetry-analyzer
 ```
 
 Then you can use the module in your project:
