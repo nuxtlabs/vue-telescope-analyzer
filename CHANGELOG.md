@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.9](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.7.8...v0.7.9) (2020-11-06)
+
+
+### Bug Fixes
+
+* ignore https error ([e64624e](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/e64624e55f699cbee9a6749f30f62d28c2d0b824))
+* yarn install command ([#27](https://github.com/nuxt-company/vue-telemetry-analyzer/issues/27)) ([7862578](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/7862578de807d93fd4dc36470a1b51ae2623f67e))
+
 ### [0.7.8](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.7.7...v0.7.8) (2020-10-19)
 
 ### [0.7.7](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.7.6...v0.7.7) (2020-09-25)
