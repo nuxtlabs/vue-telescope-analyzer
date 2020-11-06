@@ -32,7 +32,8 @@ async function analyze (originalUrl) {
     browser = await puppeteer.launch({
       args: puppeteerArgs,
       defaultViewport: puppeteerViewport,
-      headless: true
+      headless: true,
+      ignoreHTTPSErrors: true
     })
     browser.on('disconnected', () => {
       browser = null
