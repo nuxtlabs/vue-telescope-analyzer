@@ -98,7 +98,10 @@
       "url": "https://oruga.io"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$oruga)).filter(Boolean).length"
+      "js": [
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$oruga)).filter(Boolean).length",
+        "[...document.querySelectorAll('*')].filter((el) =>  ['o-autocomplete', 'o-button', 'o-checkbox ', 'o-collapse', 'o-dropdown', 'o-field', 'o-icon', 'o-input', 'o-loading', 'o-modal', 'o-pagination', 'o-radio', 'o-select', 'o-sidebar', 'o-skeleton', 'o-slider', 'o-steps', 'o-switch', 'o-table', 'o-tabs', 'o-tooltip', 'o-upload', 'o-carousel', 'o-dialog', 'o-clockpicker', 'o-datepicker', 'o-datimepicker', 'o-numberinput', 'o-timepicker', 'o-taginput', 'o-image', 'o-notification', 'o-navbar', 'o-menu', 'o-tag'].includes(el.__vue__?.$options._componentTag)).length"
+      ]
     }
   }
 }
