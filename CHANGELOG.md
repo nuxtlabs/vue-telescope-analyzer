@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.10](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.7.9...v0.7.10) (2020-11-18)
+
+
+### Bug Fixes
+
+* better Oruga UI detection ([#28](https://github.com/nuxt-company/vue-telemetry-analyzer/issues/28)) ([f62ac29](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/f62ac29679314b9c971c55a15bfc66a22ce23103))
+
 ### [0.7.9](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.7.8...v0.7.9) (2020-11-06)
 
 
