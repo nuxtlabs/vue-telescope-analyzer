@@ -46,6 +46,7 @@ To support a new Vue framework, please look at [detectors/frameworks.json](detec
 - [Chakra UI Vue](https://vue.chakra-ui.com)
 - [Oruga](https://oruga.io)
 - [VueTailwind](https://www.vue-tailwind.com/)
+- [PrimeVue](https://www.primefaces.org/primevue/showcase)
 
 To support a new UI library, please look at [detectors/uis.json](detectors/uis.json).
 

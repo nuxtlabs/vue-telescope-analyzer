@@ -103,5 +103,16 @@
     "detectors": {
       "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$chakra)).filter(Boolean).length"
     }
-  }
+  },
+  "primevue": {
+    "metas": {
+      "slug": "primevue",
+      "name": "PrimeVue",
+      "imgPath": "/ui/primevue.svg",
+      "url": "https://www.primefaces.org/primevue/showcase"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$primevue)).filter(Boolean).length"
+    }
+  },
 }
