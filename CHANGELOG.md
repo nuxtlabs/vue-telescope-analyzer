@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.1](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.8.0...v0.8.1) (2020-12-14)
+
+
+### Features
+
+* **ui:** add Vuesax support ([878407e](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/878407e4387a0e8383528bbd161ef01e28d97cd3)), closes [#30](https://github.com/nuxt-company/vue-telemetry-analyzer/issues/30)
+
 ### [0.7.11](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.7.10...v0.7.11) (2020-12-14)
 
 
