@@ -142,7 +142,7 @@ async function analyze (originalUrl) {
     }
 
     // Get Vue version
-    const version = await page.evaluate('(window.$nuxt && window.$nuxt.$root && window.$nuxt.$root.constructor.version) || (window.Vue && window.Vue.version) || [...document.querySelectorAll("*")].map((el) => el.__vue__ && el.__vue__.$root && el.__vue__.$root.constructor.version).filter(Boolean)[0]')
+    const version = await page.evaluate('window.$nuxt?.$root?.constructor?.version || window.Vue?.version || [...document.querySelectorAll("*")].map((el) => el.__vue__?.$root?.constructor?.version || el.__vue_app__?.version).filter(Boolean)[0]')
     if (version) {
       infos.vueVersion = version
     }

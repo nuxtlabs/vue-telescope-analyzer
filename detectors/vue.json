@@ -1,6 +1,6 @@
 {
   "html": "<[^>]+\\sdata-v(?:ue)?-",
-  "js": "(window.Vue && window.Vue.version) || window.$nuxt || [...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__)).filter(Boolean).length",
+  "js": "(window.Vue && window.Vue.version) || window.$nuxt || [...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__) || Boolean(el.__vue_app__)).filter(Boolean).length",
   "script": [
     "vue[.-]([\\d.]*\\d)[^/]*\\.js\\;version:\\1",
     "(?:/([\\d.]+))?/vue(?:\\.min)?\\.js\\;version:\\1"

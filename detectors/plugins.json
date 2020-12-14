@@ -8,8 +8,9 @@
     },
     "detectors": {
       "js": [
-        "window.$nuxt && window.$nuxt.$router && window.$nuxt.$route",
-        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$router && el.__vue__.$route)).filter(Boolean).length"
+        "window.$nuxt?.$router && window.$nuxt?.$route",
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$router && el.__vue__?.$route)).filter(Boolean).length",
+        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$router).filter(Boolean).length"
       ]
     }
   },
@@ -22,8 +23,8 @@
     },
     "detectors": {
       "js": [
-        "window.$nuxt && window.$nuxt.$store && window.$nuxt.$store.dipatch && window.$nuxt.$store.commit",
-        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$store && el.__vue__.$store.dispatch && el.__vue__.$store.commit)).filter(Boolean).length"
+        "window.$nuxt?.$store?.dipatch && window.$nuxt?.$store?.commit",
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$store?.dispatch && el.__vue__?.$store?.commit)).filter(Boolean).length"
       ]
     }
   },
@@ -36,8 +37,8 @@
     },
     "detectors": {
       "js": [
-        "window.$nuxt && window.$nuxt.$meta && window.$nuxt.$meta() && window.$nuxt.$meta().getOptions",
-        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$meta && el.__vue__.$meta() && el.__vue__.$meta().getOptions)).filter(Boolean).length"
+        "window.$nuxt?.$meta && window.$nuxt.$meta() && window.$nuxt.$meta().getOptions",
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$meta && el.__vue__.$meta() && el.__vue__.$meta().getOptions)).filter(Boolean).length"
       ]
     }
   },
@@ -49,7 +50,7 @@
       "url": "https://apollo.vuejs.org"
     },
     "detectors": {
-      "js": "(window.$nuxt && window.$nuxt.$apollo) || [...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$apollo)).filter(Boolean).length"
+      "js": "window.$nuxt?.$apollo || [...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$apollo)).filter(Boolean).length"
     }
   },
   "vue-warehouse": {
@@ -60,7 +61,7 @@
       "url": "https://marquez.co/docs/vue-warehouse"
     },
     "detectors": {
-      "js": "(window.$nuxt && window.$nuxt.$warehouse) || [...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$warehouse)).filter(Boolean).length"
+      "js": "window.$nuxt?.$warehouse || [...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$warehouse)).filter(Boolean).length"
     }
   },
   "vue-i18n": {
@@ -71,7 +72,10 @@
       "url": "https://kazupon.github.io/vue-i18n/"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$i18n)).filter(Boolean).length"
+      "js": [
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$i18n)).filter(Boolean).length",
+        "window.__VUE_I18N_LEGACY_API__ || window.__VUE_I18N_FULL_INSTALL__"
+      ]
     }
   },
   "@braid/vue-formulate": {
@@ -82,7 +86,7 @@
       "url": "https://vueformulate.com/"
     },
     "detectors": {
-      "js": "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__ && el.__vue__.$formulate)))"
+      "js": "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__?.$formulate)))"
     }
   },
   "@inertiajs/inertia-vue": {
@@ -93,7 +97,7 @@
       "url": "https://inertiajs.com/"
     },
     "detectors": {
-      "js": "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__ && el.__vue__.$inertia)))"
+      "js": "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__?.$inertia)))"
     }
   },
   "vee-validate": {

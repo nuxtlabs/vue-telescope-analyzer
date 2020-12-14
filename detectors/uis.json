@@ -8,8 +8,8 @@
     },
     "detectors": {
       "js": [
-        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$oruga)).filter(Boolean).length",
-        "[...document.querySelectorAll('*')].filter((el) =>  ['o-autocomplete', 'o-button', 'o-checkbox ', 'o-collapse', 'o-dropdown', 'o-field', 'o-icon', 'o-input', 'o-loading', 'o-modal', 'o-pagination', 'o-radio', 'o-select', 'o-sidebar', 'o-skeleton', 'o-slider', 'o-steps', 'o-switch', 'o-table', 'o-tabs', 'o-tooltip', 'o-upload', 'o-carousel', 'o-dialog', 'o-clockpicker', 'o-datepicker', 'o-datimepicker', 'o-numberinput', 'o-timepicker', 'o-taginput', 'o-image', 'o-notification', 'o-navbar', 'o-menu', 'o-tag'].includes(el.__vue__?.$options._componentTag)).length"
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$oruga)).filter(Boolean).length",
+        "[...document.querySelectorAll('*')].filter((el) =>  ['o-autocomplete', 'o-button', 'o-checkbox ', 'o-collapse', 'o-dropdown', 'o-field', 'o-icon', 'o-input', 'o-loading', 'o-modal', 'o-pagination', 'o-radio', 'o-select', 'o-sidebar', 'o-skeleton', 'o-slider', 'o-steps', 'o-switch', 'o-table', 'o-tabs', 'o-tooltip', 'o-upload', 'o-carousel', 'o-dialog', 'o-clockpicker', 'o-datepicker', 'o-datimepicker', 'o-numberinput', 'o-timepicker', 'o-taginput', 'o-image', 'o-notification', 'o-navbar', 'o-menu', 'o-tag'].includes(el.__vue__?.$options?._componentTag)).length"
       ]
     }
   },
@@ -32,7 +32,7 @@
       "url": "https://vuetifyjs.com/"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$vuetify)).filter(Boolean).length"
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$vuetify)).filter(Boolean).length"
     }
   },
   "bootstrap-vue": {
@@ -43,7 +43,7 @@
       "url": "https://bootstrap-vue.org/"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && (el.__vue__.$bvModal || el.__vue__.$bvConfig || el.__vue__.$bvToast))).filter(Boolean).length"
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$bvModal || el.__vue__?.$bvConfig || el.__vue__?.$bvToast)).filter(Boolean).length"
     }
   },
   "vue-tailwind": {
@@ -54,7 +54,7 @@
       "url": "https://www.vue-tailwind.com/"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && (el.__vue__.$vueTailwind || (el.__vue__.$options.components.TInput !== undefined && el.__vue__.$options.components.TButton !== undefined && el.__vue__.$options.components.TModal !== undefined)))).filter(Boolean).length"
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$vueTailwind || (el.__vue__?.$options?.components.TInput && el.__vue__?.$options?.components?.TButton && el.__vue__?.$options?.components?.TModal))).filter(Boolean).length"
     }
   },
   "tailwindcss": {
@@ -79,7 +79,7 @@
       "url": "https://buefy.org/"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$buefy)).filter(Boolean).length"
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$buefy)).filter(Boolean).length"
     }
   },
   "inkline": {
@@ -101,7 +101,7 @@
       "url": "https://vue.chakra-ui.com"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$chakra)).filter(Boolean).length"
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$chakra)).filter(Boolean).length"
     }
   },
   "primevue": {
@@ -112,7 +112,7 @@
       "url": "https://www.primefaces.org/primevue/showcase"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__ && el.__vue__.$primevue)).filter(Boolean).length"
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$primevue)).filter(Boolean).length"
     }
-  },
+  }
 }

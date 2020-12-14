@@ -1,8 +1,8 @@
 {
   "ssr": {
-    "js": "window.$nuxt && $nuxt.$options.context.nuxtState && $nuxt.$options.context.nuxtState.serverRendered"
+    "js": "window.$nuxt?.$options?.context?.nuxtState.serverRendered"
   },
   "static": {
-    "js": "window.$nuxt && $nuxt.$options.context.isStatic"
+    "js": "window.$nuxt?.$options?.context?.isStatic"
   }
 }
