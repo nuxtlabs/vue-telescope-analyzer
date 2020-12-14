@@ -114,5 +114,16 @@
     "detectors": {
       "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$primevue)).filter(Boolean).length"
     }
+  },
+  "vuesax": {
+    "metas": {
+      "slug": "vuesax",
+      "name": "Vuesax",
+      "imgPath": "/ui/vuesax.svg",
+      "url": "https://vuesax.com"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => el.__vue__?.$vs?.loading).filter(Boolean).length"
+    }
   }
 }
