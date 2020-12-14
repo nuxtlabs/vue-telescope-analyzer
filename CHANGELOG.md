@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.11](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.7.10...v0.7.11) (2020-12-14)
+
+
+### Features
+
+* add PrimeVue to the list of the detectable UI frameworks ([#32](https://github.com/nuxt-company/vue-telemetry-analyzer/issues/32)) ([ebc451a](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/ebc451ab4353cde5e00983b35ab1e3fa5a1db387))
+* support Vue 3 ([dfe0613](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/dfe061379fd0ade7adcb36bc3f6c5969574a0bc7))
+
 ### [0.7.10](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.7.9...v0.7.10) (2020-11-18)
 
 
