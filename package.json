@@ -22,9 +22,9 @@
     "consola": "^2.15.0",
     "make-dir": "^3.1.0",
     "ora": "^5.1.0",
-    "puppeteer": "^5.3.0",
+    "puppeteer": "^5.5.0",
     "tld-extract": "^2.0.0",
-    "yargs": "^16.0.3"
+    "yargs": "^16.2.0"
   },
   "devDependencies": {
     "standard-version": "^9.0.0"
