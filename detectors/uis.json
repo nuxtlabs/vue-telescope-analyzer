@@ -112,7 +112,10 @@
       "url": "https://www.primefaces.org/primevue/showcase"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$primevue)).filter(Boolean).length"
+      "js": [
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$primevue)).filter(Boolean).length",
+        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$primevue).filter(Boolean).length"
+      ]
     }
   },
   "vuesax": {
