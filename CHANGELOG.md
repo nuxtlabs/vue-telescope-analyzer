@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.3](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.8.2...v0.8.3) (2021-01-05)
+
+
+### Bug Fixes
+
+* better memory management ([bf5057b](https://github.com/nuxt-company/vue-telemetry-analyzer/commit/bf5057b18f48fee1df5132dab250108150134908))
+
 ### [0.8.2](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.8.1...v0.8.2) (2020-12-15)
 
 ### [0.8.1](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.8.0...v0.8.1) (2020-12-14)
