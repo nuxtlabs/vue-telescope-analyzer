@@ -99,7 +99,10 @@ exports.puppeteerArgs = [
   '--use-gl=swiftshader',
   '--use-mock-keychain',
   '--no-sandbox',
-  '--disable-setuid-sandbox'
+  '--disable-setuid-sandbox',
+  '--headless',
+  '--single-process',
+  '--disable-gpu'
 ]
 exports.puppeteerViewport = {
   deviceScaleFactor: 1,
