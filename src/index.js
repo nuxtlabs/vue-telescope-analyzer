@@ -17,7 +17,14 @@ const ERROR_CODES = Object.freeze({
 })
 let browser = null
 
-async function analyze (originalUrl) {
+const puppeteerDefaultArgs = {
+  args: puppeteerArgs,
+  defaultViewport: puppeteerViewport,
+  headless: true,
+  ignoreHTTPSErrors: true
+}
+
+async function analyze (originalUrl, options = {}) {
   // Parse url
   let url
   try {
@@ -29,12 +36,16 @@ async function analyze (originalUrl) {
   }
   // Start browser if not launched
   if (!browser) {
-    browser = await puppeteer.launch({
-      args: puppeteerArgs,
-      defaultViewport: puppeteerViewport,
-      headless: true,
-      ignoreHTTPSErrors: true
-    })
+    if (options.browserWSEndpoint) {
+      browser = await puppeteer.connect({
+        browserWSEndpoint: options.browserWSEndpoint,
+        ...puppeteerDefaultArgs
+      });
+    } else {
+      browser = await puppeteer.launch({
+        ...puppeteerDefaultArgs
+      })
+    }
     browser.on('disconnected', () => {
       browser = null
     })
