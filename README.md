@@ -1,15 +1,15 @@
-# Vue Telemetry Analyzer
+# Vue Telescope Analyzer
 
 CLI to analyze a website and detect Vue and its ecosystem ✨
 
-This module is used by [vuetelemetry.com](https://vuetelemetry.com) to detect Vue and its ecosystem on a website.
+This module is used by [vuetelescope.com](https://vuetelescope.com) to detect Vue and its ecosystem on a website.
 
-You can help the community discover new Vue websites by using the [browser extension](https://github.com/nuxt-company/vue-telemetry-extensions) 💚
+You can help the community discover new Vue websites by using the [browser extension](https://github.com/nuxt-company/vue-telescope-extensions) 💚
 
 ## Installation
 
 ```bash
-npm install -g vue-telemetry-analyzer # Or yarn global add vue-telemetry-analyzer
+npm install -g vue-telescope-analyzer # Or yarn global add vue-telescope-analyzer
 ```
 
 ## Usage
@@ -78,16 +78,16 @@ It will also detect the Nuxt modules used, refer to [detectors/nuxt.modules.json
 
 ## NPM module
 
-You can use `vue-telemetry-analyzer` locally on your project:
+You can use `vue-telescope-analyzer` locally on your project:
 
 ```bash
-npm install vue-telemetry-analyzer # Or yarn add vue-telemetry-analyzer
+npm install vue-telescope-analyzer # Or yarn add vue-telescope-analyzer
 ```
 
 Then you can use the module in your project:
 
 ```js
-const analyze = require('vue-telemetry-analyzer')
+const analyze = require('vue-telescope-analyzer')
 
 analyze('https://nuxtjs.org')
   .then(result => console.log(result))
@@ -116,7 +116,7 @@ Result:
   framework: {
     slug: 'nuxtjs',
     name: 'NuxtJS',
-    imgPath: '/framework/nuxt.svg', // prefix with https://icons.vuetelemetry.com
+    imgPath: '/framework/nuxt.svg', // prefix with https://icons.vuetelescope.com
   },
   // Vue plugins
   plugins: [

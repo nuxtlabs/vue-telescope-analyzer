@@ -74,7 +74,7 @@ async function analyze (originalUrl, options = {}) {
   }
   try {
     await page.setCacheEnabled(false) // disable cache for avoiding 304
-    await page.setUserAgent('Vue-Telemetry')
+    await page.setUserAgent('Vue-Telescope')
     await page.setViewport({
       width: 1680,
       height: 1260,
@@ -179,7 +179,7 @@ async function analyze (originalUrl, options = {}) {
     }
 
     // Take screenshot
-    const screenshotsDir = join(tmpdir(), 'vue-telemetry-analyzer')
+    const screenshotsDir = join(tmpdir(), 'vue-telescope-analyzer')
     const filename = createHash('md5').update(originalUrl).digest('hex')
     infos.screenshot = join(screenshotsDir, `${filename}.jpg`)
     await makeDir(screenshotsDir)

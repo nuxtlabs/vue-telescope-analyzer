@@ -12,7 +12,7 @@ Before reporting a bug, please make sure that you have read through our document
 
 ### Version
 
-vue-telemetry-analyzer: <!-- ex: v0.1.0 -->
+vue-telescope-analyzer: <!-- ex: v0.1.0 -->
 
 ### Reproduction Link
 
