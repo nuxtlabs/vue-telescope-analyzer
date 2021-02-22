@@ -97,7 +97,10 @@
       "url": "https://inertiajs.com/"
     },
     "detectors": {
-      "js": "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__?.$inertia)))"
+      "js": [
+        "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__?.$inertia)))",
+        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$inertia).filter(Boolean).length"
+      ]
     }
   },
   "vee-validate": {
