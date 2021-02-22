@@ -111,7 +111,7 @@
       "url": "https://vee-validate.logaretm.com/"
     },
     "detectors": {
-      "js": "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__ && ('$_veeObserver' in el.__vue__ || (el.__vue__.$validator && 'attach' in el.__vue__.$validator)))))"
+      "js": "window.VeeValidate || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__ && ('$_veeObserver' in el.__vue__ || (el.__vue__.$validator && 'attach' in el.__vue__.$validator)) || el.__vueParentComponent && el.__vueParentComponent.provides && Reflect.ownKeys(el.__vueParentComponent.provides).some(i => /vee-validate/i.test(i.description)) )))"
     }
   }
 }
