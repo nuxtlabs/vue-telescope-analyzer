@@ -113,5 +113,16 @@
     "detectors": {
       "js": "window.VeeValidate || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__ && ('$_veeObserver' in el.__vue__ || (el.__vue__.$validator && 'attach' in el.__vue__.$validator)) || el.__vueParentComponent && el.__vueParentComponent.provides && Reflect.ownKeys(el.__vueParentComponent.provides).some(i => /vee-validate/i.test(i.description)) )))"
     }
+  },
+  "vue-plausible": {
+    "metas": {
+      "slug": "vue-plausible",
+      "name": "vue-plausible",
+      "imgPath": "/plugins/vue-plausible.png",
+      "url": "https://github.com/moritzsternemann/vue-plausible"
+    },
+    "detectors": {
+      "js": "window.Vue?.$plausible || window.$nuxt?.$plausible || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__?.$plausible)))"
+    }
   }
 }
