@@ -372,5 +372,16 @@
     "detectors": {
       "js": "window.$nuxt?.$cloudinary"
     }
+  },
+  "docus": {
+    "metas": {
+      "slug": "docus",
+      "name": "docus",
+      "imgPath": null,
+      "url": "https://docus.dev"
+    },
+    "detectors": {
+      "js": "window.$nuxt?.$docus"
+    }
   }
 }
