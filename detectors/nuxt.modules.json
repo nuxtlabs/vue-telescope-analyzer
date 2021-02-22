@@ -59,7 +59,7 @@
       "slug": "nuxtjs-sentry",
       "name": "@nuxtjs/sentry",
       "imgPath": null,
-      "url": "https://github.com/nuxt-community/sentry-module"
+      "url": "https://sentry.nuxtjs.org/"
     },
     "detectors": {
       "js": "window.$nuxt?.$options?.context?.app?.$sentry"
