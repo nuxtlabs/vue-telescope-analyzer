@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.1](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.0...v0.9.1) (2021-02-22)
+
+
+### Features
+
+* add Docus detection ([c7ed99b](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/c7ed99b46f685f3dcc6611b4e4f115463d0d718a))
+* add vue-plausible detection ([5053290](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/505329076392133a003ab234b609628dc9ce45d2))
+* added vee-validate v4 detector ([#37](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/37)) ([6197b20](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/6197b2062ffb6262a61b1477910bd10fdc4cdfb9))
+
+
+### Bug Fixes
+
+* better Oruga UI detection ([#36](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/36)) ([488ff50](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/488ff50e1a945d3c8c01756f667cf00b6032bd22))
+
 ## [0.9.0](https://github.com/nuxt-company/vue-telemetry-analyzer/compare/v0.8.4...v0.9.0) (2021-01-22)
 
 
