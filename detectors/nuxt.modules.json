@@ -219,12 +219,12 @@
       "js": "window.$nuxt?.$options?.context?.app?.$rollbar"
     }
   },
-  "nuxt-dayjs-module": {
+  "@nuxtjs/dayjs": {
     "metas": {
-      "slug": "nuxt-dayjs-module",
-      "name": "nuxt-dayjs-module",
+      "slug": "nuxt-dayjs",
+      "name": "@nuxtjs/dayjs",
       "imgPath": null,
-      "url": "https://github.com/potato4d/nuxt-dayjs-module"
+      "url": "https://github.com/nuxt-community/dayjs-module"
     },
     "detectors": {
       "js": "window.$nuxt?.$options?.context?.app?.$dayjs"
