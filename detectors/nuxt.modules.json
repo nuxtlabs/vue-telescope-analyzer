@@ -221,7 +221,7 @@
   },
   "@nuxtjs/dayjs": {
     "metas": {
-      "slug": "nuxt-dayjs",
+      "slug": "nuxtjs-dayjs",
       "name": "@nuxtjs/dayjs",
       "imgPath": null,
       "url": "https://github.com/nuxt-community/dayjs-module"
