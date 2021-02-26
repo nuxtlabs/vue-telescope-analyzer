@@ -219,7 +219,7 @@
       "js": "window.$nuxt?.$options?.context?.app?.$rollbar"
     }
   },
-  "nuxt-dayjs-module": {
+  "@nuxtjs/dayjs": {
     "metas": {
       "slug": "nuxt-dayjs-module",
       "name": "@nuxtjs/dayjs",
