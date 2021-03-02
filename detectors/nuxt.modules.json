@@ -383,5 +383,16 @@
     "detectors": {
       "js": "window.$nuxt?.$docus"
     }
+  },
+  "druxt": {
+    "metas": {
+      "slug": "druxt",
+      "name": "druxt",
+      "imgPath": null,
+      "url": "https://druxtjs.org"
+    },
+    "detectors": {
+      "js": "window.$nuxt?.$druxt"
+    }
   }
 }
