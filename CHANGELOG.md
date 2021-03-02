@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.2](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.1...v0.9.2) (2021-03-02)
+
+
+### Features
+
+* add DruxtJS detector ([#42](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/42)) ([f0894e2](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/f0894e280d1762f8f57cfe5b3b962ed1cdd94919))
+* update @nuxtjs/dayjs module ([#41](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/41)) ([98a3dbf](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/98a3dbf24185d20c81da9aa63fb6bfceb648d0d5))
+
 ### [0.9.1](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.0...v0.9.1) (2021-02-22)
 
 
