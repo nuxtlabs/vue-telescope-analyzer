@@ -5,8 +5,8 @@ const { createHash } = require('crypto')
 const { URL } = require('url')
 const { join } = require('path')
 const { tmpdir } = require('os')
-const { isCrawlable, puppeteerArgs, puppeteerViewport } = require('./utils')
-const { hasVue, getVueMeta, getFramework, getPlugins, getUI, getNuxtMeta, getNuxtModules } = require('./detectors')
+const { isCrawlable, puppeteerArgs, puppeteerViewport, lowerCaseObjectKeys } = require('./utils')
+const { hasVue, getVueMeta, getFramework, getPlugins, getUI, getNuxtMeta, getNuxtModules, getHosting } = require('./detectors')
 const consola = require('consola')
 
 const ERROR_CODES = Object.freeze({
@@ -58,7 +58,8 @@ async function analyze (originalUrl) {
     isStatic: true, // default
     framework: null, // nuxt | gridsome | quasar
     plugins: [], // vue-router, vuex, vue-apollo, etc
-    ui: null // vuetify | bootstrap-vue | element-ui | tailwindcss
+    ui: null, // vuetify | bootstrap-vue | element-ui | tailwindcss
+    hosting: null
   }
   try {
     await page.setCacheEnabled(false) // disable cache for avoiding 304
@@ -85,7 +86,7 @@ async function analyze (originalUrl) {
       throw error
     }
     // Get headers
-    const headers = response.headers()
+    const headers = lowerCaseObjectKeys(response.headers())
 
     if (!(await isCrawlable(headers))) {
       const error = new Error(`Crawling is not allowed on ${originalUrl}`)
@@ -104,7 +105,7 @@ async function analyze (originalUrl) {
     const html = await page.content()
 
     // Use for detection
-    const context = { originalHtml, html, scripts, page }
+    const context = { originalHtml, html, scripts, page, headers }
 
     if (!(await hasVue(context))) {
       const error = new Error(`Vue is not detected on ${originalUrl}`)
@@ -156,6 +157,9 @@ async function analyze (originalUrl) {
       infos.hasSSR = meta.ssr
       infos.frameworkModules = modules
     }
+
+    // Get hosting
+    infos.hosting = await getHosting(context)
 
     // Take screenshot
     const screenshotsDir = join(tmpdir(), 'vue-telemetry-analyzer')

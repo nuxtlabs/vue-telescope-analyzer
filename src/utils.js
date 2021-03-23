@@ -109,3 +109,9 @@ exports.puppeteerViewport = {
   isMobile: false,
   width: 1920,
 }
+
+exports.lowerCaseObjectKeys = function (obj) {
+  return Object.fromEntries(
+    Object.entries(obj).map(([k, v]) => [k.toLowerCase(), v])
+  )
+}

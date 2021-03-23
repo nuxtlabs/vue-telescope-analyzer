@@ -1,4 +1,4 @@
-const { parsePatterns, asArray } = require('./utils')
+const { parsePatterns, asArray, lowerCaseObjectKeys } = require('./utils')
 
 const detectors = {
   vue: require('../detectors/vue.json'),
@@ -9,7 +9,8 @@ const detectors = {
   nuxt: {
     meta: require('../detectors/nuxt.meta.json'),
     modules: require('../detectors/nuxt.modules.json')
-  }
+  },
+  hosting: require('../detectors/hosting.json')
 }
 
 exports.hasVue = function (context) {
@@ -84,7 +85,16 @@ exports.getNuxtModules = async function (context) {
   return Array.from(modules)
 }
 
-async function isMatching (detector, { originalHtml, html, scripts, page }) {
+exports.getHosting = async function (context) {
+  for (const hosting of Object.keys(detectors.hosting)) {
+    if (await isMatching(detectors.hosting[hosting].detectors, context)) {
+      return hosting
+    }
+  }
+  return null
+}
+
+async function isMatching (detector, { originalHtml, html, scripts, page, headers }) {
   // If we can detect technology from response html
   if (detector.originalHtml) {
     for (const pattern of parsePatterns(detector.originalHtml)) {
@@ -111,6 +121,20 @@ async function isMatching (detector, { originalHtml, html, scripts, page }) {
       try {
         if (await page.evaluate(`Boolean(${js})`)) return true
       } catch (e) {}
+    }
+  }
+  // Process headers
+  if (detector.headers) {
+    detector.headers = lowerCaseObjectKeys(detector.headers)
+    for (const header of Object.keys(detector.headers)) {
+      const pattern = detector.headers[header]
+      if (pattern === '' && headers[header]) {
+        return true
+      } else {
+        for (const p of parsePatterns(pattern)) {
+          if (p.regex.test(headers[header])) return true
+        }
+      }
     }
   }
   return false

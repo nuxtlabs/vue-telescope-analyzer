@@ -1,0 +1,20 @@
+{
+  "Netlify": {
+    "detectors": {
+      "headers": {
+        "Server": "^Netlify",
+        "X-NF-Request-ID": ""
+      }
+    }
+  },
+  "Vercel": {
+    "detectors": {
+      "headers": {
+        "server": "^now$",
+        "x-now-trace": "",
+        "x-vercel-cache": "",
+        "x-vercel-id": ""
+      }
+    }
+  }
+}
