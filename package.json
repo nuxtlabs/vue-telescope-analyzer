@@ -18,7 +18,7 @@
     "vue telescope"
   ],
   "author": "NuxtJS Company",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "dependencies": {
     "consola": "^2.15.3",
     "make-dir": "^3.1.0",
