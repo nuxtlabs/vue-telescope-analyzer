@@ -128,5 +128,16 @@
     "detectors": {
       "js": "[...document.querySelectorAll('*')].map((el) => el.__vue__?.$vs?.loading).filter(Boolean).length"
     }
+  },
+  "iview": {
+    "metas": {
+      "slug": "iview",
+      "name": "iView",
+      "imgPath": "/ui/iview.svg",
+      "url": "http://iview.talkingdata.com"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$IVIEW)).filter(Boolean).length"
+    }
   }
 }
