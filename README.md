@@ -47,6 +47,7 @@ To support a new Vue framework, please look at [detectors/frameworks.json](detec
 - [Oruga](https://oruga.io)
 - [VueTailwind](https://www.vue-tailwind.com/)
 - [PrimeVue](https://www.primefaces.org/primevue/showcase)
+- [iView](http://iview.talkingdata.com)
 
 To support a new UI library, please look at [detectors/uis.json](detectors/uis.json).
 
