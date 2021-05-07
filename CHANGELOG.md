@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.3](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.2...v0.9.3) (2021-05-07)
+
+
+### Features
+
+* add iView to the list of the detectable UI frameworks ([#44](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/44)) ([944f695](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/944f6954c0c7711a54ac9d64e1ec959788b2f176))
+
 ### [0.9.2](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.1...v0.9.2) (2021-03-02)
 
 
