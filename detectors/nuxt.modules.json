@@ -394,5 +394,16 @@
     "detectors": {
       "js": "window.$nuxt?.$druxt"
     }
+  },
+  "@nuxt/nitro": {
+    "metas": {
+      "slug": "nuxt-nitro",
+      "name": "@nuxt/nitro",
+      "imgPath": null,
+      "url": "https://nitro.nuxtjs.org/"
+    },
+    "detectors": {
+      "js": "window.$nuxt?.$options?.context?.env?.NITRO_PRESET"
+    }
   }
 }
