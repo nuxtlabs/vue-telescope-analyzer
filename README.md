@@ -62,6 +62,7 @@ To support a new UI library, please look at [detectors/uis.json](detectors/uis.j
 - [Vue Formulate](https://vueformulate.com/)
 - [Inertia.js](https://inertiajs.com)
 - [vee-validate](https://vee-validate.logaretm.com)
+- [Vue Composition API](https://github.com/vuejs/composition-api)
 
 To support a new Vue plugin, please look at [detectors/plugins.json](detectors/plugins.json).
 

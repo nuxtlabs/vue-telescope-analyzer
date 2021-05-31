@@ -1,4 +1,17 @@
 {
+  "@vue/composition-api": {
+    "metas": {
+      "slug": "composition-api",
+      "name": "@vue/composition-api",
+      "imgPath": null,
+      "url": "https://github.com/vuejs/composition-api"
+    },
+    "detectors": {
+      "js": [
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.__composition_api_state__)).filter(Boolean).length"
+      ]
+    }
+  },
   "vue-router": {
     "metas": {
       "slug": "vue-router",
