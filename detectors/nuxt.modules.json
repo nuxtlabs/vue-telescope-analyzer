@@ -397,7 +397,7 @@
   },
   "@nuxt/nitro": {
     "metas": {
-      "slug": "nuxt-nitro",
+      "slug": "nuxt-nitro-compat",
       "name": "@nuxt/nitro",
       "imgPath": null,
       "url": "https://nuxtjs.org/"
