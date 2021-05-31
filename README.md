@@ -24,18 +24,18 @@ vta https://fr.nuxtjs.org
 [![render1585566509798](https://user-images.githubusercontent.com/904724/77906279-fb455d80-7287-11ea-86f2-d7eca773ba56.gif)](https://terminalizer.com/view/a30a95523602)
 
 
-It supports multiple [frameworks](#frameworks), [UI librairies](#ui-librairies) and [vue plugins](#vue-plugins).
+It supports multiple [frameworks](#frameworks), [UI libraries](#ui-libraries) and [Vue plugins](#vue-plugins).
 
 ## Frameworks
 
-- [NuxtJS](https://nuxtjs.org)
+- [Nuxt](https://nuxtjs.org)
 - [Quasar](https://quasar.dev)
 - [Gridsome](https://gridsome.org)
-- [Vuepress](https://vuepress.vuejs.org)
+- [VuePress](https://vuepress.vuejs.org)
 
 To support a new Vue framework, please look at [detectors/frameworks.json](detectors/frameworks.json).
 
-## UI Librairies
+## UI Libraries
 
 - [Element UI](https://element.eleme.io)
 - [Vuetify](https://vuetifyjs.com)
@@ -65,9 +65,9 @@ To support a new UI library, please look at [detectors/uis.json](detectors/uis.j
 
 To support a new Vue plugin, please look at [detectors/plugins.json](detectors/plugins.json).
 
-## Nuxt Infos
+## Nuxt Info
 
-When [NuxtJS](https://nuxtjs.org) is detected as a framework, it will also detect:
+When [Nuxt](https://nuxtjs.org) is detected as a framework, it will also detect:
 
 - If the website is *server-rendered* (`mode: 'universal'`)
 - If the website is *static* (`nuxt generate`)
@@ -77,7 +77,7 @@ See [detectors/nuxt.meta.json](detectors/nuxt.meta.json) for the detection.
 It will also detect the Nuxt modules used, refer to [detectors/nuxt.modules.json](detectors/nuxt.modules.json) to support new Nuxt modules.
 
 
-## NPM module
+## NPM Module
 
 You can use `vue-telescope-analyzer` locally on your project:
 
