@@ -23,7 +23,7 @@
     },
     "detectors": {
       "js": [
-        "window.$nuxt?.$store?.dipatch && window.$nuxt?.$store?.commit",
+        "window.$nuxt?.$store?.dispatch && window.$nuxt?.$store?.commit",
         "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$store?.dispatch && el.__vue__?.$store?.commit)).filter(Boolean).length"
       ]
     }
