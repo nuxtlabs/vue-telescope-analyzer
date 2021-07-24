@@ -139,5 +139,16 @@
     "detectors": {
       "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$IVIEW)).filter(Boolean).length"
     }
+  },
+  "mvi-web": {
+    "metas": {
+      "slug": "mvi-web",
+      "name": "mvi-web",
+      "imgPath": "/ui/iview.svg",
+      "url": "https://www.mvi-web.cn"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$MVI)).filter(Boolean).length"
+    }
   }
 }
