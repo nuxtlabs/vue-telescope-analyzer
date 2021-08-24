@@ -101,7 +101,10 @@
       "url": "https://vue.chakra-ui.com"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$chakra)).filter(Boolean).length"
+      "js": [
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$chakra)).filter(Boolean).length",
+        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$chakraTheme).filter(Boolean).length"
+      ]
     }
   },
   "primevue": {
