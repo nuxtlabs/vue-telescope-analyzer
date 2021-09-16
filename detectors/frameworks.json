@@ -59,7 +59,6 @@
       "url": "https://www.vuestorefront.io/"
     },
     "detectors": {
-      "html": "<meta [^>]*content=\"Vue Storefront\\ [0-9.]+?\"",
       "script": [
         "vsf-layout(?:-\\w*)?\\.?(?:[0-9a-fA-F]{7,40}|[\\d]+(?:.[\\d]+(?:.[\\d]+)?)?)(?:\\.min)?\\.js"
       ]
