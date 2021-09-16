@@ -32,6 +32,7 @@ It supports multiple [frameworks](#frameworks), [UI libraries](#ui-libraries) an
 - [Quasar](https://quasar.dev)
 - [Gridsome](https://gridsome.org)
 - [VuePress](https://vuepress.vuejs.org)
+- [Vue Storefront](https://www.vuestorefront.io/)
 
 To support a new Vue framework, please look at [detectors/frameworks.json](detectors/frameworks.json).
 
