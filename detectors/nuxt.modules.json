@@ -394,5 +394,16 @@
     "detectors": {
       "js": "window.$nuxt?.$druxt"
     }
+  },
+  "nuxt-custom-elements": {
+    "metas": {
+      "slug": "nuxt-custom-elements",
+      "name": "nuxt-custom-elements",
+      "imgPath": null,
+      "url": "https://nuxt-custom-elements.grabarzundpartner.dev"
+    },
+    "detectors": {
+      "js": "window.$nuxt?.$customElements"
+    }
   }
 }
