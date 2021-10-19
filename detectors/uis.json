@@ -143,7 +143,7 @@
       "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$IVIEW)).filter(Boolean).length"
     }
   },
-  "material": {
+  "vue-material": {
     "metas": {
       "slug": "vue-material",
       "name": "Vue Material",
