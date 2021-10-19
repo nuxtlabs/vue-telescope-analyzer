@@ -142,5 +142,19 @@
     "detectors": {
       "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$IVIEW)).filter(Boolean).length"
     }
+  },
+  "material": {
+    "metas": {
+      "slug": "vue-material",
+      "name": "Vue Material",
+      "imgPath": "/ui/vue-material.png",
+      "url": "https://www.creative-tim.com/vuematerial"
+    },
+    "detectors": {
+      "html": [
+        "<link [^>]*href=\"[^\"]+vue-material(?:\\.min)?\\.css"
+      ],
+      "js": "[...document.querySelectorAll('*')].map((el) => el.__vue__?.$material).filter(Boolean).length"
+    }
   }
 }
