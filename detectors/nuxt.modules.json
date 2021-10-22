@@ -394,5 +394,16 @@
     "detectors": {
       "js": "window.$nuxt?.$druxt"
     }
+  },
+  "nuxt-typo3": {
+    "metas": {
+      "slug": "nuxt-typo3",
+      "name": "nuxt-typo3",
+      "imgPath": null,
+      "url": "https://github.com/TYPO3-Initiatives/nuxt-typo3"
+    },
+    "detectors": {
+      "js": "window.$nuxt?.$typo3"
+    }
   }
 }
