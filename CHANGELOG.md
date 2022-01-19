@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.4](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.3...v0.9.4) (2022-01-19)
+
+
+### Features
+
+* add detector for `@vue/composition-api` ([#48](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/48)) ([0bdc4b3](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/0bdc4b3a5d4cf8c99db11886a7f2e9a367b2975d))
+* detect adult website from domain ([1f4bf07](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/1f4bf07de4a103ccf32b3727610c01a29127fec8))
+* **detectors:** add Vue 3 detector for chakra-ui/vue ([#51](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/51)) ([97d472a](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/97d472aec6b818788e2db54a7edfd210750c4af9))
+
+
+### Bug Fixes
+
+* correct typo in vuex detector ([#47](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/47)) ([ee6e9b5](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/ee6e9b513a59767b3ad2c702fae460d958d2d934))
+
 ### [0.9.3](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.2...v0.9.3) (2021-05-07)
 
 
