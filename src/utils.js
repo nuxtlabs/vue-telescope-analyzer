@@ -1,3 +1,5 @@
+const fetch = require('node-fetch')
+
 const asArray = (value) => value instanceof Array ? value : [value]
 exports.asArray = asArray
 

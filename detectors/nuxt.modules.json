@@ -351,6 +351,17 @@
       "js": "window.$nuxt?.$nuxtI18nSeo"
     }
   },
+  "@nuxtjs/i18n": {
+    "metas": {
+      "slug": "nuxt-i18n",
+      "name": "@nuxtjs/i18n",
+      "imgPath": null,
+      "url": "https://i18n.nuxtjs.org"
+    },
+    "detectors": {
+      "js": "window.$nuxt?.$i18n"
+    }
+  },
   "nuxt-image": {
     "metas": {
       "slug": "nuxt-image",
@@ -395,6 +406,28 @@
       "js": "window.$nuxt?.$druxt"
     }
   },
+  "vuestorefront": {
+    "metas": {
+      "slug": "vuestorefront",
+      "name": "Vue Storefront",
+      "imgPath": "/framework/vue-storefront.svg",
+      "url": "https://www.vuestorefront.io/"
+    },
+    "detectors": {
+      "html": "<meta [^>]*content=\"Vue Storefront\\ [0-9.]+?\""
+    }
+  },
+  "nuxt-typo3": {
+    "metas": {
+      "slug": "nuxt-typo3",
+      "name": "nuxt-typo3",
+      "imgPath": null,
+      "url": "https://github.com/TYPO3-Initiatives/nuxt-typo3"
+    },
+    "detectors": {
+      "js": "window.$nuxt?.$typo3"
+    }
+  },  
   "nuxt-custom-elements": {
     "metas": {
       "slug": "nuxt-custom-elements",

@@ -68,7 +68,7 @@ async function analyze (originalUrl, options = {}) {
     vueVersion: null,
     hasSSR: false, // default
     isStatic: true, // default
-    framework: null, // nuxt | gridsome | quasar
+    framework: null, // nuxt | gridsome | quasar | vuepress | iles
     plugins: [], // vue-router, vuex, vue-apollo, etc
     ui: null // vuetify | bootstrap-vue | element-ui | tailwindcss
   }
@@ -141,8 +141,9 @@ async function analyze (originalUrl, options = {}) {
     }
     infos.meta.siteName = await page.$eval('head > meta[property="og:site_name"]', element => element.content).catch(() => '')
 
-    const rtaLabel = await page.$eval('head > meta[name="RATING"]', element => element.content).catch(() => '')
-    if (rtaLabel.trim() === 'RTA-5042-1996-1400-1577-RTA') {
+    // Is adult website?
+    const rtaLabel = await page.$eval('head > meta[name="rating"]', element => element.content).catch(() => '')
+    if (['adult', 'RTA-5042-1996-1400-1577-RTA'].includes(rtaLabel.trim())) {
       infos.meta.isAdultContent = true
     }
 
