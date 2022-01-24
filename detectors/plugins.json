@@ -138,6 +138,17 @@
       "js": "window.Vue?.$plausible || window.$nuxt?.$plausible || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__?.$plausible)))"
     }
   },
+  "vue-tour": {
+    "metas": {
+      "slug": "vue-tour",
+      "name": "vue-tour",
+      "imgPath": null,
+      "url": "https://github.com/pulsardev/vue-tour"
+    },
+    "detectors": {
+      "js": "window.Vue?.$tours || window.$nuxt?.$tours || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__?.$tours)))"
+    }
+  },
   "pinia": {
     "metas": {
       "slug": "pinia",
