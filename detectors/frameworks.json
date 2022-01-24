@@ -39,6 +39,17 @@
       "html": "<meta [^>]*name=\"gridsome:hash\""
     }
   },
+  "iles": {
+    "metas": {
+      "slug": "iles",
+      "name": "îles",
+      "imgPath": "/framework/iles.svg",
+      "url": "https://iles-docs.netlify.app"
+    },
+    "detectors": {
+      "html": "<meta property=\"generator\" content=\"îles\""
+    }
+  },
   "quasar": {
     "metas": {
       "slug": "quasar",

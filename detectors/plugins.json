@@ -137,5 +137,29 @@
     "detectors": {
       "js": "window.Vue?.$plausible || window.$nuxt?.$plausible || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__?.$plausible)))"
     }
+  },
+  "vue-tour": {
+    "metas": {
+      "slug": "vue-tour",
+      "name": "vue-tour",
+      "imgPath": null,
+      "url": "https://github.com/pulsardev/vue-tour"
+    },
+    "detectors": {
+      "js": "window.Vue?.$tours || window.$nuxt?.$tours || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__?.$tours)))"
+    }
+  },
+  "pinia": {
+    "metas": {
+      "slug": "pinia",
+      "name": "Pinia",
+      "imgPath": "/plugins/pinia.svg",
+      "url": "https://pinia.esm.dev"
+    },
+    "detectors": {
+      "js": [
+        "[...document.querySelectorAll('*')].filter((el) => el.__vue__?.$pinia || el.__vue_app__?.config?.globalProperties?.$pinia).length"
+      ]
+    }
   }
 }

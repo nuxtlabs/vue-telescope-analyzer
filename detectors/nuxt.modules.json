@@ -405,5 +405,16 @@
     "detectors": {
       "html": "<meta [^>]*content=\"Vue Storefront\\ [0-9.]+?\""
     }
+  },
+  "nuxt-typo3": {
+    "metas": {
+      "slug": "nuxt-typo3",
+      "name": "nuxt-typo3",
+      "imgPath": null,
+      "url": "https://github.com/TYPO3-Initiatives/nuxt-typo3"
+    },
+    "detectors": {
+      "js": "window.$nuxt?.$typo3"
+    }
   }
 }

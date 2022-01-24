@@ -1,3 +1,7 @@
+const { Resolver } = require('dns').promises
+const fetch = require('node-fetch')
+const resolver = new Resolver()
+
 const asArray = (value) => value instanceof Array ? value : [value]
 exports.asArray = asArray
 
@@ -111,4 +115,22 @@ exports.puppeteerViewport = {
   isLandscape: true,
   isMobile: false,
   width: 1920,
+}
+
+const openDNSIPs = [/67\.215\.65.\d{3}/gi, /146\.112\.61\.\d{3}/gi]
+
+function isOpenDNS(ip) {
+  return openDNSIPs.some(function (regexp) {
+    return regexp.test(ip)
+  })
+}
+
+exports.isAdultContentDomain = async function (domain) {
+  resolver.setServers(['208.67.222.123'])
+  const adultIPs = await resolver.resolve(domain, 'A')
+  if (isOpenDNS(adultIPs[0])) {
+    return true
+  } else {
+    return false
+  }
 }
