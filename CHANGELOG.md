@@ -2,6 +2,40 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.6](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.5...v0.9.6) (2022-01-24)
+
+
+### Bug Fixes
+
+* remove dns for extension to work ([62462e3](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/62462e3e84d8166368966bd698450da5df344369))
+
+### [0.9.5](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.4...v0.9.5) (2022-01-24)
+
+
+### Features
+
+* add @nuxtjs/i18n module ([#53](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/53)) ([82d7a38](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/82d7a38f915362eee82ceaad657cf1ed0f046c93))
+* add detector for `vue-storefront` ([#54](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/54)) ([6b093d4](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/6b093d4556ea015cf7e2122fd544112740d915dd))
+* add detector for pinia ([#59](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/59)) ([34c4840](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/34c4840171e162ea6784834a76c26c8b6ddd5e5d))
+* add detector for vue material ([#60](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/60)) ([ea476b2](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/ea476b2e2bb23db5df04cee762bfc830aaec437e))
+* add nuxt-typo3 ([#63](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/63)) ([d190092](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/d19009213b0679249ba854040662634b7dee8379))
+* Add Vue Tour plugin detector ([#65](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/65)) ([047ca40](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/047ca404b34a9a0a629ea0c53cb93eeb5a7afbb3))
+* detect sites generated with iles ([#62](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/62)) ([f4bf62e](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/f4bf62eeda9755f1413a00b17472ae0549bb4b2d))
+
+### [0.9.4](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.3...v0.9.4) (2022-01-19)
+
+
+### Features
+
+* add detector for `@vue/composition-api` ([#48](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/48)) ([0bdc4b3](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/0bdc4b3a5d4cf8c99db11886a7f2e9a367b2975d))
+* detect adult website from domain ([1f4bf07](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/1f4bf07de4a103ccf32b3727610c01a29127fec8))
+* **detectors:** add Vue 3 detector for chakra-ui/vue ([#51](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/51)) ([97d472a](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/97d472aec6b818788e2db54a7edfd210750c4af9))
+
+
+### Bug Fixes
+
+* correct typo in vuex detector ([#47](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/47)) ([ee6e9b5](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/ee6e9b513a59767b3ad2c702fae460d958d2d934))
+
 ### [0.9.3](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.2...v0.9.3) (2021-05-07)
 
 

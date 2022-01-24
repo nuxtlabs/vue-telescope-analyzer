@@ -39,6 +39,17 @@
       "html": "<meta [^>]*name=\"gridsome:hash\""
     }
   },
+  "iles": {
+    "metas": {
+      "slug": "iles",
+      "name": "îles",
+      "imgPath": "/framework/iles.svg",
+      "url": "https://iles-docs.netlify.app"
+    },
+    "detectors": {
+      "html": "<meta property=\"generator\" content=\"îles\""
+    }
+  },
   "quasar": {
     "metas": {
       "slug": "quasar",
@@ -49,6 +60,19 @@
     "detectors": {
       "html": "<div [^>]*id=\"q-app\"",
       "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$q)).filter(Boolean).length"
+    }
+  },
+  "vuestorefront": {
+    "metas": {
+      "slug": "vuestorefront",
+      "name": "Vue Storefront",
+      "imgPath": "/framework/vue-storefront.svg",
+      "url": "https://www.vuestorefront.io/"
+    },
+    "detectors": {
+      "script": [
+        "vsf-layout(?:-\\w*)?\\.?(?:[0-9a-fA-F]{7,40}|[\\d]+(?:.[\\d]+(?:.[\\d]+)?)?)(?:\\.min)?\\.js"
+      ]
     }
   }
 }
