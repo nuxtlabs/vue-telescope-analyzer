@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.6](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.5...v0.9.6) (2022-01-24)
+
+
+### Bug Fixes
+
+* remove dns for extension to work ([62462e3](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/62462e3e84d8166368966bd698450da5df344369))
+
 ### [0.9.5](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.4...v0.9.5) (2022-01-24)
 
 
