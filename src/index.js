@@ -68,7 +68,7 @@ async function analyze (originalUrl, options = {}) {
     vueVersion: null,
     hasSSR: false, // default
     isStatic: true, // default
-    framework: null, // nuxt | gridsome | quasar
+    framework: null, // nuxt | gridsome | quasar | vuepress | iles
     plugins: [], // vue-router, vuex, vue-apollo, etc
     ui: null // vuetify | bootstrap-vue | element-ui | tailwindcss
   }
