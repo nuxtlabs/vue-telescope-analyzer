@@ -395,6 +395,17 @@
       "js": "window.$nuxt?.$druxt"
     }
   },
+  "vuestorefront": {
+    "metas": {
+      "slug": "vuestorefront",
+      "name": "Vue Storefront",
+      "imgPath": "/framework/vue-storefront.svg",
+      "url": "https://www.vuestorefront.io/"
+    },
+    "detectors": {
+      "html": "<meta [^>]*content=\"Vue Storefront\\ [0-9.]+?\""
+    }
+  },
   "nuxt-typo3": {
     "metas": {
       "slug": "nuxt-typo3",

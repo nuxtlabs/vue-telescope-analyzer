@@ -61,5 +61,18 @@
       "html": "<div [^>]*id=\"q-app\"",
       "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$q)).filter(Boolean).length"
     }
+  },
+  "vuestorefront": {
+    "metas": {
+      "slug": "vuestorefront",
+      "name": "Vue Storefront",
+      "imgPath": "/framework/vue-storefront.svg",
+      "url": "https://www.vuestorefront.io/"
+    },
+    "detectors": {
+      "script": [
+        "vsf-layout(?:-\\w*)?\\.?(?:[0-9a-fA-F]{7,40}|[\\d]+(?:.[\\d]+(?:.[\\d]+)?)?)(?:\\.min)?\\.js"
+      ]
+    }
   }
 }
