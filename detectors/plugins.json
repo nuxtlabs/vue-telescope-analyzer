@@ -137,5 +137,18 @@
     "detectors": {
       "js": "window.Vue?.$plausible || window.$nuxt?.$plausible || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__?.$plausible)))"
     }
+  },
+  "pinia": {
+    "metas": {
+      "slug": "pinia",
+      "name": "Pinia",
+      "imgPath": "/plugins/pinia.svg",
+      "url": "https://pinia.esm.dev"
+    },
+    "detectors": {
+      "js": [
+        "[...document.querySelectorAll('*')].filter((el) => el.__vue__?.$pinia || el.__vue_app__?.config?.globalProperties?.$pinia).length"
+      ]
+    }
   }
 }
