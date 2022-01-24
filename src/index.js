@@ -5,7 +5,7 @@ const { createHash } = require('crypto')
 const { URL } = require('url')
 const { join } = require('path')
 const { tmpdir } = require('os')
-const { isCrawlable, puppeteerArgs, puppeteerViewport, isAdultContentDomain } = require('./utils')
+const { isCrawlable, puppeteerArgs, puppeteerViewport } = require('./utils')
 const { hasVue, getVueMeta, getFramework, getPlugins, getUI, getNuxtMeta, getNuxtModules } = require('./detectors')
 const consola = require('consola')
 
@@ -145,10 +145,7 @@ async function analyze (originalUrl, options = {}) {
     const rtaLabel = await page.$eval('head > meta[name="rating"]', element => element.content).catch(() => '')
     if (['adult', 'RTA-5042-1996-1400-1577-RTA'].includes(rtaLabel.trim())) {
       infos.meta.isAdultContent = true
-    } else {
-      infos.meta.isAdultContent = await isAdultContentDomain(domain)
     }
-
 
     // Get page language
     const matches = html.match(new RegExp('<html[^>]*[: ]lang="([a-z]{2}((-|_)[A-Z]{2})?)"', 'i'));
