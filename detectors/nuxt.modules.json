@@ -432,7 +432,7 @@
     "metas": {
       "slug": "nuxt-custom-elements",
       "name": "nuxt-custom-elements",
-      "imgPath": null,
+      "imgPath": "/modules/custom-elements.svg",
       "url": "https://nuxt-custom-elements.grabarzundpartner.dev"
     },
     "detectors": {
