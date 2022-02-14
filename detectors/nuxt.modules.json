@@ -427,5 +427,16 @@
     "detectors": {
       "js": "window.$nuxt?.$typo3"
     }
+  },
+  "nuxt-speedkit": {
+    "metas": {
+      "slug": "nuxt-speedkit",
+      "name": "nuxt-speedkit",
+      "imgPath": "/modules/speedkit.svg",
+      "url": "https://nuxt-speedkit.grabarzundpartner.dev"
+    },
+    "detectors": {
+      "js": "window.$nuxt?.$speedkit"
+    }
   }
 }
