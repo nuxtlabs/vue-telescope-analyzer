@@ -427,5 +427,16 @@
     "detectors": {
       "js": "window.$nuxt?.$typo3"
     }
+  },  
+  "nuxt-custom-elements": {
+    "metas": {
+      "slug": "nuxt-custom-elements",
+      "name": "nuxt-custom-elements",
+      "imgPath": "/modules/custom-elements.svg",
+      "url": "https://nuxt-custom-elements.grabarzundpartner.dev"
+    },
+    "detectors": {
+      "js": "window.$nuxt?.$customElements"
+    }
   }
 }
