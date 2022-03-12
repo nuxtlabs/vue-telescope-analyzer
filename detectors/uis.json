@@ -9,7 +9,7 @@
     "detectors": {
       "js": [
         "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$options.isOruga)).filter(Boolean).length",
-        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vueParentComponent?.ctx.$options.isOruga)).filter(Boolean).length"
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue_app__?.config?.globalProperties?.$oruga)).filter(Boolean).length"
       ]
     }
   },
@@ -69,7 +69,8 @@
         "<link [^>]*href=\"[^\"]+tailwindcss(?:\\.min)?\\.css",
         "<(?:div|button|a) [^>]*class=\"[^\"]*(?:sm:|md:|lg:|xl:|hover:|active:|focus:|disabled:|visited:|first:|last:|odd:|even:|group-hover:|focus-within:)"
       ]
-    }
+    },
+    "css": true
   },
   "buefy": {
     "metas": {

@@ -36,12 +36,24 @@ exports.getFramework = async function (context) {
 }
 
 exports.getUI = async function (context) {
-  for (const ui of Object.keys(detectors.uis)) {
-    if (await isMatching(detectors.uis[ui].detectors, context)) {
-      return detectors.uis[ui].metas
-    }
+  const uis = new Set()
+
+  await Promise.all(
+    Object.keys(detectors.uis).map(async (ui) => {
+      if (await isMatching(detectors.uis[ui].detectors, context)) {
+        uis.add(detectors.uis[ui])
+      }
+    })
+  )
+
+  if (uis.size === 0) {
+    return null
   }
-  return null
+
+  // lower priority to "css frameworks"
+  const uisArray = Array.from(uis)
+  const ui = uisArray.filter(u => !u.css)[0]
+  return ui ? ui.metas : uisArray[0].metas
 }
 
 exports.getPlugins = async function (context) {
