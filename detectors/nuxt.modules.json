@@ -438,5 +438,16 @@
     "detectors": {
       "js": "window.$nuxt?.$customElements"
     }
-  }
+  },
+    "@nuxtjs/algolia": {
+    "metas": {
+      "slug": "nuxtjs-algolia",
+      "name": "@nuxtjs/algolia",
+      "imgPath": null,
+      "url": "https://algolia.nuxtjs.org"
+    },
+    "detectors": {
+      "js": "window.$nuxt?.$nuxt?.$algolia"
+    }
+  },
 }
