@@ -46,14 +46,7 @@ exports.getUI = async function (context) {
     })
   )
 
-  if (uis.size === 0) {
-    return null
-  }
-
-  // lower priority to "css frameworks"
-  const uisArray = Array.from(uis)
-  const ui = uisArray.filter(u => !u.css)[0]
-  return ui ? ui.metas : uisArray[0].metas
+  return Array.from(uis).sort((a, b) => (b.priority ?? 1) - (a.priority ?? 1))[0] 
 }
 
 exports.getPlugins = async function (context) {
