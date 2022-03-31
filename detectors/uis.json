@@ -156,5 +156,18 @@
       ],
       "js": "[...document.querySelectorAll('*')].map((el) => el.__vue__?.$material).filter(Boolean).length"
     }
+  },
+  "vulk": {
+    "metas": {
+      "slug": "vulk",
+      "name": "Culk",
+      "imgPath": "/ui/vulk.svg",
+      "url": "https://vulk.cssninja.io"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?._context?.provides?.vulk).filter(Boolean).length"
+    }
   }
 }
+
+
