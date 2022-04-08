@@ -46,7 +46,11 @@ exports.getUI = async function (context) {
     })
   )
 
-  return Array.from(uis).sort((a, b) => (typeof b.priority !== 'undefined' ? b.priority : 1) - (typeof a.priority !== 'undefined' ? a.priority : 1))[0] 
+  const ui = Array.from(uis).sort((a, b) => (typeof b.priority !== 'undefined' ? b.priority : 1) - (typeof a.priority !== 'undefined' ? a.priority : 1))[0]
+  if (ui) {
+    return ui.metas
+  }
+  return null
 }
 
 exports.getPlugins = async function (context) {
