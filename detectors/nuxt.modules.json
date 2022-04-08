@@ -458,7 +458,7 @@
       "url": "https://algolia.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$nuxt?.$algolia"
+      "js": "window.$nuxt?.$algolia"
     }
-  },
+  }
 }
