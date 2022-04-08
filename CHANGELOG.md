@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.7](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.6...v0.9.7) (2022-04-08)
+
+
+### Features
+
+* add nuxt-custom-elements module ([#56](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/56)) ([8a55838](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/8a558380c231e89f20f6ac86479fdd355dbc719e))
+* add nuxt-speedkit module ([#67](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/67)) ([971f7e3](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/971f7e39515a514418a2f1d7c2c447e8f11eed2b))
+* ui detectors priority ([#68](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/68)) ([a9725dd](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/a9725dd92fb8a4d9b43141506cf264159b2f112c))
+
 ### [0.9.6](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.5...v0.9.6) (2022-01-24)
 
 
