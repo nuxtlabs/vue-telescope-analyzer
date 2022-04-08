@@ -36,12 +36,17 @@ exports.getFramework = async function (context) {
 }
 
 exports.getUI = async function (context) {
-  for (const ui of Object.keys(detectors.uis)) {
-    if (await isMatching(detectors.uis[ui].detectors, context)) {
-      return detectors.uis[ui].metas
-    }
-  }
-  return null
+  const uis = new Set()
+
+  await Promise.all(
+    Object.keys(detectors.uis).map(async (ui) => {
+      if (await isMatching(detectors.uis[ui].detectors, context)) {
+        uis.add(detectors.uis[ui])
+      }
+    })
+  )
+
+  return Array.from(uis).sort((a, b) => (b.priority ?? 1) - (a.priority ?? 1))[0] 
 }
 
 exports.getPlugins = async function (context) {
