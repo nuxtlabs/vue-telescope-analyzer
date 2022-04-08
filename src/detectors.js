@@ -46,7 +46,7 @@ exports.getUI = async function (context) {
     })
   )
 
-  return Array.from(uis).sort((a, b) => (b.priority ?? 1) - (a.priority ?? 1))[0] 
+  return Array.from(uis).sort((a, b) => (typeof b.priority !== 'undefined' ? b.priority : 1) - (typeof a.priority !== 'undefined' ? a.priority : 1))[0] 
 }
 
 exports.getPlugins = async function (context) {
