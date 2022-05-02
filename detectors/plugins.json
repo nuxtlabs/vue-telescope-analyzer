@@ -165,7 +165,7 @@
   "@formkit/formkit": {
     "metas": {
       "slug": "formkit",
-      "name": "@formkit/formkit",
+      "name": "@formkit/vue",
       "imgPath": "/plugins/formkit.svg",
       "url": "https://formkit.com/"
     },
