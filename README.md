@@ -69,6 +69,7 @@ To support a new UI library, please look at [detectors/uis.json](detectors/uis.j
 - [Vue Composition API](https://github.com/vuejs/composition-api)
 - [Vue Tour](https://github.com/pulsardev/vue-tour)
 - [Pinia](https://github.com/posva/pinia)
+- [FormKit](https://formkit.com)
 
 To support a new Vue plugin, please look at [detectors/plugins.json](detectors/plugins.json).
 

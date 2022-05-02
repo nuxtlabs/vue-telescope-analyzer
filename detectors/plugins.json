@@ -161,5 +161,16 @@
         "[...document.querySelectorAll('*')].filter((el) => el.__vue__?.$pinia || el.__vue_app__?.config?.globalProperties?.$pinia).length"
       ]
     }
+  },
+  "@formkit/formkit": {
+    "metas": {
+      "slug": "formkit",
+      "name": "@formkit/formkit",
+      "imgPath": "/plugins/formkit.svg",
+      "url": "https://formkit.com/"
+    },
+    "detectors": {
+      "js": "Boolean([...document.querySelectorAll('*')].map((el) => el.__vue_app__).filter((el) => el && el.config && el.config.globalProperties && el.config.globalProperties.$formkit).length)"
+    }
   }
 }
