@@ -162,7 +162,7 @@
       ]
     }
   },
-  "@formkit/formkit": {
+  "@formkit/vue": {
     "metas": {
       "slug": "formkit",
       "name": "@formkit/vue",
