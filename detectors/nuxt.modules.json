@@ -271,7 +271,7 @@
       "url": "https://prismic.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$prismic"
+      "js": "window.$nuxt?.$options?.context?.app?.$prismic || (window.__NUXT__?.config?.public && window.__NUXT__.config.public['@nuxtjs/prismic'])"
     }
   },
   "storyblok-nuxt": {
@@ -282,7 +282,7 @@
       "url": "https://github.com/storyblok/storyblok-nuxt"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$storyapi"
+      "js": "window.$nuxt?.$options?.context?.app?.$storyapi || window.__NUXT__?.config?.public?.storyblok"
     }
   },
   "nuxt-sanity": {
@@ -293,7 +293,7 @@
       "url": "https://sanity.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$sanity"
+      "js": "window.$nuxt?.$options?.context?.app?.$sanity || window.__NUXT__?.config?.public?.strapi"
     }
   },
   "@nuxt/content": {
@@ -304,7 +304,7 @@
       "url": "https://content.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$content"
+      "js": "window.$nuxt?.$options?.context?.app?.$content || window.__NUXT__?.config?.public?.content"
     }
   },
   "@nuxtjs/color-mode": {
@@ -315,7 +315,7 @@
       "url": "https://color-mode.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$colorMode"
+      "js": "window.$nuxt?.$options?.context?.app?.$colorMode || window.$nuxt?.$colorMode || (window.__NUXT__?.state && window.__NUXT__?.state['color-mode'])"
     }
   },
   "nuxt-ackee": {
@@ -326,7 +326,7 @@
       "url": "https://github.com/bdrtsky/nuxt-ackee"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$ackee"
+      "js": "window.$nuxt?.$options?.context?.app?.$ackee || window.$nuxt?.$ackee"
     }
   },
   "@nuxtjs/strapi": {
@@ -337,7 +337,18 @@
       "url": "https://strapi.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$strapi"
+      "js": "window.$nuxt?.$options?.context?.app?.$strapi || window.__NUXT__?.config?.public?.strapi"
+    }
+  },
+  "@nuxtjs/supabase": {
+    "metas": {
+      "slug": "nuxtjs-supabase",
+      "name": "@nuxtjs/supabase",
+      "imgPath": null,
+      "url": "https://supabase.nuxtjs.org"
+    },
+    "detectors": {
+      "js": "window.$nuxt?.$supabase || window.__NUXT__?.config?.public?.supabase"
     }
   },
   "nuxt-i18n": {
@@ -359,7 +370,7 @@
       "url": "https://i18n.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$i18n"
+      "js": "window.$nuxt?.$i18n || window.__NUXT__?.config?.public?.i18n"
     }
   },
   "nuxt-image": {
@@ -370,7 +381,7 @@
       "url": "https://image.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$img"
+      "js": "window.$nuxt?.$img || window.__NUXT__?.config?.public?.image"
     }
   },
   "nuxt-cloudinary": {
@@ -392,7 +403,7 @@
       "url": "https://docus.dev"
     },
     "detectors": {
-      "js": "window.$nuxt?.$docus"
+      "js": "window.$nuxt?.$docus || window.__NUXT__?.config?.public?.docus"
     }
   },
   "druxt": {
@@ -450,7 +461,7 @@
       "js": "window.$nuxt?.$customElements"
     }
   },
-    "@nuxtjs/algolia": {
+  "@nuxtjs/algolia": {
     "metas": {
       "slug": "nuxtjs-algolia",
       "name": "@nuxtjs/algolia",
@@ -458,7 +469,18 @@
       "url": "https://algolia.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$algolia"
+      "js": "window.$nuxt?.$algolia || window.__NUXT__?.config?.public?.algolia"
+    }
+  },
+  "nuxt-directus": {
+    "metas": {
+      "slug": "nuxt-directus",
+      "name": "nuxt-directus",
+      "imgPath": null,
+      "url": "https://nuxt-directus.netlify.app/"
+    },
+    "detectors": {
+      "js": "window.__NUXT__?.config?.public?.directus"
     }
   }
 }
