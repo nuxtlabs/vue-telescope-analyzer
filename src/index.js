@@ -118,7 +118,7 @@ async function analyze (originalUrl, options = {}) {
     let scripts = await page.evaluateHandle(() => Array.from(document.getElementsByTagName('script')).map(({ src }) => src))
     scripts = (await scripts.jsonValue()).filter(script => script)
 
-    // Original HTLM sent back
+    // Original HTML sent back
     const originalHtml = await response.text()
 
     // Get page html
