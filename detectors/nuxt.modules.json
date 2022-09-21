@@ -315,7 +315,7 @@
       "url": "https://color-mode.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$colorMode || window.$nuxt?.$colorMode || (window.__NUXT__?.state && window.__NUXT__?.state['color-mode'])"
+      "js": "window.$nuxt?.$options?.context?.app?.$colorMode || window.$nuxt?.$colorMode || (window.__NUXT__?.state && window.__NUXT__?.state['color-mode']) || window.__NUXT_COLOR_MODE__ "
     }
   },
   "nuxt-ackee": {
