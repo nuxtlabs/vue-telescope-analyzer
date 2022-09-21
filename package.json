@@ -1,6 +1,6 @@
 {
   "name": "vue-telescope-analyzer",
-  "version": "0.9.12",
+  "version": "0.9.13",
   "description": "",
   "main": "src/index.js",
   "bin": {
