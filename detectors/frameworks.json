@@ -28,6 +28,17 @@
       "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$vuepress)).filter(Boolean).length"
     }
   },
+  "vitepress": {
+    "metas": {
+      "slug": "vitepress",
+      "name": "VitePress",
+      "imgPath": "/framework/vitepress.svg",
+      "url": "https://vitepress.vuejs.org"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?._component.name === 'VitePressApp').filter(Boolean).length"
+    }
+  },
   "gridsome": {
     "metas": {
       "slug": "gridsome",
