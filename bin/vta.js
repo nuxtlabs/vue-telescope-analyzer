@@ -23,7 +23,7 @@ yargs
 
     const hrstart = process.hrtime()
     try {
-      const result = await require('..')(argv.url)
+      const result = await require('..')(argv.url, { browserWSEndpoint: argv.browserWSEndpoint })
       spinner.stop()
       consola.log(result)
 

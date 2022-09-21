@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.14](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.13...v0.9.14) (2022-09-21)
+
+### [0.9.13](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.12...v0.9.13) (2022-09-21)
+
+
+### Features
+
+* add vitepress detection ([#81](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/81)) ([9f328ac](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/9f328ace99c148a3c1d7e4db32dc3f82a195567c))
+
+
+### Bug Fixes
+
+* typo ([#77](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/77)) ([3ab0501](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/3ab0501ce38b9bafeaf6a3a201470fae66028452))
+* update nuxt/image detection ([20ac9f0](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/20ac9f0c5c0a6d24bed76c2c7ca4c6bffeb0a415))
+
 ### [0.9.12](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.10...v0.9.12) (2022-05-04)
 
 
