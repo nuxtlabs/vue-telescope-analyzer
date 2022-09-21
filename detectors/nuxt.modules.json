@@ -384,7 +384,7 @@
       "js": [
         "window.$nuxt?.$img",
         "window.__NUXT__?.config?.public?.image",
-        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$router).filter(Boolean).length"
+        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$img).filter(Boolean).length"
       ]
     }
   },
