@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.15](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.14...v0.9.15) (2022-09-21)
+
+
+### Bug Fixes
+
+* add `@nuxtjs/color-mode` recognition case ([#82](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/82)) ([15adce5](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/15adce57fdefddd76bb417d7621b07fd76c23573))
+* use $img not $router for nuxt/image ([5c9c94c](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/5c9c94c322085df3759ea8df36df4a7cf1dff408)), closes [#83](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/83)
+
 ### [0.9.14](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.13...v0.9.14) (2022-09-21)
 
 ### [0.9.13](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.12...v0.9.13) (2022-09-21)
