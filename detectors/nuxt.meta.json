@@ -3,6 +3,6 @@
     "js": "window.$nuxt?.$options?.context?.nuxtState.serverRendered || window.__NUXT__?.serverRendered"
   },
   "static": {
-    "js": "window.$nuxt?.$options?.context?.isStatic"
+    "js": "window.$nuxt?.$options?.context?.isStatic || window.__NUXT__?.prerenderedAt"
   }
 }
