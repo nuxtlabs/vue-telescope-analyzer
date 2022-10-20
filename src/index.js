@@ -50,9 +50,15 @@ async function analyze (originalUrl, options = {}) {
       browser = null
     })
   }
-  // Force https
-  originalUrl = 'https://' + url.hostname + url.pathname
-  const domain = tldParser(url.origin).domain
+
+  originalUrl = url.protocol + '//' + url.hostname + ':' + url.port + url.pathname
+  let domain
+  if (url.hostname === 'localhost' || url.hostname.match(/^((2((5[0-5])|([0-4]\d)))|([0-1]?\d{1,2}))(\.((2((5[0-5])|([0-4]\d)))|([0-1]?\d{1,2}))){3}$/)) {
+    domain = url.hostname;
+  } else {
+    domain = tldParser(url.origin).domain
+  }
+  
   const page = await browser.newPage()
   const infos = {
     url: originalUrl,
