@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.16](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.15...v0.9.16) (2022-11-18)
+
+
+### Features
+
+* detect IP and localhost sites and remove mandatory https access ([#87](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/87)) ([e76ba2f](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/e76ba2fa88bb89b27eafe1b2c3fc1b6d3fe31d29))
+* support nuxt 3 static rendering ([#84](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/84)) ([0fd1e22](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/0fd1e22e32be6af38f5960418124cdb77acbfc99))
+
 ### [0.9.15](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.14...v0.9.15) (2022-09-21)
 
 
