@@ -23,7 +23,6 @@ vta https://fr.nuxtjs.org
 
 [![render1585566509798](https://user-images.githubusercontent.com/904724/77906279-fb455d80-7287-11ea-86f2-d7eca773ba56.gif)](https://terminalizer.com/view/a30a95523602)
 
-
 It supports multiple [frameworks](#frameworks), [UI libraries](#ui-libraries) and [Vue plugins](#vue-plugins).
 
 ## Frameworks
@@ -68,7 +67,8 @@ To support a new UI library, please look at [detectors/uis.json](detectors/uis.j
 - [vee-validate](https://vee-validate.logaretm.com)
 - [Vue Composition API](https://github.com/vuejs/composition-api)
 - [Vue Tour](https://github.com/pulsardev/vue-tour)
-- [Pinia](https://github.com/posva/pinia)
+- [Pinia](https://pinia.vuejs.org/)
+- [Harlem](https://harlemjs.com)
 - [FormKit](https://formkit.com)
 
 To support a new Vue plugin, please look at [detectors/plugins.json](detectors/plugins.json).
@@ -77,13 +77,12 @@ To support a new Vue plugin, please look at [detectors/plugins.json](detectors/p
 
 When [Nuxt](https://nuxtjs.org) is detected as a framework, it will also detect:
 
-- If the website is *server-rendered* (`mode: 'universal'`)
-- If the website is *static* (`nuxt generate`)
+- If the website is _server-rendered_ (`mode: 'universal'`)
+- If the website is _static_ (`nuxt generate`)
 
 See [detectors/nuxt.meta.json](detectors/nuxt.meta.json) for the detection.
 
 It will also detect the Nuxt modules used, refer to [detectors/nuxt.modules.json](detectors/nuxt.modules.json) to support new Nuxt modules.
-
 
 ## NPM Module
 
@@ -96,11 +95,11 @@ npm install vue-telescope-analyzer # Or yarn add vue-telescope-analyzer
 Then you can use the module in your project:
 
 ```js
-const analyze = require('vue-telescope-analyzer')
+const analyze = require("vue-telescope-analyzer");
 
-analyze('https://nuxtjs.org')
-  .then(result => console.log(result))
-  .catch(error => console.error(error))
+analyze("https://nuxtjs.org")
+  .then((result) => console.log(result))
+  .catch((error) => console.error(error));
 ```
 
 Result:
