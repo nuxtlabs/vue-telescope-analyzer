@@ -170,7 +170,7 @@
       "url": "https://harlemjs.com"
     },
     "detectors": {
-      "js": "Boolean(window.$harlem.createInstance)"
+      "js": "Boolean(window.$harlem?.createInstance)"
     }
   },
   "@formkit/vue": {
