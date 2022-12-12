@@ -315,7 +315,7 @@
       "url": "https://color-mode.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$colorMode || window.$nuxt?.$colorMode || (window.__NUXT__?.state && window.__NUXT__?.state['color-mode'])"
+      "js": "window.$nuxt?.$options?.context?.app?.$colorMode || window.$nuxt?.$colorMode || (window.__NUXT__?.state && window.__NUXT__?.state['color-mode']) || window.__NUXT_COLOR_MODE__ "
     }
   },
   "nuxt-ackee": {
@@ -384,7 +384,7 @@
       "js": [
         "window.$nuxt?.$img",
         "window.__NUXT__?.config?.public?.image",
-        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$router).filter(Boolean).length"
+        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$img).filter(Boolean).length"
       ]
     }
   },
