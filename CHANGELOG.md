@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.17](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.16...v0.9.17) (2022-12-19)
+
+
+### Features
+
+* add suport for harlem ([#90](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/90)) ([2d348e2](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/2d348e2b03aa9232661e720077cf1ad7cccc647c)), closes [#1](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/1) [#82](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/82) [#83](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/83) [#84](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/84) [#87](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/87)
+
 ### [0.9.16](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.15...v0.9.16) (2022-11-18)
 
 
