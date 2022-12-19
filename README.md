@@ -4,7 +4,7 @@ CLI to analyze a website and detect Vue and its ecosystem ✨
 
 This module is used by [vuetelescope.com](https://vuetelescope.com) to detect Vue and its ecosystem on a website.
 
-You can help the community discover new Vue websites by using the [browser extension](https://github.com/nuxt-company/vue-telescope-extensions) 💚
+You can help the community discover new Vue websites by using the [browser extension](https://github.com/nuxtlabs/vue-telescope-extensions) 💚
 
 ## Installation
 
@@ -18,7 +18,7 @@ npm install -g vue-telescope-analyzer # Or yarn global add vue-telescope-analyze
 vta [url]
 
 # Example
-vta https://fr.nuxtjs.org
+vta https://nuxt.com
 ```
 
 [![render1585566509798](https://user-images.githubusercontent.com/904724/77906279-fb455d80-7287-11ea-86f2-d7eca773ba56.gif)](https://terminalizer.com/view/a30a95523602)
@@ -27,7 +27,7 @@ It supports multiple [frameworks](#frameworks), [UI libraries](#ui-libraries) an
 
 ## Frameworks
 
-- [Nuxt](https://nuxtjs.org)
+- [Nuxt](https://nuxt.com)
 - [Quasar](https://quasar.dev)
 - [Gridsome](https://gridsome.org)
 - [VuePress](https://vuepress.vuejs.org)
@@ -75,7 +75,7 @@ To support a new Vue plugin, please look at [detectors/plugins.json](detectors/p
 
 ## Nuxt Info
 
-When [Nuxt](https://nuxtjs.org) is detected as a framework, it will also detect:
+When [Nuxt](https://nuxt.com) is detected as a framework, it will also detect:
 
 - If the website is _server-rendered_ (`mode: 'universal'`)
 - If the website is _static_ (`nuxt generate`)
@@ -95,93 +95,71 @@ npm install vue-telescope-analyzer # Or yarn add vue-telescope-analyzer
 Then you can use the module in your project:
 
 ```js
-const analyze = require("vue-telescope-analyzer");
+const analyze = require('vue-telescope-analyzer')
 
-analyze("https://nuxtjs.org")
-  .then((result) => console.log(result))
-  .catch((error) => console.error(error));
+analyze('https://nuxt.com')
+  .then(result => console.log(result))
+  .catch(error => console.error(error))
 ```
 
 Result:
 
 ```js
-{
-  url: 'https://nuxtjs.org/',
-  hostname: 'nuxtjs.org',
-  domain: 'nuxtjs.org',
-  // website metadata
+{                                                                                                                17:48:21
+  url: 'https://nuxt.com/',
+  hostname: 'nuxt.com',
+  domain: 'nuxt.com',
   meta: {
     language: 'en',
-    title: 'Nuxt.js - The Vue.js Framework',
-    description: 'Nuxt.js presets all the configuration needed to make...',
-    siteName: 'NuxtJS',
+    title: 'Nuxt: The Intuitive Web Framework',
+    description: 'Build your next Vue.js application with confidence using Nuxt. An open source framework under MIT license that makes web development simple and powerful.',
+    siteName: '',
     isAdultContent: false
   },
-  vueVersion: '2.6.11',
+  vueVersion: '3.2.45',
   hasSSR: true,
-  isStatic: true,
-  // Vue Framework
+  isStatic: false,
   framework: {
     slug: 'nuxtjs',
     name: 'NuxtJS',
-    imgPath: '/framework/nuxt.svg', // prefix with https://icons.vuetelescope.com
+    imgPath: '/framework/nuxt.svg',
+    url: 'https://nuxt.com'
   },
-  // Vue plugins
   plugins: [
     {
       slug: 'vue-router',
       name: 'vue-router',
       imgPath: null,
       url: 'https://router.vuejs.org/'
-    },
-    {
-      slug: 'vue-meta',
-      name: 'vue-meta',
-      imgPath: null,
-      url: 'https://vue-meta.nuxtjs.org'
-    },
-    {
-      slug: 'vuex',
-      name: 'vuex',
-      imgPath: null,
-      url: 'https://vuex.vuejs.org'
     }
   ],
-  // UI Librairy
   ui: {
     slug: 'tailwind-css',
     name: 'Tailwind CSS',
     imgPath: '/ui/tailwind.svg',
     url: 'https://tailwindcss.com/'
   },
-  // Framework modules
   frameworkModules: [
     {
-      slug: 'nuxt-http',
-      name: '@nuxt/http',
+      slug: 'nuxt-content',
+      name: '@nuxt/content',
       imgPath: null,
-      url: 'https://http.nuxtjs.org'
+      url: 'https://content.nuxtjs.org'
     },
     {
-      slug: 'nuxtjs-pwa',
-      name: '@nuxtjs/pwa',
+      slug: 'nuxtjs-algolia',
+      name: '@nuxtjs/algolia',
       imgPath: null,
-      url: 'https://pwa.nuxtjs.org/'
+      url: 'https://algolia.nuxtjs.org'
     },
     {
-      slug: 'nuxtjs-google-analytics',
-      name: '@nuxtjs/google-analytics',
+      slug: 'nuxt-image',
+      name: '@nuxt/image',
       imgPath: null,
-      url: 'https://github.com/nuxt-community/analytics-module'
-    },
-    {
-      slug: 'nuxtjs-color-mode',
-      name: '@nuxtjs/color-mode',
-      imgPath: null,
-      url: 'https://github.com/nuxt-community/color-mode-module'
+      url: 'https://image.nuxtjs.org'
     }
   ],
-  screenshot: '/var/folders/....../8f1a071384d0b4.jpg'
+  screenshot: '/var/folders/.../00b97a2040a9aeffc8d5c9d855d2643a.jpg'
 }
 ```
 
