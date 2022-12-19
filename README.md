@@ -121,7 +121,7 @@ Result:
   isStatic: false,
   framework: {
     slug: 'nuxtjs',
-    name: 'NuxtJS',
+    name: 'Nuxt',
     imgPath: '/framework/nuxt.svg',
     url: 'https://nuxt.com'
   },

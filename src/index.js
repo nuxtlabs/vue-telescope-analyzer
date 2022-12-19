@@ -174,8 +174,8 @@ async function analyze (originalUrl, options = {}) {
     infos.plugins = await getPlugins(context)
     infos.ui = await getUI(context)
 
-    // Get Nuxt modules if using NuxtJS
-    if (infos.framework && infos.framework.name === 'NuxtJS') {
+    // Get Nuxt modules if using Nuxt
+    if (infos.framework && infos.framework.slug === 'nuxtjs') {
       const [meta, modules] = await Promise.all([
         getNuxtMeta(context),
         getNuxtModules(context)

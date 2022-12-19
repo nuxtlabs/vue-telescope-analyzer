@@ -2,9 +2,9 @@
   "nuxt": {
     "metas": {
       "slug": "nuxtjs",
-      "name": "NuxtJS",
+      "name": "Nuxt",
       "imgPath": "/framework/nuxt.svg",
-      "url": "https://nuxtjs.org"
+      "url": "https://nuxt.com"
     },
     "detectors": {
       "html": [
