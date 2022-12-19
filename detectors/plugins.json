@@ -162,6 +162,17 @@
       ]
     }
   },
+  "harlem": {
+    "metas": {
+      "slug": "harlem",
+      "name": "Harlem",
+      "imgPath": "/plugins/harlem.svg",
+      "url": "https://harlemjs.com"
+    },
+    "detectors": {
+      "js": "Boolean(window.$harlem?.createInstance)"
+    }
+  },
   "@formkit/vue": {
     "metas": {
       "slug": "formkit",
