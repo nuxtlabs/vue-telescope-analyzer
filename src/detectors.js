@@ -93,7 +93,7 @@ exports.getNuxtModules = async function (context) {
   return Array.from(modules)
 }
 
-async function isMatching (detector, { originalHtml, html, scripts, page }) {
+async function isMatching (detector, { originalHtml, html, scripts, page, headers }) {
   // If we can detect technology from response html
   if (detector.originalHtml) {
     for (const pattern of parsePatterns(detector.originalHtml)) {
@@ -120,6 +120,14 @@ async function isMatching (detector, { originalHtml, html, scripts, page }) {
       try {
         if (await page.evaluate(`Boolean(${js})`)) return true
       } catch (e) {}
+    }
+  }
+  // If we can detect technology from headers
+  if (headers && detector.headers && typeof detector.headers === 'object' && Object.keys(detector.headers).length > 0) {
+    for (const header of Object.keys(headers)) {
+      if (Object.keys(detector.headers).find(key => key.toLowerCase() === header.toLowerCase())) {
+        if (detector.headers[header].toLowerCase() === headers[header].toLowerCase()) return true
+      }
     }
   }
   return false

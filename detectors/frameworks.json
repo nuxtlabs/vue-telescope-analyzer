@@ -14,7 +14,10 @@
       "js": "window.__NUXT__ || window.$nuxt || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue_app__?.$nuxt)))",
       "script": [
         "/_nuxt/"
-      ]
+      ],
+      "headers": {
+        "x-powered-by": "nuxt"
+      }
     }
   },
   "vuepress": {

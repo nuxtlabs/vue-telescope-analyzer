@@ -4,5 +4,8 @@
   "script": [
     "vue[.-]([\\d.]*\\d)[^/]*\\.js\\;version:\\1",
     "(?:/([\\d.]+))?/vue(?:\\.min)?\\.js\\;version:\\1"
-  ]
+  ],
+  "headers": {
+    "x-powered-by": "nuxt"
+  }
 }

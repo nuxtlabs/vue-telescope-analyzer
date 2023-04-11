@@ -58,7 +58,7 @@ async function analyze (originalUrl, options = {}) {
   } else {
     domain = tldParser(url.origin).domain
   }
-  
+
   const page = await browser.newPage()
   const infos = {
     url: originalUrl,
@@ -131,7 +131,7 @@ async function analyze (originalUrl, options = {}) {
     const html = await page.content()
 
     // Use for detection
-    const context = { originalHtml, html, scripts, page }
+    const context = { originalHtml, html, scripts, page, headers }
 
     if (!(await hasVue(context))) {
       const error = new Error(`Vue is not detected on ${originalUrl}`)
