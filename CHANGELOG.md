@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.19](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.18...v0.9.19) (2023-04-26)
+
+
+### Features
+
+* add framework version ([89e94ea](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/89e94ea25d72a28dde6c45f17c43a5358ea23378))
+
 ### [0.9.18](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.17...v0.9.18) (2023-04-13)
 
 
