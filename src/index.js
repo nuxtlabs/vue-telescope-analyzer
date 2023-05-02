@@ -180,7 +180,7 @@ async function analyze (originalUrl, options = {}) {
         getNuxtMeta(context),
         getNuxtModules(context)
       ])
-      infos.framework.version = await page.evaluate(`__unctx__?.get('nuxt-app')?.use()?.versions?.nuxt`)
+      infos.framework.version = await page.evaluate(`window.__unctx__?.get('nuxt-app')?.use()?.versions?.nuxt`)
       if (!infos.framework.version && infos.vueVersion) {
         infos.framework.version = infos.vueVersion.split('.')[0]
       }
