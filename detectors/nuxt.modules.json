@@ -436,11 +436,11 @@
     "metas": {
       "slug": "nuxt-typo3",
       "name": "nuxt-typo3",
-      "imgPath": null,
+      "imgPath": "/modules/typo3.svg",
       "url": "https://github.com/TYPO3-Initiatives/nuxt-typo3"
     },
     "detectors": {
-      "js": "window.$nuxt?.$typo3"
+      "js": "window.$nuxt?.$typo3 || window.__NUXT__?.config?.public?.typo3"
     }
   },
   "nuxt-speedkit": {
