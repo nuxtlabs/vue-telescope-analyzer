@@ -486,5 +486,16 @@
     "detectors": {
       "js": "window.__NUXT__?.config?.public?.directus"
     }
+  },
+  "nuxtlabs-ui": {
+    "metas": {
+      "slug": "nuxtlabs-ui",
+      "name": "@nuxthq/ui",
+      "imgPath": null,
+      "url": "https://ui.nuxtlabs.com"
+    },
+    "detectors": {
+      "js": "window.__unctx__?.get('nuxt-app')?.use()._appConfig?.ui?.primary"
+    }
   }
 }
