@@ -51,6 +51,7 @@ To support a new Vue framework, please look at [detectors/frameworks.json](detec
 - [iView](http://iview.talkingdata.com)
 - [Vue Material](https://www.creative-tim.com/vuematerial)
 - [Vulk](https://vulk.cssninja.io)
+- [Arco Design](https://arco.design)
 
 To support a new UI library, please look at [detectors/uis.json](detectors/uis.json).
 
