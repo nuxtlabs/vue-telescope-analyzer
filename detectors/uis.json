@@ -168,7 +168,16 @@
     "detectors": {
       "js": "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?._context?.provides?.vulk).filter(Boolean).length"
     }
+  },
+  "arco-design": {
+    "metas": {
+      "slug": "arco-design",
+      "name": "Arco Design",
+      "imgPath": "/ui/arco.svg",
+      "url": "https://arco.design"
+    },
+    "detectors": {
+      "html": "<(?:div|button|a) [^>]*class=\"arco-[a-z0-9-]*"
+    }
   }
 }
-
-
