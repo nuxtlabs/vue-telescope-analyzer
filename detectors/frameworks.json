@@ -28,7 +28,7 @@
       "url": "https://vuepress.vuejs.org"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$vuepress)).filter(Boolean).length"
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$vuepress || el.__vue_app__?._component?.name === 'VuepressApp')).filter(Boolean).length"
     }
   },
   "vitepress": {
