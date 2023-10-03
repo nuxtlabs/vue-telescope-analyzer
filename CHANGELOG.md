@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.22](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.21...v0.9.22) (2023-10-03)
+
+
+### Features
+
+* add detector for arco design ([#102](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/102)) ([ade8c00](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/ade8c00f8fd16a65bc5148e95e66c204981617d8))
+* add vuepress2 detection ([#101](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/101)) ([8c79109](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/8c79109d29beb336ac03e632edf6933bd2869cac))
+
+
+### Bug Fixes
+
+* remove unused dependency causing errors ([#99](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/99)) ([879d336](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/879d336b21b26ac2679bd06f9fd04425efee75a5))
+
 ### [0.9.21](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.20...v0.9.21) (2023-06-19)
 
 
