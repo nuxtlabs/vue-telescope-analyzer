@@ -487,15 +487,26 @@
       "js": "window.__NUXT__?.config?.public?.directus"
     }
   },
-  "nuxtlabs-ui": {
+  "nuxt-ui": {
     "metas": {
-      "slug": "nuxtlabs-ui",
-      "name": "@nuxthq/ui",
+      "slug": "nuxt-ui",
+      "name": "@nuxt/ui",
       "imgPath": null,
-      "url": "https://ui.nuxtlabs.com"
+      "url": "https://ui.nuxt.com"
     },
     "detectors": {
       "js": "window.__unctx__?.get('nuxt-app')?.use()._appConfig?.ui?.primary"
+    }
+  },
+  "nuxt-ui-pro": {
+    "metas": {
+      "slug": "nuxt-ui-pro",
+      "name": "@nuxt/ui-pro",
+      "imgPath": null,
+      "url": "https://ui.nuxt.com/pro"
+    },
+    "detectors": {
+      "js": "window.__unctx__?.get('nuxt-app')?.use()._appConfig?.ui?.variables"
     }
   }
 }
