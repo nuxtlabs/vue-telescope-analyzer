@@ -495,7 +495,7 @@
       "url": "https://ui.nuxt.com"
     },
     "detectors": {
-      "js": "window.__unctx__?.get('nuxt-app')?.use()._appConfig?.ui?.primary"
+      "js": "useNuxtApp?.()._appConfig?.ui?.primary || window.__unctx__?.get('nuxt-app')?.use()._appConfig?.ui?.primary"
     }
   },
   "nuxt-ui-pro": {
@@ -506,7 +506,7 @@
       "url": "https://ui.nuxt.com/pro"
     },
     "detectors": {
-      "js": "window.__unctx__?.get('nuxt-app')?.use()._appConfig?.ui?.variables"
+      "js": "useNuxtApp?.()._appConfig?.ui?.variables || window.__unctx__?.get('nuxt-app')?.use()._appConfig?.ui?.variables"
     }
   }
 }
