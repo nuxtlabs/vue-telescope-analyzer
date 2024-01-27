@@ -33,6 +33,7 @@ It supports multiple [frameworks](#frameworks), [UI libraries](#ui-libraries) an
 - [VuePress](https://vuepress.vuejs.org)
 - [Vue Storefront](https://www.vuestorefront.io/)
 - [îles](https://iles-docs.netlify.app)
+- [TresJs](https://tresjs.org/)
 
 To support a new Vue framework, please look at [detectors/frameworks.json](detectors/frameworks.json).
 
