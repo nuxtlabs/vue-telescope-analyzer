@@ -370,7 +370,7 @@
       "url": "https://i18n.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$i18n || window.__unctx__?.get('nuxt-app')?.use().$i18n"
+      "js": "window.$nuxt?.$i18n || window.__unctx__?.get('nuxt-app')?.use()?.$i18n"
     }
   },
   "nuxt-image": {
