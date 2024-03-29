@@ -37,7 +37,7 @@
       "slug": "nuxtjs-apollo",
       "name": "@nuxtjs/apollo",
       "imgPath": null,
-      "url": "https://github.com/nuxt-community/apollo-module"
+      "url": "https://github.com/nuxt-modules/apollo"
     },
     "detectors": {
       "js": "window.$nuxt?.$options?.context?.app?.$apolloHelpers || window.__unctx__?.get('nuxt-app')?.use()?.$apolloHelpers"
@@ -81,7 +81,7 @@
       "slug": "nuxtjs-device",
       "name": "@nuxtjs/device",
       "imgPath": null,
-      "url": "https://github.com/nuxt-community/device-module"
+      "url": "https://github.com/nuxt-modules/device"
     },
     "detectors": {
       "js": "window.$nuxt?.$options?.context?.app?.$device || window.__unctx__?.get('nuxt-app')?.use()?.$device"
