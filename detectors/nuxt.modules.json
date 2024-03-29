@@ -366,7 +366,7 @@
     "metas": {
       "slug": "nuxt-i18n",
       "name": "@nuxtjs/i18n",
-      "imgPath": null,
+      "imgPath": "/modules/nuxt-i18n.svg",
       "url": "https://i18n.nuxtjs.org"
     },
     "detectors": {
