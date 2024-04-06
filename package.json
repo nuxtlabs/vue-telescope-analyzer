@@ -1,6 +1,6 @@
 {
   "name": "vue-telescope-analyzer",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "description": "",
   "main": "src/index.js",
   "bin": {
@@ -24,6 +24,7 @@
   "dependencies": {
     "citty": "^0.1.6",
     "consola": "^3.2.3",
+    "load-json-file": "^7.0.1",
     "make-dir": "^4.0.0",
     "ora": "8.0.1",
     "puppeteer": "^22.6.3",
