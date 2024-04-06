@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.10.0](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.23...v0.10.0) (2024-04-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* move to esm and upgrade deps
+
+### Features
+
+* **app:** Add TresJs to vue-telemetry ([#105](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/105)) ([8ff8135](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/8ff8135d48ef13012075a7d3b8a99e78f201d0a4))
+* move to esm and upgrade deps ([0ae5429](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/0ae54290f0ff0ac12987ec64796d0c419ed7ca85))
+
+
+### Bug Fixes
+
+* check nuxt instance from `unctx` where needed ([#107](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/107)) ([b543297](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/b5432978e2d0b109cd1f1ebeb4331ae4996d7f22))
+
 ### [0.9.23](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.22...v0.9.23) (2024-01-24)
 
 
