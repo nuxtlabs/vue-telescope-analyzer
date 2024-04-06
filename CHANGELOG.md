@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.10.1](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.10.0...v0.10.1) (2024-04-06)
+
+
+### Bug Fixes
+
+* cli commands ([919ee6f](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/919ee6f7677fa400d17fc2edda597de3e754e94b))
+
 ## [0.10.0](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.23...v0.10.0) (2024-04-06)
 
 
