@@ -1,12 +1,17 @@
 import { parsePatterns, asArray } from './utils.mjs'
+import { fileURLToPath } from 'url'
+import { dirname, resolve } from 'path'
+import { loadJsonFileSync } from 'load-json-file'
 
-import vue from '../detectors/vue.json' assert { type: 'json' }
-import vueMeta from '../detectors/vue.meta.json' assert { type: 'json' }
-import frameworks from '../detectors/frameworks.json' assert { type: 'json' }
-import plugins from '../detectors/plugins.json' assert { type: 'json' }
-import uis from '../detectors/uis.json' assert { type: 'json' }
-import nuxtMeta from '../detectors/nuxt.meta.json' assert { type: 'json' }
-import nuxtModules from '../detectors/nuxt.modules.json' assert { type: 'json' }
+const __dirname = dirname(fileURLToPath(import.meta.url))
+
+const vue = loadJsonFileSync(resolve(__dirname, '../detectors/vue.json'))
+const vueMeta = loadJsonFileSync(resolve(__dirname, '../detectors/vue.meta.json'))
+const frameworks = loadJsonFileSync(resolve(__dirname, '../detectors/frameworks.json'))
+const plugins = loadJsonFileSync(resolve(__dirname, '../detectors/plugins.json'))
+const uis = loadJsonFileSync(resolve(__dirname, '../detectors/uis.json'))
+const nuxtMeta = loadJsonFileSync(resolve(__dirname, '../detectors/nuxt.meta.json'))
+const nuxtModules = loadJsonFileSync(resolve(__dirname, '../detectors/nuxt.modules.json'))
 
 const detectors = {
   vue,

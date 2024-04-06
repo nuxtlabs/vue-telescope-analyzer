@@ -11,6 +11,9 @@ dependencies:
   consola:
     specifier: ^3.2.3
     version: 3.2.3
+  load-json-file:
+    specifier: ^7.0.1
+    version: 7.0.1
   make-dir:
     specifier: ^4.0.0
     version: 4.0.0
@@ -1021,6 +1024,11 @@ packages:
       pify: 3.0.0
       strip-bom: 3.0.0
     dev: true
+
+  /load-json-file@7.0.1:
+    resolution: {integrity: sha512-Gnxj3ev3mB5TkVBGad0JM6dmLiQL+o0t23JPBZ9sd+yvSLk05mFoqKBw5N8gbbkU4TNXyqCgIrl/VM17OgUIgQ==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dev: false
 
   /locate-path@2.0.0:
     resolution: {integrity: sha512-NCI2kiDkyR7VeEKm27Kda/iQHyKJe1Bu0FlTbYp3CqJu+9IFe9bLyAjMxf5ZDDbEg+iMPzB5zYyUTSm8wVTKmA==}

@@ -301,7 +301,7 @@
       "slug": "nuxt-content",
       "name": "@nuxt/content",
       "imgPath": null,
-      "url": "https://content.nuxtjs.org"
+      "url": "https://content.nuxt.com"
     },
     "detectors": {
       "js": "window.$nuxt?.$options?.context?.app?.$content || window.__NUXT__?.config?.public?.content"
@@ -378,14 +378,16 @@
       "slug": "nuxt-image",
       "name": "@nuxt/image",
       "imgPath": null,
-      "url": "https://image.nuxtjs.org"
+      "url": "https://image.nuxt.com"
     },
     "detectors": {
+      "html": "data-nuxt-img",
       "js": [
         "window.$nuxt?.$img",
         "window.__NUXT__?.config?.public?.image",
         "window.__unctx__?.get('nuxt-app')?.use()?.$img",
-        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$img).filter(Boolean).length"
+        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$img).filter(Boolean).length",
+        "useNuxtApp?.()._img"
       ]
     }
   },
@@ -508,6 +510,39 @@
     },
     "detectors": {
       "js": "useNuxtApp?.()._appConfig?.ui?.variables || window.__unctx__?.get('nuxt-app')?.use()._appConfig?.ui?.variables"
+    }
+  },
+  "nuxt-mdc": {
+    "metas": {
+      "slug": "nuxt-mdc",
+      "name": "@nuxtjs/mdc",
+      "imgPath": null,
+      "url": "https://github.com/nuxt-modules/mdc"
+    },
+    "detectors": {
+      "js": "useNuxtApp?.().payload?.config?.public?.mdc || window.__unctx__?.get('nuxt-app')?.use().payload?.config?.public?.mdc"
+    }
+  },
+  "nuxt-studio": {
+    "metas": {
+      "slug": "nuxt-studio",
+      "name": "@nuxthq/studio",
+      "imgPath": null,
+      "url": "https://nuxt.studio"
+    },
+    "detectors": {
+      "js": "useNuxtApp?.().payload?.config?.public?.studio || window.__unctx__?.get('nuxt-app')?.use().payload?.config?.public?.studio"
+    }
+  },
+  "nuxt-plausible": {
+    "metas": {
+      "slug": "nuxt-plausible",
+      "name": "@nuxtjs/plausible",
+      "imgPath": null,
+      "url": "https://github.com/nuxt-modules/plausible"
+    },
+    "detectors": {
+      "js": "useNuxtApp?.().payload?.config?.public?.plausible || window.__unctx__?.get('nuxt-app')?.use().payload?.config?.public?.plausible"
     }
   }
 }

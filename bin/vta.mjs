@@ -3,12 +3,19 @@
 import ora from 'ora'
 import consola from 'consola'
 import { defineCommand, runMain } from 'citty'
+import { fileURLToPath } from 'url'
+import { dirname, resolve } from 'path'
 import { analyze } from '../src/index.mjs'
+import { loadJsonFileSync } from 'load-json-file'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const pkg = loadJsonFileSync(resolve(__dirname, '../package.json'))
 
 const main = defineCommand({
   meta: {
     name: 'vta',
-    description: 'Vue Telescope Analyzer'
+    description: 'Vue Telescope Analyzer',
+    version: pkg.version
   },
   args: {
     url: {
