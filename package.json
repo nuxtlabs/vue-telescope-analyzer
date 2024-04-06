@@ -4,8 +4,8 @@
   "description": "",
   "main": "src/index.js",
   "bin": {
-    "vta": "bin/vta.js",
-    "vue-telescope-analyzer": "bin/vta.js"
+    "vta": "bin/vta.mjs",
+    "vue-telescope-analyzer": "bin/vta.mjs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,7 +15,9 @@
     "vue",
     "vue analyzer",
     "vue telemetry",
-    "vue telescope"
+    "vue telescope",
+    "vue telescope analyzer",
+    "vta"
   ],
   "author": "NuxtJS Company",
   "license": "GPL-3.0",
