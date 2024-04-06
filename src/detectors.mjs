@@ -3,15 +3,15 @@ import { fileURLToPath } from 'url'
 import { dirname, resolve } from 'path'
 import { loadJsonFileSync } from 'load-json-file'
 
-const __dirname = dirname(fileURLToPath(import.meta.url))
+const dir = dirname(fileURLToPath(import.meta.url))
 
-const vue = loadJsonFileSync(resolve(__dirname, '../detectors/vue.json'))
-const vueMeta = loadJsonFileSync(resolve(__dirname, '../detectors/vue.meta.json'))
-const frameworks = loadJsonFileSync(resolve(__dirname, '../detectors/frameworks.json'))
-const plugins = loadJsonFileSync(resolve(__dirname, '../detectors/plugins.json'))
-const uis = loadJsonFileSync(resolve(__dirname, '../detectors/uis.json'))
-const nuxtMeta = loadJsonFileSync(resolve(__dirname, '../detectors/nuxt.meta.json'))
-const nuxtModules = loadJsonFileSync(resolve(__dirname, '../detectors/nuxt.modules.json'))
+const vue = loadJsonFileSync(resolve(dir, '../detectors/vue.json'))
+const vueMeta = loadJsonFileSync(resolve(dir, '../detectors/vue.meta.json'))
+const frameworks = loadJsonFileSync(resolve(dir, '../detectors/frameworks.json'))
+const plugins = loadJsonFileSync(resolve(dir, '../detectors/plugins.json'))
+const uis = loadJsonFileSync(resolve(dir, '../detectors/uis.json'))
+const nuxtMeta = loadJsonFileSync(resolve(dir, '../detectors/nuxt.meta.json'))
+const nuxtModules = loadJsonFileSync(resolve(dir, '../detectors/nuxt.modules.json'))
 
 const detectors = {
   vue,
