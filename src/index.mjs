@@ -1,15 +1,14 @@
-const puppeteer = require('puppeteer')
-const tldParser = require('tld-extract')
-const makeDir = require('make-dir')
-const { createHash } = require('crypto')
-const { URL } = require('url')
-const { join } = require('path')
-const { tmpdir } = require('os')
-const { isCrawlable, puppeteerArgs, puppeteerViewport } = require('./utils')
-const { hasVue, getVueMeta, getFramework, getPlugins, getUI, getNuxtMeta, getNuxtModules } = require('./detectors')
-const consola = require('consola')
+import puppeteer from 'puppeteer'
+import tldParser from 'tld-extract'
+import makeDir from 'make-dir'
+import { createHash } from 'crypto'
+import { URL } from 'url'
+import { join } from 'path'
+import { tmpdir } from 'os'
+import { isCrawlable, puppeteerArgs, puppeteerViewport } from './utils.mjs'
+import { hasVue, getVueMeta, getFramework, getPlugins, getUI, getNuxtMeta, getNuxtModules } from './detectors.mjs'
 
-const ERROR_CODES = Object.freeze({
+export const ERROR_CODES = Object.freeze({
   INVALID_URL: 1,
   HTTP_ERROR: 2,
   NOT_CRAWLABLE: 3,
@@ -24,7 +23,7 @@ const puppeteerDefaultArgs = {
   ignoreHTTPSErrors: true
 }
 
-async function analyze (originalUrl, options = {}) {
+export async function analyze (originalUrl, options = {}) {
   // Parse url
   let url
   try {
@@ -51,7 +50,7 @@ async function analyze (originalUrl, options = {}) {
     })
   }
 
-  originalUrl = url.protocol + '//' + url.hostname + ':' + url.port + url.pathname
+  originalUrl = url.protocol + '//' + url.hostname + (url.port ? `:${url.port}` : '') + url.pathname
   let domain
   if (url.hostname === 'localhost' || url.hostname.match(/^((2((5[0-5])|([0-4]\d)))|([0-1]?\d{1,2}))(\.((2((5[0-5])|([0-4]\d)))|([0-1]?\d{1,2}))){3}$/)) {
     domain = url.hostname;
@@ -61,7 +60,7 @@ async function analyze (originalUrl, options = {}) {
 
   const page = await browser.newPage()
   const infos = {
-    url: originalUrl,
+    url: originalUrl.replace(':/', '/'),
     hostname: url.hostname,
     domain: domain,
     meta: {
@@ -208,9 +207,7 @@ async function analyze (originalUrl, options = {}) {
   }
 }
 
-module.exports = analyze
-module.exports.ERROR_CODES = ERROR_CODES
-module.exports.close = async function () {
+export async function close () {
   if (browser) {
     await browser.close()
   }

@@ -9,7 +9,7 @@ You can help the community discover new Vue websites by using the [browser exten
 ## Installation
 
 ```bash
-npm install -g vue-telescope-analyzer # Or yarn global add vue-telescope-analyzer
+npm i -g vue-telescope-analyzer
 ```
 
 ## Usage
@@ -107,62 +107,50 @@ analyze('https://nuxt.com')
 Result:
 
 ```js
-{                                                                                                                17:48:21
-  url: 'https://nuxt.com/',
+{ url: 'https//nuxt.com/',
   hostname: 'nuxt.com',
   domain: 'nuxt.com',
-  meta: {
-    language: 'en',
-    title: 'Nuxt: The Intuitive Web Framework',
-    description: 'Build your next Vue.js application with confidence using Nuxt. An open source framework under MIT license that makes web development simple and powerful.',
-    siteName: '',
-    isAdultContent: false
-  },
-  vueVersion: '3.2.45',
+  meta:
+   { language: 'en',
+     title: 'Nuxt: The Intuitive Vue Framework · Nuxt',
+     description:
+      'Nuxt is an open source framework that makes web development intuitive and powerful. Create performant and production-grade full-stack web apps and websites with confidence.',
+     siteName: 'Nuxt',
+     isAdultContent: false },
+  vueVersion: '3.4.21',
   hasSSR: true,
-  isStatic: false,
-  framework: {
-    slug: 'nuxtjs',
-    name: 'Nuxt',
-    imgPath: '/framework/nuxt.svg',
-    url: 'https://nuxt.com'
-  },
-  plugins: [
-    {
-      slug: 'vue-router',
-      name: 'vue-router',
-      imgPath: null,
-      url: 'https://router.vuejs.org/'
-    }
-  ],
-  ui: {
-    slug: 'tailwind-css',
-    name: 'Tailwind CSS',
-    imgPath: '/ui/tailwind.svg',
-    url: 'https://tailwindcss.com/'
-  },
-  frameworkModules: [
-    {
-      slug: 'nuxt-content',
-      name: '@nuxt/content',
-      imgPath: null,
-      url: 'https://content.nuxtjs.org'
-    },
-    {
-      slug: 'nuxtjs-algolia',
-      name: '@nuxtjs/algolia',
-      imgPath: null,
-      url: 'https://algolia.nuxtjs.org'
-    },
-    {
-      slug: 'nuxt-image',
-      name: '@nuxt/image',
-      imgPath: null,
-      url: 'https://image.nuxtjs.org'
-    }
-  ],
-  screenshot: '/var/folders/.../00b97a2040a9aeffc8d5c9d855d2643a.jpg'
-}
+  isStatic: true,
+  framework:
+   { slug: 'nuxtjs',
+     name: 'Nuxt',
+     imgPath: '/framework/nuxt.svg',
+     url: 'https://nuxt.com',
+     version: '3.10.3' },
+  plugins:
+   [ { slug: 'vue-router',
+       name: 'vue-router',
+       imgPath: null,
+       url: 'https://router.vuejs.org/' } ],
+  ui:
+   { slug: 'tailwind-css',
+     name: 'Tailwind CSS',
+     imgPath: '/ui/tailwind.svg',
+     url: 'https://tailwindcss.com/' },
+  frameworkModules:
+   [ { slug: 'nuxt-content',
+       name: '@nuxt/content',
+       imgPath: null,
+       url: 'https://content.nuxtjs.org' },
+     { slug: 'nuxtjs-color-mode',
+       name: '@nuxtjs/color-mode',
+       imgPath: null,
+       url: 'https://color-mode.nuxtjs.org' },
+     { slug: 'nuxt-ui', name: '@nuxt/ui', imgPath: null, url: 'https://ui.nuxt.com' },
+     { slug: 'nuxt-ui-pro',
+       name: '@nuxt/ui-pro',
+       imgPath: null,
+       url: 'https://ui.nuxt.com/pro' } ],
+  screenshot: '/var/folders/.../00b97a2040a9aeffc8d5c9d855d2643a.jpg' }
 ```
 
 ## Contributing

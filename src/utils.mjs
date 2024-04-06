@@ -1,8 +1,7 @@
-const asArray = (value) => value instanceof Array ? value : [value]
-exports.asArray = asArray
+export const asArray = (value) => value instanceof Array ? value : [value]
 
 // Src: https://github.com/AliasIO/wappalyzer/blob/master/src/wappalyzer.js
-exports.parsePatterns = function (patterns) {
+export function parsePatterns (patterns) {
   if (!patterns) {
     return [];
   }
@@ -55,7 +54,7 @@ exports.parsePatterns = function (patterns) {
   return parsed;
 }
 
-exports.isCrawlable = async function (htmlHeaders) {
+export async function isCrawlable (htmlHeaders) {
   const tag = htmlHeaders['x-robots-tag']
   const patterns = /noindex|none/
 
@@ -63,7 +62,7 @@ exports.isCrawlable = async function (htmlHeaders) {
 }
 
 // From https://github.com/alixaxel/chrome-aws-lambda/blob/master/source/index.js#L83
-exports.puppeteerArgs = [
+export const puppeteerArgs = [
   '--autoplay-policy=user-gesture-required',
   '--disable-background-networking',
   '--disable-background-timer-throttling',
@@ -104,7 +103,7 @@ exports.puppeteerArgs = [
   '--single-process',
   '--disable-gpu'
 ]
-exports.puppeteerViewport = {
+export const puppeteerViewport = {
   deviceScaleFactor: 1,
   hasTouch: false,
   height: 1080,

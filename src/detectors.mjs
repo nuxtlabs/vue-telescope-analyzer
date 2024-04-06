@@ -1,22 +1,30 @@
-const { parsePatterns, asArray } = require('./utils')
+import { parsePatterns, asArray } from './utils.mjs'
+
+import vue from '../detectors/vue.json' assert { type: 'json' }
+import vueMeta from '../detectors/vue.meta.json' assert { type: 'json' }
+import frameworks from '../detectors/frameworks.json' assert { type: 'json' }
+import plugins from '../detectors/plugins.json' assert { type: 'json' }
+import uis from '../detectors/uis.json' assert { type: 'json' }
+import nuxtMeta from '../detectors/nuxt.meta.json' assert { type: 'json' }
+import nuxtModules from '../detectors/nuxt.modules.json' assert { type: 'json' }
 
 const detectors = {
-  vue: require('../detectors/vue.json'),
-  meta: require('../detectors/vue.meta.json'),
-  frameworks: require('../detectors/frameworks.json'),
-  plugins: require('../detectors/plugins.json'),
-  uis: require('../detectors/uis.json'),
+  vue,
+  meta: vueMeta,
+  frameworks,
+  plugins,
+  uis,
   nuxt: {
-    meta: require('../detectors/nuxt.meta.json'),
-    modules: require('../detectors/nuxt.modules.json')
+    meta: nuxtMeta,
+    modules: nuxtModules
   }
 }
 
-exports.hasVue = function (context) {
+export function hasVue (context) {
   return isMatching(detectors.vue, context)
 }
 
-exports.getVueMeta = async function(context) {
+export async function getVueMeta (context) {
   const meta = {}
   await Promise.all(
     Object.keys(detectors.meta).map(async (key) => {
@@ -26,7 +34,7 @@ exports.getVueMeta = async function(context) {
   return meta
 }
 
-exports.getFramework = async function (context) {
+export async function getFramework (context) {
   for (const framework of Object.keys(detectors.frameworks)) {
     if (await isMatching(detectors.frameworks[framework].detectors, context)) {
       return detectors.frameworks[framework].metas
@@ -35,7 +43,7 @@ exports.getFramework = async function (context) {
   return null
 }
 
-exports.getUI = async function (context) {
+export async function getUI (context) {
   const uis = new Set()
 
   await Promise.all(
@@ -53,7 +61,7 @@ exports.getUI = async function (context) {
   return null
 }
 
-exports.getPlugins = async function (context) {
+export async function getPlugins (context) {
   const plugins = new Set()
 
   await Promise.all(
@@ -67,7 +75,7 @@ exports.getPlugins = async function (context) {
   return Array.from(plugins)
 }
 
-exports.getNuxtMeta = async function (context) {
+export async function getNuxtMeta (context) {
   const meta = {}
 
   await Promise.all(
@@ -79,7 +87,7 @@ exports.getNuxtMeta = async function (context) {
   return meta
 }
 
-exports.getNuxtModules = async function (context) {
+export async function getNuxtModules (context) {
   const modules = new Set()
 
   await Promise.all(
