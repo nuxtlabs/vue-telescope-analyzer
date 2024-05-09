@@ -446,15 +446,15 @@
       "js": "window.$nuxt?.$typo3 || window.__NUXT__?.config?.public?.typo3 || window.__unctx__?.get('nuxt-app')?.use()?.$typo3"
     }
   },
-  "nuxt-speedkit": {
+  "nuxt-booster": {
     "metas": {
-      "slug": "nuxt-speedkit",
-      "name": "nuxt-speedkit",
-      "imgPath": "/modules/speedkit.svg",
-      "url": "https://nuxt-speedkit.grabarzundpartner.dev"
+      "slug": "nuxt-booster",
+      "name": "nuxt-booster",
+      "imgPath": "/modules/nuxt-booster.svg",
+      "url": "https://basics.github.io/nuxt-booster"
     },
     "detectors": {
-      "js": "window.$nuxt?.$speedkit || window.__unctx__?.get('nuxt-app')?.use()?.$speedkit"
+      "js": "window.__NUXT__?.config?.public?.booster || window.__unctx__?.get('nuxt-app')?.use()?.$booster"
     }
   },
   "nuxt-custom-elements": {
