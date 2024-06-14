@@ -27,6 +27,11 @@ const main = defineCommand({
       type: 'string',
       description: 'Browser WS endpoint to use',
       required: false
+    },
+    json: {
+      type: 'boolean',
+      description: 'Output results in JSON format',
+      required: false
     }
   },
   async setup ({ args }) {
@@ -39,10 +44,15 @@ const main = defineCommand({
     try {
       const result = await analyze(args.url, { browserWSEndpoint: args.browser })
       spinner.stop()
-      consola.log(result)
 
-      const hrend = process.hrtime(hrstart)
-      consola.info('Execution time (hr): %ds %dms', hrend[0], hrend[1] / 1000000)
+      if (args.json) {
+        console.log(JSON.stringify(result, null, 2))
+      } else {
+        consola.log(result)
+        const hrend = process.hrtime(hrstart)
+        consola.info('Execution time (hr): %ds %dms', hrend[0], hrend[1] / 1000000)
+      }
+      
       process.exit(0)
     } catch (err) {
       consola.error(err.message)
