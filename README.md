@@ -19,6 +19,9 @@ vta [url]
 
 # Example
 vta https://nuxt.com
+
+# Example for valid JSON output
+vta https://nuxt.com --json
 ```
 
 [![render1585566509798](https://user-images.githubusercontent.com/904724/77906279-fb455d80-7287-11ea-86f2-d7eca773ba56.gif)](https://terminalizer.com/view/a30a95523602)
